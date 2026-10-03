@@ -1,0 +1,9 @@
+# Temporary and backup files
+*.bak
+*.tmp
+*.temp
+*~
+
+# LaTeX build outputs
+report/build/
+build/

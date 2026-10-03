@@ -1,0 +1,204 @@
+{
+  "sked_version": "0.1.0",
+  "id": "srs-cinema-booking-system",
+  "topic": "SRS Cinema Booking System",
+  "created": "2026-10-03T16:26:23+03:00",
+  "updated": "2026-10-03T17:22:43+03:00",
+  "phase": 5,
+  "round": 11,
+  "mode": "deep",
+  "profile": "ieee",
+  "language": {
+    "dialogue": "uk",
+    "document": "uk"
+  },
+  "params": {
+    "epsilon": 0.05,
+    "stable_rounds": 2,
+    "min_rounds": 3,
+    "max_rounds": 15,
+    "weights": {
+      "alpha": 0.4,
+      "beta": 0.3,
+      "gamma": 0.3
+    },
+    "q_threshold": 0.85,
+    "overfull_tolerance_pt": 1.0,
+    "max_fix_loops": 3
+  },
+  "context": {
+    "authority": "",
+    "audience": "Автор проєкту та AI-агент (Google Antigravity)",
+    "exemplars": [],
+    "constraints": [],
+    "rubric": [],
+    "house_style": {
+      "rules": [],
+      "forbid_chars": []
+    },
+    "metadata": {
+      "title": "Специфікація вимог до програмного забезпечення: Cinema Booking System",
+      "author": "",
+      "affiliation": "",
+      "doc_type": "",
+      "version": "1.0.0",
+      "date": "",
+      "keywords": ""
+    }
+  },
+  "metrics": [
+    {
+      "round": 0,
+      "delta": 1.0,
+      "active": 15,
+      "added": 15,
+      "edited": 0,
+      "status_changes": 0,
+      "retracted": 0,
+      "open_questions": 6,
+      "contested": 0,
+      "closed": "2026-10-03T16:27:39+03:00"
+    },
+    {
+      "round": 1,
+      "delta": 0.2778,
+      "active": 16,
+      "added": 1,
+      "edited": 1,
+      "status_changes": 2,
+      "retracted": 0,
+      "open_questions": 5,
+      "contested": 0,
+      "closed": "2026-10-03T16:33:06+03:00"
+    },
+    {
+      "round": 2,
+      "delta": 0.3913,
+      "active": 21,
+      "added": 5,
+      "edited": 1,
+      "status_changes": 2,
+      "retracted": 0,
+      "open_questions": 4,
+      "contested": 0,
+      "closed": "2026-10-03T16:35:48+03:00"
+    },
+    {
+      "round": 3,
+      "delta": 0.3214,
+      "active": 26,
+      "added": 5,
+      "edited": 1,
+      "status_changes": 2,
+      "retracted": 0,
+      "open_questions": 3,
+      "contested": 0,
+      "closed": "2026-10-03T16:38:15+03:00"
+    },
+    {
+      "round": 4,
+      "delta": 0.4211,
+      "active": 34,
+      "added": 8,
+      "edited": 0,
+      "status_changes": 4,
+      "retracted": 0,
+      "open_questions": 2,
+      "contested": 0,
+      "closed": "2026-10-03T16:54:17+03:00"
+    },
+    {
+      "round": 5,
+      "delta": 0.1538,
+      "active": 38,
+      "added": 4,
+      "edited": 1,
+      "status_changes": 1,
+      "retracted": 0,
+      "open_questions": 2,
+      "contested": 0,
+      "closed": "2026-10-03T16:56:42+03:00"
+    },
+    {
+      "round": 6,
+      "delta": 0.1628,
+      "active": 41,
+      "added": 3,
+      "edited": 1,
+      "status_changes": 1,
+      "retracted": 0,
+      "open_questions": 1,
+      "contested": 0,
+      "closed": "2026-10-03T16:58:04+03:00"
+    },
+    {
+      "round": 7,
+      "delta": 0.1304,
+      "active": 45,
+      "added": 4,
+      "edited": 0,
+      "status_changes": 1,
+      "retracted": 0,
+      "open_questions": 1,
+      "contested": 0,
+      "closed": "2026-10-03T16:59:51+03:00"
+    },
+    {
+      "round": 8,
+      "delta": 0.1569,
+      "active": 49,
+      "added": 4,
+      "edited": 1,
+      "status_changes": 2,
+      "retracted": 0,
+      "open_questions": 0,
+      "contested": 0,
+      "closed": "2026-10-03T17:01:17+03:00"
+    },
+    {
+      "round": 9,
+      "delta": 0.1091,
+      "active": 55,
+      "added": 6,
+      "edited": 0,
+      "status_changes": 0,
+      "retracted": 0,
+      "open_questions": 0,
+      "contested": 0,
+      "closed": "2026-10-03T17:04:54+03:00"
+    },
+    {
+      "round": 10,
+      "delta": 0.0182,
+      "active": 54,
+      "added": 0,
+      "edited": 0,
+      "status_changes": 0,
+      "retracted": 1,
+      "open_questions": 0,
+      "contested": 0,
+      "closed": "2026-10-03T17:08:32+03:00"
+    }
+  ],
+  "gates": {
+    "kstar": {
+      "hash": "d98a15ec6daf0af66c5ab0e05042b564a1db62c3a1cd5839887d8f6edb92f625",
+      "ts": "2026-10-03T17:15:18+03:00",
+      "round": 11
+    },
+    "structure": {
+      "hash": "a4f11068061a7e05751e6693169c1d2f0f817abb861d4b38ca1e68e65788403c",
+      "ts": "2026-10-03T17:22:37+03:00",
+      "round": 11
+    }
+  },
+  "converged": {
+    "by": "human",
+    "round": 10,
+    "ts": "2026-10-03T17:08:38+03:00",
+    "open_reasons_at_convergence": [
+      "delta not below epsilon=0.05 for 2 consecutive rounds (last: 0.109, 0.018)"
+    ],
+    "note": "Користувач підтвердив завершення діалогу та запросив підсумок узгодженого розуміння K*"
+  }
+}

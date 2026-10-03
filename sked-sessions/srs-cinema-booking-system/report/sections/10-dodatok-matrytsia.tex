@@ -1,0 +1,47 @@
+\section{Початкова матриця простежуваності вимог}\label{sec:dodatok-matrytsia}
+
+Цей додаток містить початкову матрицю простежуваності (Traceability Matrix), яка забезпечує двосторонній зв'язок між зафіксованими пунктами погодженого консенсусу $K^*$, формальними ідентифікаторами вимог (\texttt{REQ-F}, \texttt{REQ-TDD}, \texttt{REQ-LOG}, \texttt{REQ-NF}), конкретними умовами їх верифікації та відповідними BDD-сценаріями перевірки поведінки (\tabref{tab:traceability}).
+
+\begin{table}[htbp]
+\caption{Матриця простежуваності: Вимоги $\rightarrow$ База $K^*$ $\rightarrow$ Критерії $\rightarrow$ BDD-сценарії}\label{tab:traceability}
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}l l l L l@{}}
+\toprule
+\textbf{ID вимоги} & \textbf{Пункт $K^*$} & \textbf{Розділ SRS} & \textbf{Критерій прийняття} & \textbf{BDD-сценарій} \\
+\midrule
+REQ-F-001 & K2, K22 & \S\ref{sec:funktsional-katalog} & Публічний доступ до розкладу без автентифікації & ---~\sked{K2,K22} \\
+REQ-F-002 & K2, K31 & \S\ref{sec:funktsional-katalog} & Відображення схеми залу; вибір не резервує місце & ---~\sked{K31} \\
+REQ-F-003 & K23 & \S\ref{sec:funktsional-auth} & Бронювання/скасування суто після входу & ---~\sked{K23} \\
+REQ-F-004 & K24 & \S\ref{sec:funktsional-auth} & Унікальний внутрішній числовий ID клієнта & ---~\sked{K24} \\
+REQ-F-005 & K24 & \S\ref{sec:funktsional-auth} & Доступ лише до власних бронювань (захист IDOR) & --- \\
+REQ-F-006 & K26 & \S\ref{sec:funktsional-auth} & Відокремлений адмін-розділ за роллю RBAC & ---~\sked{K26} \\
+REQ-F-007 & K4 & \S\ref{sec:funktsional-bronuvannia} & Допустимий діапазон від 1 до 6 місць у бронюванні & ---~\sked{K4} \\
+REQ-F-008 & K5 & \S\ref{sec:funktsional-bronuvannia} & Атомарна фіксація в момент кліку без hold/таймауту & Сценарій 1~\sked{K5} \\
+REQ-F-009 & K29 & \S\ref{sec:funktsional-bronuvannia} & Рівно 1 успішне бронювання при конкуренції за місце & Сценарій 1~\sked{K29} \\
+REQ-F-010 & K30 & \S\ref{sec:funktsional-bronuvannia} & Відхилення всього бронювання, якщо хоч 1 місце зайняте & Сценарій 2~\sked{K30} \\
+REQ-F-011 & K36 & \S\ref{sec:funktsional-skasuvannia-user} & Повне скасування всіх місць бронювання (без часткового) & Сценарій 3~\sked{K36} \\
+REQ-F-012 & K37 & \S\ref{sec:funktsional-skasuvannia-user} & Скасування дозволене суто до часу початку сеансу & Сценарій 3~\sked{K37} \\
+REQ-F-013 & K38 & \S\ref{sec:funktsional-skasuvannia-user} & Перехід у «Скасоване» та негайне звільнення місць & Сценарій 3~\sked{K38} \\
+REQ-F-014 & K39 & \S\ref{sec:funktsional-skasuvannia-user} & Ідемпотентність повторних викликів скасування & ---~\sked{K39} \\
+REQ-F-015 & K3 & \S\ref{sec:funktsional-admin} & Базовий CRUD фільмів, залів і сеансів адміном & ---~\sked{K3} \\
+REQ-F-016 & K44 & \S\ref{sec:funktsional-admin} & Вільне редагування сеансу за відсутності бронювань & ---~\sked{K44} \\
+REQ-F-017 & K45 & \S\ref{sec:funktsional-admin} & Блокування прямої зміни сеансу з активними бронюваннями & Сценарій 6~\sked{K45} \\
+REQ-F-018 & K46 & \S\ref{sec:funktsional-admin} & Явне скасування сеансу адміном з обов'язковою причиною & Сценарій 6~\sked{K46} \\
+REQ-F-019 & K47 & \S\ref{sec:funktsional-admin} & Каскадне переведення бронювань у «Скасовано» та аудит & Сценарій 6~\sked{K47} \\
+REQ-F-020 & K48 & \S\ref{sec:funktsional-admin} & Відображення причини скасування сеансу в кабінеті & Сценарій 6~\sked{K48} \\
+REQ-TDD-001 & K7, K11 & \S\ref{sec:tdd-process} & Обов'язковість попереднього створення автоматизованих тестів & ---~\sked{K7,K11} \\
+REQ-TDD-002 & K12 & \S\ref{sec:tdd-process} & Дотримання 5-крокового циклу Red-Green-Refactor & ---~\sked{K12} \\
+REQ-TDD-003 & K13 & \S\ref{sec:tdd-scope} & Обов'язкове тестування всіх погоджених граничних кейсів & Сценарії 1--6~\sked{K13} \\
+REQ-LOG-001 & K8, K16 & \S\ref{sec:loguvannia-podii} & Автоматичне логування 5 ключових категорій подій & ---~\sked{K8,K16} \\
+REQ-LOG-002 & K17 & \S\ref{sec:loguvannia-podii} & Наявність усіх обов'язкових полів аудиту у лог-записі & ---~\sked{K17} \\
+REQ-LOG-003 & K18 & \S\ref{sec:loguvannia-bezpeka} & Сувора заборона логування паролів, токенів і секретів & ---~\sked{K18} \\
+REQ-LOG-004 & K19 & \S\ref{sec:loguvannia-zberezhennia} & Персистентне збереження логів після рестарту сервера & ---~\sked{K19} \\
+REQ-LOG-005 & K20 & \S\ref{sec:loguvannia-testy} & Збереження деталізованих звітів кожного прогону тестів & ---~\sked{K20} \\
+REQ-NF-001 & K5, K30 & \S\ref{sec:nefunktsional-atomarnist} & Гарантія неподільності ACID операцій («все або нічого») & Сценарій 1, 2 \\
+REQ-NF-002 & K40, K41 & \S\ref{sec:nefunktsional-atomarnist} & Персистентність та збереження узгодженості після збоїв & ---~\sked{K40,K41} \\
+REQ-NF-005 & K27 & \S\ref{sec:nefunktsional-bezpeka} & Заборона самопризначення ролі адміністратора клієнтом & ---~\sked{K27} \\
+REQ-NF-006 & K28 & \S\ref{sec:opis-korystuvachi} & Єдиний обліковий запис адміністратора при конфігурації & ---~\sked{K28} \\
+\bottomrule
+\end{tabularx}
+\end{table}
