@@ -7,15 +7,17 @@
 
 \begin{figure}[htbp]
 \centering
-\begin{tikzpicture}[node distance=10mm and 12mm]
+\makebox[\textwidth][c]{%
+\begin{tikzpicture}[node distance=10mm and 32mm]
   \node[sked box] (client) {Вебклієнт\\(Браузер / SPA)};
   \node[sked box, right=of client] (server) {Серверний застосунок\\(API \& Бізнес-правила)};
   \node[sked box, right=of server] (db) {Персистентне сховище\\(База даних / Сховище)};
-  \draw[sked arrow] (client) -- node[sked label, above=2pt] {Запити API} (server);
-  \draw[sked arrow] (server) -- node[sked label, above=2pt] {Атомарні транзакції} (db);
-  \draw[sked arrow] (server) -- node[sked label, below=2pt] {Відповіді \& Статуси} (client);
-  \draw[sked arrow] (db) -- node[sked label, below=2pt] {Персистентні дані} (server);
-\end{tikzpicture}
+  \draw[sked arrow] ([yshift=2.5mm]client.east) -- node[sked label, above=1pt] {Запити API} ([yshift=2.5mm]server.west);
+  \draw[sked arrow] ([yshift=-2.5mm]server.west) -- node[sked label, below=1pt] {Відповіді \& Статуси} ([yshift=-2.5mm]client.east);
+  \draw[sked arrow] ([yshift=2.5mm]server.east) -- node[sked label, above=1pt] {Атомарні транзакції} ([yshift=2.5mm]db.west);
+  \draw[sked arrow] ([yshift=-2.5mm]db.west) -- node[sked label, below=1pt] {Персистентні дані} ([yshift=-2.5mm]server.east);
+\end{tikzpicture}%
+}
 \caption{Контекстна клієнт-серверна архітектура системи}\label{fig:architecture}
 \end{figure}
 
@@ -32,7 +34,7 @@
 \begin{table}[htbp]
 \caption{Матриця прав доступу ролей (RBAC)}\label{tab:rbac-matrix}
 \centering
-\begin{tabularx}{\textwidth}{@{}l c c c@{}}
+\begin{tabularx}{\textwidth}{@{}X >{\centering\arraybackslash}p{2.8cm} >{\centering\arraybackslash}p{2.6cm} >{\centering\arraybackslash}p{2.8cm}@{}}
 \toprule
 \textbf{Операція / Ресурс} & \textbf{Анонімний відвідувач} & \textbf{Користувач (Клієнт)} & \textbf{Адміністратор} \\
 \midrule

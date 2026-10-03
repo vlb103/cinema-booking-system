@@ -2,14 +2,23 @@
 
 Цей додаток містить початкову матрицю простежуваності (Traceability Matrix), яка забезпечує двосторонній зв'язок між зафіксованими пунктами погодженого консенсусу $K^*$, формальними ідентифікаторами вимог (\texttt{REQ-F}, \texttt{REQ-TDD}, \texttt{REQ-LOG}, \texttt{REQ-NF}), конкретними умовами їх верифікації та відповідними BDD-сценаріями перевірки поведінки (\tabref{tab:traceability}).
 
-\begin{table}[htbp]
-\caption{Матриця простежуваності: Вимоги $\rightarrow$ База $K^*$ $\rightarrow$ Критерії $\rightarrow$ BDD-сценарії}\label{tab:traceability}
-\centering
-\small
-\begin{tabularx}{\textwidth}{@{}l l l L l@{}}
+\begin{small}
+\setlength{\tabcolsep}{3.5pt}
+\begin{longtable}{@{}p{2.3cm} p{1.4cm} p{1.6cm} p{7.5cm} p{2.2cm}@{}}
+\caption{Матриця простежуваності: Вимоги $\rightarrow$ База $K^*$ $\rightarrow$ Критерії $\rightarrow$ BDD-сценарії}\label{tab:traceability}\\
 \toprule
 \textbf{ID вимоги} & \textbf{Пункт $K^*$} & \textbf{Розділ SRS} & \textbf{Критерій прийняття} & \textbf{BDD-сценарій} \\
 \midrule
+\endfirsthead
+\multicolumn{5}{l}{\small\itshape Продовження таблиці~\ref{tab:traceability}}\\
+\toprule
+\textbf{ID вимоги} & \textbf{Пункт $K^*$} & \textbf{Розділ SRS} & \textbf{Критерій прийняття} & \textbf{BDD-сценарій} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+\bottomrule
+\endlastfoot
 REQ-F-001 & K2, K22 & \S\ref{sec:funktsional-katalog} & Публічний доступ до розкладу без автентифікації & ---~\sked{K2,K22} \\
 REQ-F-002 & K2, K31 & \S\ref{sec:funktsional-katalog} & Відображення схеми залу; вибір не резервує місце & ---~\sked{K31} \\
 REQ-F-003 & K23 & \S\ref{sec:funktsional-auth} & Бронювання/скасування суто після входу & ---~\sked{K23} \\
@@ -43,5 +52,5 @@ REQ-NF-002 & K40, K41 & \S\ref{sec:nefunktsional-atomarnist} & Персисте�
 REQ-NF-005 & K27 & \S\ref{sec:nefunktsional-bezpeka} & Заборона самопризначення ролі адміністратора клієнтом & ---~\sked{K27} \\
 REQ-NF-006 & K28 & \S\ref{sec:opis-korystuvachi} & Єдиний обліковий запис адміністратора при конфігурації & ---~\sked{K28} \\
 \bottomrule
-\end{tabularx}
-\end{table}
+\end{longtable}
+\end{small}
