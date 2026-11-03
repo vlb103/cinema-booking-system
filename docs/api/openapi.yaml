@@ -1,0 +1,1301 @@
+openapi: 3.0.3
+info:
+  title: Cinema Booking System API
+  version: 1.0.0
+  description: |
+    REST API Cinema Booking System, версія 1.
+    Джерела: spec/srs.md (1.0.0), docs/api/api-requirements.md.
+    Поле x-req-id у кожній операції містить ID вимог SRS, які вона реалізує
+    (перший елемент це вимога-операція, далі правила всередині неї).
+    Не входять у v1: група 2 прогалин і перегляд журналів аудиту.
+servers:
+  - url: http://localhost:8080/api/v1
+    description: Локальний сервер або mock
+
+tags:
+  - name: Auth
+    description: Реєстрація і вхід
+  - name: Sessions
+    description: Публічна афіша і схема залу
+  - name: Bookings
+    description: Бронювання користувача
+  - name: Admin Films
+    description: Адміністрування фільмів
+  - name: Admin Halls
+    description: Адміністрування залів
+  - name: Admin Sessions
+    description: Адміністрування сеансів
+
+security:
+  - bearerAuth: []
+
+paths:
+  /auth/register:
+    post:
+      tags: [Auth]
+      operationId: registerUser
+      summary: Реєстрація користувача
+      description: |
+        Створює обліковий запис з роллю USER і внутрішнім числовим ID.
+        Поле role у тілі ігнорується (REQ-NF-005).
+      x-req-id: [REQ-F-003, REQ-F-004, REQ-NF-005]
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegisterRequest'
+            examples:
+              default:
+                value:
+                  email: user@example.com
+                  password: secret123
+      responses:
+        '201':
+          description: Обліковий запис створено
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+              examples:
+                default:
+                  value:
+                    id: 15
+                    email: user@example.com
+                    role: USER
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '409':
+          description: Email вже зареєстровано
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                emailTaken:
+                  value:
+                    code: EMAIL_ALREADY_EXISTS
+                    message: Обліковий запис з таким email вже існує
+                    details: []
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+  /auth/login:
+    post:
+      tags: [Auth]
+      operationId: loginUser
+      summary: Вхід за email і паролем
+      description: Повертає токен доступу, який передається в заголовку Authorization як Bearer.
+      x-req-id: [REQ-F-003]
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginRequest'
+            examples:
+              default:
+                value:
+                  email: user@example.com
+                  password: secret123
+      responses:
+        '200':
+          description: Успішний вхід
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LoginResponse'
+              examples:
+                default:
+                  value:
+                    accessToken: eyJhbGciOiJIUzI1NiJ9.mock.token
+                    tokenType: Bearer
+                    user:
+                      id: 15
+                      email: user@example.com
+                      role: USER
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          description: Невірний email або пароль
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                invalidCredentials:
+                  value:
+                    code: INVALID_CREDENTIALS
+                    message: Невірний email або пароль
+                    details: []
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+  /sessions:
+    get:
+      tags: [Sessions]
+      operationId: listSessions
+      summary: Отримання афіші (фільми і сеанси)
+      description: |
+        Публічна операція без токена. Повертає сеанси зі статусом ACTIVE,
+        які ще не почалися, разом з даними фільму і залу.
+      x-req-id: [REQ-F-001, REQ-F-015]
+      security: []
+      responses:
+        '200':
+          description: Список актуальних сеансів
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/SessionListItem'
+              examples:
+                default:
+                  value:
+                    - id: 10
+                      startTime: '2026-11-10T18:00:00Z'
+                      status: ACTIVE
+                      film:
+                        id: 1
+                        title: Interstellar
+                        durationMinutes: 169
+                        description: Науково-фантастичний фільм про подорож крізь космос
+                      hall:
+                        id: 2
+                        name: Зал 2
+                    - id: 11
+                      startTime: '2026-11-10T20:30:00Z'
+                      status: ACTIVE
+                      film:
+                        id: 3
+                        title: The Matrix
+                        durationMinutes: 136
+                        description: Науково-фантастичний бойовик
+                      hall:
+                        id: 1
+                        name: Зал 1
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+  /sessions/{sessionId}/seats:
+    get:
+      tags: [Sessions]
+      operationId: getSessionSeatMap
+      summary: Отримання схеми залу сеансу
+      description: |
+        Публічна операція без токена. Повертає всі місця залу з поточним станом
+        FREE або TAKEN. Місця скасованих бронювань одразу повертаються як FREE.
+      x-req-id: [REQ-F-002, REQ-F-013]
+      security: []
+      parameters:
+        - $ref: '#/components/parameters/SessionId'
+      responses:
+        '200':
+          description: Схема залу
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SeatMap'
+              examples:
+                default:
+                  value:
+                    sessionId: 10
+                    sessionStatus: ACTIVE
+                    hall:
+                      id: 2
+                      name: Зал 2
+                      rowsCount: 2
+                      seatsPerRow: 3
+                      capacity: 6
+                    seats:
+                      - { row: 1, number: 1, status: FREE }
+                      - { row: 1, number: 2, status: FREE }
+                      - { row: 1, number: 3, status: TAKEN }
+                      - { row: 2, number: 1, status: FREE }
+                      - { row: 2, number: 2, status: TAKEN }
+                      - { row: 2, number: 3, status: FREE }
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+  /bookings:
+    post:
+      tags: [Bookings]
+      operationId: createBooking
+      summary: Створення бронювання
+      description: |
+        Атомарно бронює від 1 до 6 місць на сеанс («все або нічого»).
+        Якщо хоч одне місце зайняте, бронювання не створюється і повертається 409 SEATS_TAKEN.
+        Доступно лише ролі USER.
+      x-req-id: [REQ-F-008, REQ-F-003, REQ-F-004, REQ-F-007, REQ-F-009, REQ-F-010, REQ-NF-001, REQ-NF-006]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateBookingRequest'
+            examples:
+              default:
+                value:
+                  sessionId: 10
+                  seats:
+                    - { row: 1, number: 1 }
+                    - { row: 1, number: 2 }
+      responses:
+        '201':
+          description: Бронювання створено
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Booking'
+              examples:
+                default:
+                  value:
+                    id: 42
+                    userId: 15
+                    status: ACTIVE
+                    seats:
+                      - { row: 1, number: 1 }
+                      - { row: 1, number: 2 }
+                    session:
+                      id: 10
+                      startTime: '2026-11-10T18:00:00Z'
+                      status: ACTIVE
+                      filmTitle: Interstellar
+                      hallName: Зал 2
+                    createdAt: '2026-11-03T12:00:00Z'
+                    cancelledAt: null
+                    cancellationReason: null
+        '400':
+          description: Помилка валідації (0 або понад 6 місць, повтор місця, місце поза схемою залу)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                tooManySeats:
+                  value:
+                    code: VALIDATION_ERROR
+                    message: Бронювання має містити від 1 до 6 місць
+                    details:
+                      - 'seats: отримано 7 місць'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '409':
+          description: Місця зайняті або сеанс недоступний для бронювання
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                seatsTaken:
+                  value:
+                    code: SEATS_TAKEN
+                    message: Одне або кілька місць уже зайняті, бронювання не створено
+                    details:
+                      - 'ряд 1, місце 3'
+                sessionNotAvailable:
+                  value:
+                    code: SESSION_NOT_AVAILABLE
+                    message: Сеанс скасовано або він уже розпочався
+                    details: []
+        '500':
+          $ref: '#/components/responses/InternalError'
+    get:
+      tags: [Bookings]
+      operationId: listMyBookings
+      summary: Перегляд власних бронювань (кабінет)
+      description: |
+        Повертає лише бронювання поточного користувача з даними сеансу.
+        Для бронювань скасованого сеансу заповнено cancellationReason.
+        Доступно лише ролі USER.
+      x-req-id: [REQ-F-020, REQ-F-003, REQ-F-005, REQ-F-019, REQ-NF-004]
+      responses:
+        '200':
+          description: Список бронювань користувача
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Booking'
+              examples:
+                default:
+                  value:
+                    - id: 42
+                      userId: 15
+                      status: ACTIVE
+                      seats:
+                        - { row: 1, number: 1 }
+                        - { row: 1, number: 2 }
+                      session:
+                        id: 10
+                        startTime: '2026-11-10T18:00:00Z'
+                        status: ACTIVE
+                        filmTitle: Interstellar
+                        hallName: Зал 2
+                      createdAt: '2026-11-03T12:00:00Z'
+                      cancelledAt: null
+                      cancellationReason: null
+                    - id: 37
+                      userId: 15
+                      status: CANCELLED
+                      seats:
+                        - { row: 4, number: 7 }
+                      session:
+                        id: 77
+                        startTime: '2026-11-05T19:00:00Z'
+                        status: CANCELLED
+                        filmTitle: The Matrix
+                        hallName: Зал 1
+                      createdAt: '2026-11-01T09:30:00Z'
+                      cancelledAt: '2026-11-04T08:00:00Z'
+                      cancellationReason: Аварійне відключення живлення
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+  /bookings/{bookingId}/cancel:
+    post:
+      tags: [Bookings]
+      operationId: cancelBooking
+      summary: Скасування бронювання клієнтом
+      description: |
+        Скасовує бронювання повністю, якщо сеанс ще не почався.
+        Повторний виклик для вже скасованого бронювання повертає 200 з поточним станом.
+        Чуже бронювання повертає 403.
+      x-req-id: [REQ-F-011, REQ-F-003, REQ-F-005, REQ-F-012, REQ-F-013, REQ-F-014, REQ-NF-004]
+      parameters:
+        - $ref: '#/components/parameters/BookingId'
+      responses:
+        '200':
+          description: Бронювання скасовано (або вже було скасоване)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Booking'
+              examples:
+                default:
+                  value:
+                    id: 42
+                    userId: 15
+                    status: CANCELLED
+                    seats:
+                      - { row: 1, number: 1 }
+                      - { row: 1, number: 2 }
+                    session:
+                      id: 10
+                      startTime: '2026-11-10T18:00:00Z'
+                      status: ACTIVE
+                      filmTitle: Interstellar
+                      hallName: Зал 2
+                    createdAt: '2026-11-03T12:00:00Z'
+                    cancelledAt: '2026-11-03T13:15:00Z'
+                    cancellationReason: null
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '409':
+          description: Сеанс уже розпочався, скасування заблоковано
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                deadlinePassed:
+                  value:
+                    code: CANCELLATION_DEADLINE_PASSED
+                    message: Сеанс уже розпочався, скасування неможливе
+                    details: []
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+  /admin/films:
+    get:
+      tags: [Admin Films]
+      operationId: adminListFilms
+      summary: Перегляд переліку фільмів
+      x-req-id: [REQ-F-015, REQ-F-006, REQ-NF-003]
+      responses:
+        '200':
+          description: Перелік фільмів
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Film'
+              examples:
+                default:
+                  value:
+                    - id: 1
+                      title: Interstellar
+                      durationMinutes: 169
+                      description: Науково-фантастичний фільм про подорож крізь космос
+                    - id: 3
+                      title: The Matrix
+                      durationMinutes: 136
+                      description: Науково-фантастичний бойовик
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '500':
+          $ref: '#/components/responses/InternalError'
+    post:
+      tags: [Admin Films]
+      operationId: adminCreateFilm
+      summary: Додавання фільму
+      x-req-id: [REQ-F-015, REQ-F-006, REQ-NF-003]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FilmCreate'
+            examples:
+              default:
+                value:
+                  title: Interstellar
+                  durationMinutes: 169
+                  description: Науково-фантастичний фільм про подорож крізь космос
+      responses:
+        '201':
+          description: Фільм додано
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Film'
+              examples:
+                default:
+                  value:
+                    id: 1
+                    title: Interstellar
+                    durationMinutes: 169
+                    description: Науково-фантастичний фільм про подорож крізь космос
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+  /admin/films/{filmId}:
+    patch:
+      tags: [Admin Films]
+      operationId: adminUpdateFilm
+      summary: Редагування фільму
+      description: Змінює лише передані поля.
+      x-req-id: [REQ-F-015, REQ-F-006, REQ-NF-003]
+      parameters:
+        - $ref: '#/components/parameters/FilmId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FilmUpdate'
+            examples:
+              default:
+                value:
+                  description: Реставрована версія 2026 року
+      responses:
+        '200':
+          description: Фільм оновлено
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Film'
+              examples:
+                default:
+                  value:
+                    id: 1
+                    title: Interstellar
+                    durationMinutes: 169
+                    description: Реставрована версія 2026 року
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+  /admin/halls:
+    get:
+      tags: [Admin Halls]
+      operationId: adminListHalls
+      summary: Перегляд параметрів залів
+      x-req-id: [REQ-F-015, REQ-F-006, REQ-NF-003]
+      responses:
+        '200':
+          description: Перелік залів
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Hall'
+              examples:
+                default:
+                  value:
+                    - id: 1
+                      name: Зал 1
+                      rowsCount: 10
+                      seatsPerRow: 12
+                      capacity: 120
+                    - id: 2
+                      name: Зал 2
+                      rowsCount: 2
+                      seatsPerRow: 3
+                      capacity: 6
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '500':
+          $ref: '#/components/responses/InternalError'
+    post:
+      tags: [Admin Halls]
+      operationId: adminCreateHall
+      summary: Створення залу
+      description: Схема залу прямокутна, rowsCount рядів по seatsPerRow місць. Місткість рахує сервер.
+      x-req-id: [REQ-F-015, REQ-F-006, REQ-NF-003]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/HallCreate'
+            examples:
+              default:
+                value:
+                  name: Зал 1
+                  rowsCount: 10
+                  seatsPerRow: 12
+      responses:
+        '201':
+          description: Зал створено
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Hall'
+              examples:
+                default:
+                  value:
+                    id: 1
+                    name: Зал 1
+                    rowsCount: 10
+                    seatsPerRow: 12
+                    capacity: 120
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+  /admin/sessions:
+    post:
+      tags: [Admin Sessions]
+      operationId: adminCreateSession
+      summary: Створення сеансу
+      description: Новий сеанс отримує статус ACTIVE і з'являється в афіші.
+      x-req-id: [REQ-F-015, REQ-F-006, REQ-NF-003]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SessionCreate'
+            examples:
+              default:
+                value:
+                  filmId: 1
+                  hallId: 2
+                  startTime: '2026-11-10T18:00:00Z'
+      responses:
+        '201':
+          description: Сеанс створено
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Session'
+              examples:
+                default:
+                  value:
+                    id: 10
+                    filmId: 1
+                    hallId: 2
+                    startTime: '2026-11-10T18:00:00Z'
+                    status: ACTIVE
+                    cancellationReason: null
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+  /admin/sessions/{sessionId}:
+    patch:
+      tags: [Admin Sessions]
+      operationId: adminUpdateSession
+      summary: Редагування сеансу
+      description: |
+        Змінює час, зал або фільм. Дозволено лише якщо на сеанс немає активних бронювань,
+        інакше 409 SESSION_HAS_ACTIVE_BOOKINGS. Скасований сеанс редагувати не можна.
+      x-req-id: [REQ-F-016, REQ-F-006, REQ-F-017, REQ-NF-003]
+      parameters:
+        - $ref: '#/components/parameters/SessionId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SessionUpdate'
+            examples:
+              default:
+                value:
+                  startTime: '2026-11-10T19:00:00Z'
+      responses:
+        '200':
+          description: Сеанс оновлено
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Session'
+              examples:
+                default:
+                  value:
+                    id: 10
+                    filmId: 1
+                    hallId: 2
+                    startTime: '2026-11-10T19:00:00Z'
+                    status: ACTIVE
+                    cancellationReason: null
+        '400':
+          $ref: '#/components/responses/ValidationError'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '409':
+          description: Редагування заблоковано
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                hasActiveBookings:
+                  value:
+                    code: SESSION_HAS_ACTIVE_BOOKINGS
+                    message: На сеанс є активні бронювання, зміна заблокована
+                    details: []
+                alreadyCancelled:
+                  value:
+                    code: SESSION_ALREADY_CANCELLED
+                    message: Сеанс скасовано, редагування неможливе
+                    details: []
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+  /admin/sessions/{sessionId}/cancel:
+    post:
+      tags: [Admin Sessions]
+      operationId: adminCancelSession
+      summary: Скасування сеансу адміністратором
+      description: |
+        Переводить сеанс і всі його активні бронювання у статус CANCELLED
+        і зберігає причину. Порожня причина відхиляється з 400.
+      x-req-id: [REQ-F-018, REQ-F-006, REQ-F-019, REQ-NF-003]
+      parameters:
+        - $ref: '#/components/parameters/SessionId'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CancelSessionRequest'
+            examples:
+              default:
+                value:
+                  reason: Аварійне відключення живлення
+      responses:
+        '200':
+          description: Сеанс скасовано
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CancelSessionResponse'
+              examples:
+                default:
+                  value:
+                    session:
+                      id: 77
+                      filmId: 3
+                      hallId: 1
+                      startTime: '2026-11-05T19:00:00Z'
+                      status: CANCELLED
+                      cancellationReason: Аварійне відключення живлення
+                    cancelledBookingsCount: 12
+        '400':
+          description: Не вказано причину скасування
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                emptyReason:
+                  value:
+                    code: VALIDATION_ERROR
+                    message: Причина скасування обов'язкова
+                    details:
+                      - 'reason: порожнє значення'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '403':
+          $ref: '#/components/responses/Forbidden'
+        '404':
+          $ref: '#/components/responses/NotFound'
+        '409':
+          description: Сеанс уже скасовано
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+              examples:
+                alreadyCancelled:
+                  value:
+                    code: SESSION_ALREADY_CANCELLED
+                    message: Сеанс уже скасовано
+                    details: []
+        '500':
+          $ref: '#/components/responses/InternalError'
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: Токен з відповіді /auth/login у заголовку Authorization Bearer <token>
+
+  parameters:
+    SessionId:
+      name: sessionId
+      in: path
+      required: true
+      description: ID сеансу
+      schema:
+        type: integer
+        format: int64
+        minimum: 1
+      example: 10
+    BookingId:
+      name: bookingId
+      in: path
+      required: true
+      description: ID бронювання
+      schema:
+        type: integer
+        format: int64
+        minimum: 1
+      example: 42
+    FilmId:
+      name: filmId
+      in: path
+      required: true
+      description: ID фільму
+      schema:
+        type: integer
+        format: int64
+        minimum: 1
+      example: 1
+
+  responses:
+    ValidationError:
+      description: Помилка валідації запиту
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          examples:
+            default:
+              value:
+                code: VALIDATION_ERROR
+                message: Некоректні дані запиту
+                details:
+                  - 'email: некоректний формат'
+    Unauthorized:
+      description: Токен відсутній або недійсний
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          examples:
+            default:
+              value:
+                code: UNAUTHORIZED
+                message: Потрібна автентифікація
+                details: []
+    Forbidden:
+      description: Недостатньо прав або чужий ресурс
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          examples:
+            default:
+              value:
+                code: FORBIDDEN
+                message: Доступ заборонено
+                details: []
+    NotFound:
+      description: Ресурс не знайдено
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          examples:
+            default:
+              value:
+                code: NOT_FOUND
+                message: Сеанс не знайдено
+                details: []
+
+    InternalError:
+      description: Системна помилка сервера
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Error'
+          examples:
+            default:
+              value:
+                code: INTERNAL_ERROR
+                message: Внутрішня помилка сервера
+                details: []
+
+  schemas:
+    Error:
+      type: object
+      description: Єдина модель помилки для всіх відповідей 4xx і 5xx
+      required: [code, message, details]
+      properties:
+        code:
+          type: string
+          enum:
+            - VALIDATION_ERROR
+            - UNAUTHORIZED
+            - INVALID_CREDENTIALS
+            - FORBIDDEN
+            - NOT_FOUND
+            - EMAIL_ALREADY_EXISTS
+            - SEATS_TAKEN
+            - SESSION_NOT_AVAILABLE
+            - CANCELLATION_DEADLINE_PASSED
+            - SESSION_HAS_ACTIVE_BOOKINGS
+            - SESSION_ALREADY_CANCELLED
+            - INTERNAL_ERROR
+        message:
+          type: string
+          description: Пояснення для людини
+        details:
+          type: array
+          description: Уточнення (поля з помилками, зайняті місця). Може бути порожнім
+          items:
+            type: string
+
+    Role:
+      type: string
+      enum: [USER, ADMIN]
+
+    User:
+      type: object
+      description: Користувач (обліковий запис)
+      required: [id, email, role]
+      properties:
+        id:
+          type: integer
+          format: int64
+          readOnly: true
+          description: Внутрішній числовий ID, генерується сервером і не змінюється
+        email:
+          type: string
+          format: email
+        role:
+          $ref: '#/components/schemas/Role'
+
+    RegisterRequest:
+      type: object
+      required: [email, password]
+      properties:
+        email:
+          type: string
+          format: email
+          maxLength: 254
+        password:
+          type: string
+          minLength: 8
+          maxLength: 128
+          format: password
+
+    LoginRequest:
+      type: object
+      required: [email, password]
+      properties:
+        email:
+          type: string
+          format: email
+        password:
+          type: string
+          format: password
+
+    LoginResponse:
+      type: object
+      required: [accessToken, tokenType, user]
+      properties:
+        accessToken:
+          type: string
+        tokenType:
+          type: string
+          enum: [Bearer]
+        user:
+          $ref: '#/components/schemas/User'
+
+    Film:
+      type: object
+      description: Фільм
+      required: [id, title, durationMinutes]
+      properties:
+        id:
+          type: integer
+          format: int64
+          readOnly: true
+        title:
+          type: string
+          minLength: 1
+          maxLength: 200
+        durationMinutes:
+          type: integer
+          minimum: 1
+        description:
+          type: string
+          maxLength: 2000
+
+    FilmCreate:
+      type: object
+      required: [title, durationMinutes]
+      properties:
+        title:
+          type: string
+          minLength: 1
+          maxLength: 200
+        durationMinutes:
+          type: integer
+          minimum: 1
+        description:
+          type: string
+          maxLength: 2000
+
+    FilmUpdate:
+      type: object
+      minProperties: 1
+      properties:
+        title:
+          type: string
+          minLength: 1
+          maxLength: 200
+        durationMinutes:
+          type: integer
+          minimum: 1
+        description:
+          type: string
+          maxLength: 2000
+
+    Hall:
+      type: object
+      description: Зал з прямокутною схемою місць
+      required: [id, name, rowsCount, seatsPerRow, capacity]
+      properties:
+        id:
+          type: integer
+          format: int64
+          readOnly: true
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        rowsCount:
+          type: integer
+          minimum: 1
+        seatsPerRow:
+          type: integer
+          minimum: 1
+        capacity:
+          type: integer
+          readOnly: true
+          description: rowsCount * seatsPerRow
+
+    HallCreate:
+      type: object
+      required: [name, rowsCount, seatsPerRow]
+      properties:
+        name:
+          type: string
+          minLength: 1
+          maxLength: 100
+        rowsCount:
+          type: integer
+          minimum: 1
+        seatsPerRow:
+          type: integer
+          minimum: 1
+
+    HallSummary:
+      type: object
+      required: [id, name]
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+
+    SessionStatus:
+      type: string
+      enum: [ACTIVE, CANCELLED]
+
+    Session:
+      type: object
+      description: Сеанс
+      required: [id, filmId, hallId, startTime, status, cancellationReason]
+      properties:
+        id:
+          type: integer
+          format: int64
+          readOnly: true
+        filmId:
+          type: integer
+          format: int64
+        hallId:
+          type: integer
+          format: int64
+        startTime:
+          type: string
+          format: date-time
+          description: Час початку сеансу, ISO-8601 UTC
+        status:
+          $ref: '#/components/schemas/SessionStatus'
+        cancellationReason:
+          type: string
+          nullable: true
+          description: Причина скасування від адміністратора, null для активного сеансу
+
+    SessionCreate:
+      type: object
+      required: [filmId, hallId, startTime]
+      properties:
+        filmId:
+          type: integer
+          format: int64
+        hallId:
+          type: integer
+          format: int64
+        startTime:
+          type: string
+          format: date-time
+
+    SessionUpdate:
+      type: object
+      minProperties: 1
+      properties:
+        filmId:
+          type: integer
+          format: int64
+        hallId:
+          type: integer
+          format: int64
+        startTime:
+          type: string
+          format: date-time
+
+    SessionListItem:
+      type: object
+      description: Сеанс в афіші з даними фільму і залу
+      required: [id, startTime, status, film, hall]
+      properties:
+        id:
+          type: integer
+          format: int64
+        startTime:
+          type: string
+          format: date-time
+        status:
+          $ref: '#/components/schemas/SessionStatus'
+        film:
+          $ref: '#/components/schemas/Film'
+        hall:
+          $ref: '#/components/schemas/HallSummary'
+
+    SessionSummary:
+      type: object
+      description: Короткі дані сеансу для кабінету
+      required: [id, startTime, status, filmTitle, hallName]
+      properties:
+        id:
+          type: integer
+          format: int64
+        startTime:
+          type: string
+          format: date-time
+        status:
+          $ref: '#/components/schemas/SessionStatus'
+        filmTitle:
+          type: string
+        hallName:
+          type: string
+
+    CancelSessionRequest:
+      type: object
+      required: [reason]
+      properties:
+        reason:
+          type: string
+          minLength: 1
+          maxLength: 500
+          description: Непорожня причина скасування (пробіли не рахуються)
+
+    CancelSessionResponse:
+      type: object
+      required: [session, cancelledBookingsCount]
+      properties:
+        session:
+          $ref: '#/components/schemas/Session'
+        cancelledBookingsCount:
+          type: integer
+          minimum: 0
+
+    Seat:
+      type: object
+      description: Місце, визначається рядом і номером
+      required: [row, number]
+      properties:
+        row:
+          type: integer
+          minimum: 1
+        number:
+          type: integer
+          minimum: 1
+
+    SeatState:
+      type: object
+      required: [row, number, status]
+      properties:
+        row:
+          type: integer
+          minimum: 1
+        number:
+          type: integer
+          minimum: 1
+        status:
+          type: string
+          enum: [FREE, TAKEN]
+
+    SeatMap:
+      type: object
+      description: Схема залу сеансу з поточною зайнятістю місць
+      required: [sessionId, sessionStatus, hall, seats]
+      properties:
+        sessionId:
+          type: integer
+          format: int64
+        sessionStatus:
+          $ref: '#/components/schemas/SessionStatus'
+        hall:
+          $ref: '#/components/schemas/Hall'
+        seats:
+          type: array
+          items:
+            $ref: '#/components/schemas/SeatState'
+
+    BookingStatus:
+      type: string
+      enum: [ACTIVE, CANCELLED]
+
+    CreateBookingRequest:
+      type: object
+      required: [sessionId, seats]
+      properties:
+        sessionId:
+          type: integer
+          format: int64
+        seats:
+          type: array
+          minItems: 1
+          maxItems: 6
+          uniqueItems: true
+          items:
+            $ref: '#/components/schemas/Seat'
+
+    Booking:
+      type: object
+      description: Бронювання
+      required: [id, userId, status, seats, session, createdAt, cancelledAt, cancellationReason]
+      properties:
+        id:
+          type: integer
+          format: int64
+          readOnly: true
+        userId:
+          type: integer
+          format: int64
+          readOnly: true
+        status:
+          $ref: '#/components/schemas/BookingStatus'
+        seats:
+          type: array
+          minItems: 1
+          maxItems: 6
+          items:
+            $ref: '#/components/schemas/Seat'
+        session:
+          $ref: '#/components/schemas/SessionSummary'
+        createdAt:
+          type: string
+          format: date-time
+        cancelledAt:
+          type: string
+          format: date-time
+          nullable: true
+        cancellationReason:
+          type: string
+          nullable: true
+          description: Причина скасування сеансу адміністратором. null, якщо бронювання активне або скасоване самим користувачем
