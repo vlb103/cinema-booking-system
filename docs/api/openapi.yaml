@@ -1,7 +1,7 @@
 openapi: 3.0.3
 info:
   title: Cinema Booking System API
-  version: 1.0.0
+  version: 1.1.0
   description: |
     REST API Cinema Booking System, версія 1.
     Джерела: spec/srs.md (1.0.0), docs/api/api-requirements.md.
@@ -141,11 +141,17 @@ paths:
       description: |
         Публічна операція без токена. Повертає сеанси зі статусом ACTIVE,
         які ще не почалися, разом з даними фільму і залу.
-      x-req-id: [REQ-F-001, REQ-F-015]
+        Необов'язкові фільтри date і filmId звужують цей список і поєднуються за правилом «і».
+        Без фільтрів результат такий самий, як у версії 1.0.0.
+        Сеанси впорядковані за зростанням часу початку.
+      x-req-id: [REQ-F-001, REQ-F-015, REQ-F-021, REQ-F-022, REQ-F-023]
       security: []
+      parameters:
+        - $ref: '#/components/parameters/SessionDateFilter'
+        - $ref: '#/components/parameters/FilmIdFilter'
       responses:
         '200':
-          description: Список актуальних сеансів
+          description: Список актуальних сеансів (з урахуванням фільтрів)
           content:
             application/json:
               schema:
@@ -177,6 +183,11 @@ paths:
                       hall:
                         id: 1
                         name: Зал 1
+                empty:
+                  summary: Немає сеансів, що відповідають фільтрам
+                  value: []
+        '400':
+          $ref: '#/components/responses/ValidationError'
         '500':
           $ref: '#/components/responses/InternalError'
 
@@ -833,6 +844,25 @@ components:
       in: path
       required: true
       description: ID фільму
+      schema:
+        type: integer
+        format: int64
+        minimum: 1
+      example: 1
+    SessionDateFilter:
+      name: date
+      in: query
+      required: false
+      description: Календарна дата початку сеансу, доба за UTC від 00:00:00 включно до 00:00:00 наступного дня
+      schema:
+        type: string
+        format: date
+      example: '2026-11-13'
+    FilmIdFilter:
+      name: filmId
+      in: query
+      required: false
+      description: ID фільму, сеанси якого потрібно показати
       schema:
         type: integer
         format: int64
