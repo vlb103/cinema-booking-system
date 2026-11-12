@@ -2,6 +2,7 @@
 // (REQ-F-003, REQ-F-004, REQ-NF-005, ADD-01, ADD-05, SRS §2.2).
 const crypto = require('crypto');
 const { ApiError } = require('../errors');
+const { isoNow } = require('../clock');
 const { EVENT_TYPES, STATUSES } = require('../logging/events');
 const { isEmail } = require('./validation');
 
@@ -43,6 +44,15 @@ function registrationErrors(body) {
   return details;
 }
 
+function loginErrors(body) {
+  const details = [];
+  if (!isEmail(body.email)) details.push('email: некоректний формат');
+  if (typeof body.password !== 'string' || body.password.length === 0) details.push("password: обов'язкове рядкове поле");
+  return details;
+}
+
+const isUniqueViolation = (err) => Boolean(err) && err.code === 'SQLITE_CONSTRAINT_UNIQUE';
+
 function createAuthService({ usersRepository, logger, clock }) {
   function logRegistration(status, { userId = null, reason = null } = {}) {
     logger.log({
@@ -54,30 +64,29 @@ function createAuthService({ usersRepository, logger, clock }) {
     });
   }
 
+  function emailTaken() {
+    logRegistration(STATUSES.REJECTED, { reason: 'Email вже зареєстровано' });
+    return new ApiError(409, 'EMAIL_ALREADY_EXISTS', 'Обліковий запис з таким email вже існує');
+  }
+
+  function createAccount(email, password, role) {
+    return usersRepository.createUser({ email, passwordHash: hashPassword(password), role, createdAt: isoNow(clock) });
+  }
+
   function register(body = {}) {
     const details = registrationErrors(body);
     if (details.length) {
       logRegistration(STATUSES.REJECTED, { reason: `Помилка валідації: ${details.join(', ')}` });
       throw new ApiError(400, 'VALIDATION_ERROR', 'Некоректні дані запиту', details);
     }
-    if (usersRepository.findByEmail(body.email)) {
-      logRegistration(STATUSES.REJECTED, { reason: 'Email вже зареєстровано' });
-      throw new ApiError(409, 'EMAIL_ALREADY_EXISTS', 'Обліковий запис з таким email вже існує');
-    }
+    if (usersRepository.findByEmail(body.email)) throw emailTaken();
     // Поле role з запиту ігнорується, роль завжди USER (REQ-NF-005).
     let id;
     try {
-      id = usersRepository.createUser({
-        email: body.email,
-        passwordHash: hashPassword(body.password),
-        role: 'USER',
-        createdAt: clock.now().toISOString(),
-      });
+      id = createAccount(body.email, body.password, 'USER');
     } catch (err) {
-      if (err && err.code === 'SQLITE_CONSTRAINT_UNIQUE') {
-        logRegistration(STATUSES.REJECTED, { reason: 'Email вже зареєстровано' });
-        throw new ApiError(409, 'EMAIL_ALREADY_EXISTS', 'Обліковий запис з таким email вже існує');
-      }
+      // Одночасна реєстрація того самого email, перевірку випередив інший запит.
+      if (isUniqueViolation(err)) throw emailTaken();
       throw err;
     }
     logRegistration(STATUSES.SUCCESS, { userId: id });
@@ -98,7 +107,7 @@ function createAuthService({ usersRepository, logger, clock }) {
       throw new ApiError(401, 'INVALID_CREDENTIALS', 'Невірний email або пароль');
     }
     const accessToken = crypto.randomBytes(32).toString('base64url');
-    usersRepository.saveToken({ tokenHash: hashToken(accessToken), userId: user.id, createdAt: clock.now().toISOString() });
+    usersRepository.saveToken({ tokenHash: hashToken(accessToken), userId: user.id, createdAt: isoNow(clock) });
     logger.log({ event_type: EVENT_TYPES.USER_LOGIN, status: STATUSES.SUCCESS, user_id: user.id, entity_ids: { userId: user.id } });
     return { accessToken, tokenType: 'Bearer', user: publicUser(user) };
   }
@@ -113,12 +122,7 @@ function createAuthService({ usersRepository, logger, clock }) {
   // Єдиний адміністратор створюється під час первинного налаштування (SRS §2.2).
   function ensureInitialAdmin({ email, password }) {
     if (usersRepository.countAdmins() > 0 || usersRepository.findByEmail(email)) return;
-    const id = usersRepository.createUser({
-      email,
-      passwordHash: hashPassword(password),
-      role: 'ADMIN',
-      createdAt: clock.now().toISOString(),
-    });
+    const id = createAccount(email, password, 'ADMIN');
     logger.log({ event_type: EVENT_TYPES.ADMIN_INITIALIZED, status: STATUSES.SUCCESS, user_id: id, entity_ids: { userId: id } });
   }
 

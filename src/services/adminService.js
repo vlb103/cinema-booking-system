@@ -1,20 +1,12 @@
 // Керування фільмами, залами, сеансами (REQ-F-015..REQ-F-019, ADD-07, ADD-08, ADD-11, ADD-13).
 const { ApiError } = require('../errors');
+const { isoNow } = require('../clock');
 const { EVENT_TYPES, STATUSES } = require('../logging/events');
-
-const isPositiveInt = (v) => Number.isInteger(v) && v >= 1;
-const isText = (v, min, max) => typeof v === 'string' && v.length >= min && v.length <= max;
-// date-time за RFC 3339 з обов'язковим часовим поясом
-const DATE_TIME = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(\.\d+)?(Z|[+-]\d{2}:\d{2})$/;
-const isDateTime = (v) => typeof v === 'string' && DATE_TIME.test(v) && !Number.isNaN(Date.parse(v));
+const { isPositiveInt, isText, isDateTime, pick, missing } = require('./validation');
 
 const FILM_FIELDS = ['title', 'durationMinutes', 'description'];
 const SESSION_FIELDS = ['filmId', 'hallId', 'startTime'];
 const REASON_MAX = 500;
-
-function pick(body, keys) {
-  return Object.fromEntries(keys.filter((k) => body[k] !== undefined).map((k) => [k, body[k]]));
-}
 
 // Перевіряє лише передані поля фільму (для створення обов'язковість перевіряється окремо).
 function filmFieldErrors(fields) {
@@ -33,8 +25,9 @@ function sessionFieldErrors(fields) {
   return details;
 }
 
-function missing(fields, keys) {
-  return keys.filter((k) => !(k in fields)).map((k) => `${k}: обов'язкове поле`);
+// Часткове редагування: потрібне хоча б одне поле, перевіряються лише передані (ADD-13).
+function partialUpdateErrors(fields, fieldErrors) {
+  return Object.keys(fields).length ? fieldErrors(fields) : ['тіло запиту: потрібне хоча б одне поле'];
 }
 
 function createAdminService({ filmsRepository, hallsRepository, sessionsRepository, logger, clock }) {
@@ -65,7 +58,7 @@ function createAdminService({ filmsRepository, hallsRepository, sessionsReposito
 
   function updateFilm(user, filmId, body = {}) {
     const fields = pick(body, FILM_FIELDS);
-    const details = Object.keys(fields).length ? filmFieldErrors(fields) : ['тіло запиту: потрібне хоча б одне поле'];
+    const details = partialUpdateErrors(fields, filmFieldErrors);
     if (details.length) throw validationError(user, EVENT_TYPES.FILM_UPDATED, { filmId }, details);
     if (!isPositiveInt(filmId) || !filmsRepository.findFilmById(filmId)) {
       throw notFound(user, EVENT_TYPES.FILM_UPDATED, { filmId }, 'Фільм');
@@ -91,6 +84,21 @@ function createAdminService({ filmsRepository, hallsRepository, sessionsReposito
 
   // Сеанси
 
+  // Сеанс має існувати (інакше 404) і не бути скасованим (інакше 409 SESSION_ALREADY_CANCELLED, ADD-11).
+  function requireActiveSession(user, eventType, sessionId, cancelledMessage) {
+    const ids = { sessionId };
+    const session = isPositiveInt(sessionId) ? sessionsRepository.findSessionById(sessionId) : null;
+    if (!session) throw notFound(user, eventType, ids, 'Сеанс');
+    if (session.status === 'CANCELLED') {
+      audit(user, eventType, STATUSES.REJECTED, ids, cancelledMessage);
+      throw new ApiError(409, 'SESSION_ALREADY_CANCELLED', cancelledMessage);
+    }
+    return session;
+  }
+
+  // Причина обов'язкова, рядок з одних пробілів не рахується (REQ-F-018, ADD-11).
+  const isValidReason = (reason) => isText(reason, 1, REASON_MAX) && reason.trim().length > 0;
+
   function checkRefs(user, eventType, entityIds, fields) {
     if ('filmId' in fields && !filmsRepository.findFilmById(fields.filmId)) throw notFound(user, eventType, entityIds, 'Фільм');
     if ('hallId' in fields && !hallsRepository.findHallById(fields.hallId)) throw notFound(user, eventType, entityIds, 'Зал');
@@ -115,14 +123,9 @@ function createAdminService({ filmsRepository, hallsRepository, sessionsReposito
   function updateSession(user, sessionId, body = {}) {
     const fields = pick(body, SESSION_FIELDS);
     const ids = { sessionId };
-    const details = Object.keys(fields).length ? sessionFieldErrors(fields) : ['тіло запиту: потрібне хоча б одне поле'];
+    const details = partialUpdateErrors(fields, sessionFieldErrors);
     if (details.length) throw validationError(user, EVENT_TYPES.SESSION_UPDATED, ids, details);
-    const session = isPositiveInt(sessionId) ? sessionsRepository.findSessionById(sessionId) : null;
-    if (!session) throw notFound(user, EVENT_TYPES.SESSION_UPDATED, ids, 'Сеанс');
-    if (session.status === 'CANCELLED') {
-      audit(user, EVENT_TYPES.SESSION_UPDATED, STATUSES.REJECTED, ids, 'Сеанс скасовано, редагування неможливе');
-      throw new ApiError(409, 'SESSION_ALREADY_CANCELLED', 'Сеанс скасовано, редагування неможливе');
-    }
+    requireActiveSession(user, EVENT_TYPES.SESSION_UPDATED, sessionId, 'Сеанс скасовано, редагування неможливе');
     checkRefs(user, EVENT_TYPES.SESSION_UPDATED, ids, fields);
     // Зміна дозволена лише без активних бронювань (REQ-F-016, REQ-F-017).
     const result = sessionsRepository.updateSessionIfNoActiveBookings(sessionId, normalize(fields));
@@ -138,16 +141,11 @@ function createAdminService({ filmsRepository, hallsRepository, sessionsReposito
   function cancelSession(user, sessionId, body = {}) {
     const ids = { sessionId };
     const { reason } = body;
-    if (typeof reason !== 'string' || reason.trim().length === 0 || reason.length > REASON_MAX) {
+    if (!isValidReason(reason)) {
       throw validationError(user, EVENT_TYPES.SESSION_CANCELLED, ids, [`reason: непорожній рядок до ${REASON_MAX} символів`]);
     }
-    const session = isPositiveInt(sessionId) ? sessionsRepository.findSessionById(sessionId) : null;
-    if (!session) throw notFound(user, EVENT_TYPES.SESSION_CANCELLED, ids, 'Сеанс');
-    if (session.status === 'CANCELLED') {
-      audit(user, EVENT_TYPES.SESSION_CANCELLED, STATUSES.REJECTED, ids, 'Сеанс уже скасовано');
-      throw new ApiError(409, 'SESSION_ALREADY_CANCELLED', 'Сеанс уже скасовано');
-    }
-    const result = sessionsRepository.cancelSessionCascade({ sessionId, reason, cancelledAt: clock.now().toISOString() });
+    requireActiveSession(user, EVENT_TYPES.SESSION_CANCELLED, sessionId, 'Сеанс уже скасовано');
+    const result = sessionsRepository.cancelSessionCascade({ sessionId, reason, cancelledAt: isoNow(clock) });
     audit(user, EVENT_TYPES.SESSION_CANCELLED, STATUSES.SUCCESS, { sessionId, bookingIds: result.bookingIds }, reason);
     return { session: result.session, cancelledBookingsCount: result.bookingIds.length };
   }

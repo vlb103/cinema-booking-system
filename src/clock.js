@@ -3,4 +3,9 @@ const systemClock = {
   now: () => new Date(),
 };
 
-module.exports = { systemClock };
+// Поточний час у форматі ISO-8601 UTC, у якому він зберігається в БД і лозі.
+function isoNow(clock) {
+  return clock.now().toISOString();
+}
+
+module.exports = { systemClock, isoNow };

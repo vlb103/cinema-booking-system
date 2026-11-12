@@ -1,16 +1,12 @@
 // Маршрути Auth за docs/api/openapi.yaml (registerUser, loginUser).
 const express = require('express');
+const { respond, bodyOf } = require('./helpers');
 
 function createAuthRouter({ authService }) {
   const router = express.Router();
 
-  router.post('/register', (req, res) => {
-    res.status(201).json(authService.register(req.body || {}));
-  });
-
-  router.post('/login', (req, res) => {
-    res.status(200).json(authService.login(req.body || {}));
-  });
+  router.post('/register', respond(201, (req) => authService.register(bodyOf(req))));
+  router.post('/login', respond(200, (req) => authService.login(bodyOf(req))));
 
   return router;
 }

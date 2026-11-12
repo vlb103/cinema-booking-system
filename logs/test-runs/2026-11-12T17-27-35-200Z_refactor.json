@@ -1,0 +1,535 @@
+{
+  "stage": "refactor",
+  "startedAt": "2026-11-12T17:27:35.200Z",
+  "finishedAt": "2026-11-12T17:27:38.404Z",
+  "durationMs": 3204,
+  "success": false,
+  "totals": {
+    "suites": 15,
+    "tests": 19,
+    "passed": 19,
+    "failed": 13,
+    "skipped": 0
+  },
+  "requirements": {
+    "REQ-LOG-005": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "REQ-TDD-002": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "REQ-LOG-002": {
+      "total": 10,
+      "passed": 10,
+      "failed": 0
+    },
+    "REQ-LOG-003": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    "REQ-LOG-004": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    }
+  },
+  "passed": [
+    {
+      "file": "tests/unit/run-report-reporter.test.js",
+      "title": "Звіт прогону тестів (REQ-LOG-005) > [REQ-LOG-005][T-66] після прогону створюються файли звіту JSON і Markdown"
+    },
+    {
+      "file": "tests/unit/run-report-reporter.test.js",
+      "title": "Звіт прогону тестів (REQ-LOG-005) > [REQ-LOG-005][T-66] звіт містить час запуску, кількість тестів, списки успішних і впалих кейсів і повідомлення про помилки"
+    },
+    {
+      "file": "tests/unit/run-report-reporter.test.js",
+      "title": "Звіт прогону тестів (REQ-LOG-005) > [REQ-LOG-005][REQ-TDD-002] звіт фіксує стадію TDD і покриття вимог за ID у назвах тестів"
+    },
+    {
+      "file": "tests/unit/run-report-reporter.test.js",
+      "title": "Звіт прогону тестів (REQ-LOG-005) > [REQ-LOG-005][T-66] кожен прогін зберігається окремим файлом і не перезаписує попередній"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002][T-60] запис містить усі шість обов'язкових полів"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002][T-60] timestamp у форматі ISO-8601 UTC і береться з годинника"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] якщо суб'єкт не ідентифікований, user_id дорівнює null, а відсутні entity_ids і reason мають значення за замовчуванням"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] status SUCCESS приймається"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] status REJECTED приймається"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] status ERROR приймається"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] запис з помилкою структури (невідомий status) відхиляється"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] запис з помилкою структури (без status) відхиляється"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] запис з помилкою структури (без event_type) відхиляється"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] кожен запис займає окремий рядок JSON"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, конфіденційні дані (REQ-LOG-003) > [REQ-LOG-003][T-62] паролі і токени в entity_ids і в зайвих полях не потрапляють у файл"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, конфіденційні дані (REQ-LOG-003) > [REQ-LOG-003][T-62] Bearer-токен у тексті reason маскується"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, персистентність (REQ-LOG-004) > [REQ-LOG-004][T-64] записи попереднього запуску доступні після перезапуску, новий запуск дописує, а не перезаписує"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, персистентність (REQ-LOG-004) > [REQ-LOG-004] каталог для файлу логу створюється, якщо його немає"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, персистентність (REQ-LOG-004) > [REQ-LOG-004] читання відсутнього файлу логу повертає порожній список"
+    }
+  ],
+  "failed": [
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "(помилка завантаження файлу)",
+      "reason": "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)",
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "(помилка завантаження файлу)",
+      "reason": "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)",
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "(помилка завантаження файлу)",
+      "reason": "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)",
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "(помилка завантаження файлу)",
+      "reason": "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)",
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "(помилка завантаження файлу)",
+      "reason": "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)",
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "(помилка завантаження файлу)",
+      "reason": "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)",
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "(помилка завантаження файлу)",
+      "reason": "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)",
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "(помилка завантаження файлу)",
+      "reason": "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)",
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "(помилка завантаження файлу)",
+      "reason": "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)",
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "(помилка завантаження файлу)",
+      "reason": "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)",
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "(помилка завантаження файлу)",
+      "reason": "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)",
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "(помилка завантаження файлу)",
+      "reason": "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)",
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/unit/test-infrastructure.test.js",
+      "title": "(помилка завантаження файлу)",
+      "reason": "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)",
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "file": "tests/unit/run-report-reporter.test.js",
+      "title": "Звіт прогону тестів (REQ-LOG-005) > [REQ-LOG-005][T-66] після прогону створюються файли звіту JSON і Markdown",
+      "status": "passed",
+      "durationMs": 14,
+      "reqIds": [
+        "REQ-LOG-005"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/run-report-reporter.test.js",
+      "title": "Звіт прогону тестів (REQ-LOG-005) > [REQ-LOG-005][T-66] звіт містить час запуску, кількість тестів, списки успішних і впалих кейсів і повідомлення про помилки",
+      "status": "passed",
+      "durationMs": 77,
+      "reqIds": [
+        "REQ-LOG-005"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/run-report-reporter.test.js",
+      "title": "Звіт прогону тестів (REQ-LOG-005) > [REQ-LOG-005][REQ-TDD-002] звіт фіксує стадію TDD і покриття вимог за ID у назвах тестів",
+      "status": "passed",
+      "durationMs": 11,
+      "reqIds": [
+        "REQ-LOG-005",
+        "REQ-TDD-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/run-report-reporter.test.js",
+      "title": "Звіт прогону тестів (REQ-LOG-005) > [REQ-LOG-005][T-66] кожен прогін зберігається окремим файлом і не перезаписує попередній",
+      "status": "passed",
+      "durationMs": 9,
+      "reqIds": [
+        "REQ-LOG-005"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002][T-60] запис містить усі шість обов'язкових полів",
+      "status": "passed",
+      "durationMs": 21,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002][T-60] timestamp у форматі ISO-8601 UTC і береться з годинника",
+      "status": "passed",
+      "durationMs": 7,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] якщо суб'єкт не ідентифікований, user_id дорівнює null, а відсутні entity_ids і reason мають значення за замовчуванням",
+      "status": "passed",
+      "durationMs": 9,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] status SUCCESS приймається",
+      "status": "passed",
+      "durationMs": 6,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] status REJECTED приймається",
+      "status": "passed",
+      "durationMs": 39,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] status ERROR приймається",
+      "status": "passed",
+      "durationMs": 23,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] запис з помилкою структури (невідомий status) відхиляється",
+      "status": "passed",
+      "durationMs": 47,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] запис з помилкою структури (без status) відхиляється",
+      "status": "passed",
+      "durationMs": 3,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] запис з помилкою структури (без event_type) відхиляється",
+      "status": "passed",
+      "durationMs": 3,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] кожен запис займає окремий рядок JSON",
+      "status": "passed",
+      "durationMs": 5,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, конфіденційні дані (REQ-LOG-003) > [REQ-LOG-003][T-62] паролі і токени в entity_ids і в зайвих полях не потрапляють у файл",
+      "status": "passed",
+      "durationMs": 7,
+      "reqIds": [
+        "REQ-LOG-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, конфіденційні дані (REQ-LOG-003) > [REQ-LOG-003][T-62] Bearer-токен у тексті reason маскується",
+      "status": "passed",
+      "durationMs": 7,
+      "reqIds": [
+        "REQ-LOG-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, персистентність (REQ-LOG-004) > [REQ-LOG-004][T-64] записи попереднього запуску доступні після перезапуску, новий запуск дописує, а не перезаписує",
+      "status": "passed",
+      "durationMs": 7,
+      "reqIds": [
+        "REQ-LOG-004"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, персистентність (REQ-LOG-004) > [REQ-LOG-004] каталог для файлу логу створюється, якщо його немає",
+      "status": "passed",
+      "durationMs": 4,
+      "reqIds": [
+        "REQ-LOG-004"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, персистентність (REQ-LOG-004) > [REQ-LOG-004] читання відсутнього файлу логу повертає порожній список",
+      "status": "passed",
+      "durationMs": 2,
+      "reqIds": [
+        "REQ-LOG-004"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "(помилка завантаження файлу)",
+      "status": "failed",
+      "reqIds": [],
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "(помилка завантаження файлу)",
+      "status": "failed",
+      "reqIds": [],
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "(помилка завантаження файлу)",
+      "status": "failed",
+      "reqIds": [],
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "(помилка завантаження файлу)",
+      "status": "failed",
+      "reqIds": [],
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "(помилка завантаження файлу)",
+      "status": "failed",
+      "reqIds": [],
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "(помилка завантаження файлу)",
+      "status": "failed",
+      "reqIds": [],
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "(помилка завантаження файлу)",
+      "status": "failed",
+      "reqIds": [],
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "(помилка завантаження файлу)",
+      "status": "failed",
+      "reqIds": [],
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "(помилка завантаження файлу)",
+      "status": "failed",
+      "reqIds": [],
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "(помилка завантаження файлу)",
+      "status": "failed",
+      "reqIds": [],
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "(помилка завантаження файлу)",
+      "status": "failed",
+      "reqIds": [],
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "(помилка завантаження файлу)",
+      "status": "failed",
+      "reqIds": [],
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    },
+    {
+      "file": "tests/unit/test-infrastructure.test.js",
+      "title": "(помилка завантаження файлу)",
+      "status": "failed",
+      "reqIds": [],
+      "failureMessages": [
+        "C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\src\\services\\authService.js: Unexpected token, expected \",\" (50:100)\n\n  48 |   const details = [];\n  49 |   if (!isEmail(body.email)) details.push('email: некоректний формат');\n> 50 |   if (typeof body.password !== 'string' || body.password.length === 0) details.push('password: обов'язкове рядкове поле');\n     |                                                                                                     ^\n  51 |   return details;\n  52 | }\n  53 |"
+      ]
+    }
+  ]
+}

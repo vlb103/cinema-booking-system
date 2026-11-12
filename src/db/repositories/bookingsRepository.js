@@ -1,4 +1,5 @@
 // Робота з таблицями bookings і booking_seats.
+const { immediateTransaction } = require('./sql');
 
 // Місця вже зайняті, бронювання не створено (REQ-F-009, REQ-F-010).
 class SeatsTakenError extends Error {
@@ -52,7 +53,7 @@ function createBookingsRepository(db) {
   // IMMEDIATE одразу бере блокування на запис, тому між перевіркою і записом
   // інше з'єднання не може зайняти ці місця. Унікальний індекс ux_active_seat є
   // останнім захистом від подвійного бронювання (REQ-NF-006).
-  const insertAtomic = db.transaction(({ userId, sessionId, seats, createdAt }) => {
+  const insertAtomic = immediateTransaction(db, ({ userId, sessionId, seats, createdAt }) => {
     const taken = findTaken(sessionId, seats);
     if (taken.length) throw new SeatsTakenError(taken);
     const bookingId = Number(db.prepare('INSERT INTO bookings (user_id, session_id, status, created_at) VALUES (?, ?, ?, ?)')
@@ -62,7 +63,7 @@ function createBookingsRepository(db) {
     return bookingId;
   });
 
-  const cancelTx = db.transaction(({ bookingId, cancelledAt }) => {
+  const cancelTx = immediateTransaction(db, ({ bookingId, cancelledAt }) => {
     const changed = db.prepare("UPDATE bookings SET status = 'CANCELLED', cancelled_at = ? WHERE id = ? AND status = 'ACTIVE'")
       .run(cancelledAt, bookingId).changes;
     if (changed) db.prepare('UPDATE booking_seats SET active = 0 WHERE booking_id = ?').run(bookingId);
@@ -78,7 +79,7 @@ function createBookingsRepository(db) {
 
     createBookingAtomic(params) {
       try {
-        return insertAtomic.immediate(params);
+        return insertAtomic(params);
       } catch (err) {
         if (err && err.code === 'SQLITE_CONSTRAINT_UNIQUE') {
           throw new SeatsTakenError(findTaken(params.sessionId, params.seats));
@@ -98,7 +99,7 @@ function createBookingsRepository(db) {
 
     // Повне скасування: статус бронювання і звільнення всіх його місць в одній транзакції
     // (REQ-F-011, REQ-F-013). Умова status = 'ACTIVE' не дає скасувати двічі (REQ-F-014).
-    cancelBooking: (params) => cancelTx.immediate(params),
+    cancelBooking: cancelTx,
   };
 }
 

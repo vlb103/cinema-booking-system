@@ -9,12 +9,4 @@ class ApiError extends Error {
   }
 }
 
-// Позначка для функцій, які ще не реалізовано (стадія Red у TDD).
-class NotImplementedError extends Error {
-  constructor(what) {
-    super(`Not implemented: ${what}`);
-    this.name = 'NotImplementedError';
-  }
-}
-
-module.exports = { ApiError, NotImplementedError };
+module.exports = { ApiError };

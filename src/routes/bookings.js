@@ -1,23 +1,15 @@
 // Маршрути Bookings за docs/api/openapi.yaml. Доступні лише ролі USER (ADD-10).
 const express = require('express');
-const { parseId } = require('./params');
+const { parseId, respond, bodyOf } = require('./helpers');
 
 function createBookingsRouter({ auth, bookingService }) {
   const router = express.Router();
   router.use(auth.requireAuth, auth.requireRole('USER'));
 
-  router.post('/', (req, res) => {
-    res.status(201).json(bookingService.createBooking(req.user, req.body || {}));
-  });
-
-  router.get('/', (req, res) => {
-    res.status(200).json(bookingService.listMyBookings(req.user));
-  });
-
+  router.post('/', respond(201, (req) => bookingService.createBooking(req.user, bodyOf(req))));
+  router.get('/', respond(200, (req) => bookingService.listMyBookings(req.user)));
   // Тіло запиту ігнорується, скасування лише повне (REQ-F-011).
-  router.post('/:bookingId/cancel', (req, res) => {
-    res.status(200).json(bookingService.cancelBooking(req.user, parseId(req.params.bookingId)));
-  });
+  router.post('/:bookingId/cancel', respond(200, (req) => bookingService.cancelBooking(req.user, parseId(req.params.bookingId))));
 
   return router;
 }

@@ -1,4 +1,5 @@
 // Робота з таблицею films.
+const { updateColumns } = require('./sql');
 
 function toFilm(row) {
   const film = { id: row.id, title: row.title, durationMinutes: row.duration_minutes };
@@ -29,9 +30,7 @@ function createFilmsRepository(db) {
 
     // Змінює лише передані поля (ADD-13).
     updateFilm(id, fields) {
-      const keys = Object.keys(fields).filter((k) => COLUMNS[k]);
-      const sets = keys.map((k) => `${COLUMNS[k]} = ?`).join(', ');
-      db.prepare(`UPDATE films SET ${sets} WHERE id = ?`).run(...keys.map((k) => fields[k]), id);
+      updateColumns(db, 'films', COLUMNS, id, fields);
       return findFilmById(id);
     },
   };

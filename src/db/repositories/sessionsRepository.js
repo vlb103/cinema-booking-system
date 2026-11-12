@@ -1,4 +1,5 @@
 // Робота з таблицею sessions.
+const { immediateTransaction, updateColumns } = require('./sql');
 
 function toSession(row) {
   return {
@@ -18,9 +19,6 @@ function createSessionsRepository(db) {
     const row = db.prepare('SELECT * FROM sessions WHERE id = ?').get(id);
     return row ? toSession(row) : null;
   }
-
-  // Транзакція з блокуванням на запис від самого початку (BEGIN IMMEDIATE).
-  const immediate = (fn) => { const tx = db.transaction(fn); return (...args) => tx.immediate(...args); };
 
   const countActiveBookings = (sessionId) => db.prepare("SELECT COUNT(*) AS n FROM bookings WHERE session_id = ? AND status = 'ACTIVE'")
     .get(sessionId).n;
@@ -51,17 +49,15 @@ function createSessionsRepository(db) {
 
     // Перевірка активних бронювань і зміна сеансу в одній транзакції (REQ-F-016, REQ-F-017),
     // щоб між перевіркою і зміною не з'явилося нове бронювання.
-    updateSessionIfNoActiveBookings: immediate((id, fields) => {
+    updateSessionIfNoActiveBookings: immediateTransaction(db, (id, fields) => {
       if (countActiveBookings(id) > 0) return { blocked: true };
-      const keys = Object.keys(fields).filter((k) => COLUMNS[k]);
-      const sets = keys.map((k) => `${COLUMNS[k]} = ?`).join(', ');
-      db.prepare(`UPDATE sessions SET ${sets} WHERE id = ?`).run(...keys.map((k) => fields[k]), id);
+      updateColumns(db, 'sessions', COLUMNS, id, fields);
       return { blocked: false, session: findSessionById(id) };
     }),
 
     // Скасування сеансу і каскадне скасування всіх його активних бронювань в одній транзакції
     // (REQ-F-018, REQ-F-019). Бронювання лишаються в історії зі статусом CANCELLED і причиною.
-    cancelSessionCascade: immediate(({ sessionId, reason, cancelledAt }) => {
+    cancelSessionCascade: immediateTransaction(db, ({ sessionId, reason, cancelledAt }) => {
       const bookingIds = db.prepare("SELECT id FROM bookings WHERE session_id = ? AND status = 'ACTIVE' ORDER BY id")
         .all(sessionId).map((r) => r.id);
       db.prepare(`UPDATE bookings SET status = 'CANCELLED', cancelled_at = ?, cancellation_reason = ?
