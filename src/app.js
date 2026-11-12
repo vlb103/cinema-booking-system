@@ -12,6 +12,7 @@ const { createBookingsRepository } = require('./db/repositories/bookingsReposito
 const { createAuthService } = require('./services/authService');
 const { createCatalogService } = require('./services/catalogService');
 const { createAdminService } = require('./services/adminService');
+const { createBookingService } = require('./services/bookingService');
 const { createAuthMiddleware } = require('./middleware/auth');
 const { createErrorHandler } = require('./middleware/errorHandler');
 const { createAuthRouter } = require('./routes/auth');
@@ -38,6 +39,7 @@ function createApp({ db, clock = systemClock, logFilePath = config.logFilePath, 
   const authService = createAuthService({ usersRepository, logger, clock });
   const catalogService = createCatalogService({ sessionsRepository, hallsRepository, bookingsRepository, clock });
   const adminService = createAdminService({ filmsRepository, hallsRepository });
+  const bookingService = createBookingService({ bookingsRepository, sessionsRepository, hallsRepository, logger, clock });
   const auth = createAuthMiddleware({ authService, logger });
 
   authService.ensureInitialAdmin(admin);
@@ -45,7 +47,7 @@ function createApp({ db, clock = systemClock, logFilePath = config.logFilePath, 
   const app = express();
   app.use(express.json());
 
-  const deps = { authService, catalogService, adminService, auth };
+  const deps = { authService, catalogService, adminService, bookingService, auth };
   const api = express.Router();
   api.use('/auth', createAuthRouter(deps));
   api.use('/sessions', createSessionsRouter(deps));

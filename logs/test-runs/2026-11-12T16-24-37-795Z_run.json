@@ -1,0 +1,676 @@
+{
+  "stage": "run",
+  "startedAt": "2026-11-12T16:24:37.795Z",
+  "finishedAt": "2026-11-12T16:24:57.053Z",
+  "durationMs": 19258,
+  "success": true,
+  "totals": {
+    "suites": 1,
+    "tests": 39,
+    "passed": 39,
+    "failed": 0,
+    "skipped": 0
+  },
+  "requirements": {
+    "REQ-F-008": {
+      "total": 12,
+      "passed": 12,
+      "failed": 0
+    },
+    "REQ-F-007": {
+      "total": 19,
+      "passed": 19,
+      "failed": 0
+    },
+    "REQ-TDD-003": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0
+    },
+    "REQ-F-004": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "REQ-F-009": {
+      "total": 7,
+      "passed": 7,
+      "failed": 0
+    },
+    "REQ-F-013": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "ADD-06": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "ADD-09": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "ADD-02": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "ADD-03": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "REQ-F-018": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "REQ-F-010": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "REQ-NF-001": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "REQ-NF-006": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    }
+  },
+  "passed": [
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-008][REQ-F-007][REQ-TDD-003][P-05] бронювання 1 місця (мінімум) повертає 201 Booking за контрактом"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-007][REQ-TDD-003][P-06] бронювання 6 місць (максимум) повертає 201"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-008] після бронювання місця одразу зайняті у схемі залу, інші вільні"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-004][REQ-F-008] бронювання зберігається в БД з ID користувача і всіма місцями"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-009] два користувачі бронюють різні місця одного сеансу, обидва успішні"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-009] те саме місце на іншому сеансі вільне і бронюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-013][REQ-F-008] місце зі скасованого бронювання можна забронювати знову"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-008][ADD-06] граничний випадок, сеанс починається через 1 секунду, бронювання дозволене"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-007][ADD-09] граничні місця схеми залу (перше і останнє) бронюються"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][REQ-TDD-003][N-04] 0 місць відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][REQ-TDD-003][N-05] 7 місць відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09][N-06] одне місце двічі відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09][N-07] ряд поза схемою залу відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09] номер місця поза схемою залу відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09] ряд, наступний за останнім відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] ряд 0 (нумерація з 1) відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] номер місця 0 (нумерація з 1) відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] ряд не ціле число відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] місце без номера відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] місце числом замість пари ряд і номер відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит без seats відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит без sessionId відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит seats не масив відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит sessionId рядком відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит порожнє тіло відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][ADD-06][N-11] неіснуючий сеанс повертає 404 NOT_FOUND"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][REQ-F-018][ADD-06][N-10] скасований сеанс повертає 409 SESSION_NOT_AVAILABLE"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][ADD-06][N-10] граничний випадок, сеанс починається рівно зараз, 409 SESSION_NOT_AVAILABLE"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][ADD-06][N-10] сеанс, що вже йде, повертає 409 SESSION_NOT_AVAILABLE"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-009][N-08] місце вже заброньоване іншим клієнтом, 409 SEATS_TAKEN із зазначенням місця"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-009] той самий користувач не може вдруге забронювати своє ж місце"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-010][REQ-NF-001][REQ-TDD-003][N-09] BDD-сценарій 2, місця 5 і 6 вільні, 7 зайняте, бронювання [5, 6, 7] відхиляється повністю"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-010][REQ-NF-001] після відмови вільні місця групи одразу доступні іншому клієнту"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-010] у відповіді SEATS_TAKEN перелічено лише зайняті місця"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-F-009][REQ-NF-006][REQ-TDD-003][REQ-F-008] BDD-сценарій 1, 10 одночасних запитів на одне місце дають рівно 1 успіх і 9 SEATS_TAKEN"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-F-009][REQ-F-008] після конкурентної гонки місце лишається зайнятим і не допускає повторного бронювання"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-F-010][REQ-NF-001][REQ-NF-006] одночасні групові запити зі спільним місцем, успішний лише один, решта місць невдалих груп вільні"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-NF-006][REQ-F-009] два екземпляри сервера з окремими з'єднаннями до однієї БД, 10 одночасних запитів дають 1 успіх і без збоїв"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, атомарність при збої (REQ-NF-001) > [REQ-NF-001][REQ-F-008] збій під час запису місць відкатує транзакцію, часткових записів немає"
+    }
+  ],
+  "failed": [],
+  "tests": [
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-008][REQ-F-007][REQ-TDD-003][P-05] бронювання 1 місця (мінімум) повертає 201 Booking за контрактом",
+      "status": "passed",
+      "durationMs": 173,
+      "reqIds": [
+        "REQ-F-008",
+        "REQ-F-007",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-007][REQ-TDD-003][P-06] бронювання 6 місць (максимум) повертає 201",
+      "status": "passed",
+      "durationMs": 150,
+      "reqIds": [
+        "REQ-F-007",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-008] після бронювання місця одразу зайняті у схемі залу, інші вільні",
+      "status": "passed",
+      "durationMs": 148,
+      "reqIds": [
+        "REQ-F-008"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-004][REQ-F-008] бронювання зберігається в БД з ID користувача і всіма місцями",
+      "status": "passed",
+      "durationMs": 132,
+      "reqIds": [
+        "REQ-F-004",
+        "REQ-F-008"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-009] два користувачі бронюють різні місця одного сеансу, обидва успішні",
+      "status": "passed",
+      "durationMs": 231,
+      "reqIds": [
+        "REQ-F-009"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-009] те саме місце на іншому сеансі вільне і бронюється",
+      "status": "passed",
+      "durationMs": 146,
+      "reqIds": [
+        "REQ-F-009"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-013][REQ-F-008] місце зі скасованого бронювання можна забронювати знову",
+      "status": "passed",
+      "durationMs": 151,
+      "reqIds": [
+        "REQ-F-013",
+        "REQ-F-008"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-008][ADD-06] граничний випадок, сеанс починається через 1 секунду, бронювання дозволене",
+      "status": "passed",
+      "durationMs": 131,
+      "reqIds": [
+        "REQ-F-008",
+        "ADD-06"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-007][ADD-09] граничні місця схеми залу (перше і останнє) бронюються",
+      "status": "passed",
+      "durationMs": 138,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-09"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][REQ-TDD-003][N-04] 0 місць відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 147,
+      "reqIds": [
+        "REQ-F-007",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][REQ-TDD-003][N-05] 7 місць відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 138,
+      "reqIds": [
+        "REQ-F-007",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09][N-06] одне місце двічі відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 146,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-09"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09][N-07] ряд поза схемою залу відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 143,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-09"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09] номер місця поза схемою залу відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 138,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-09"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09] ряд, наступний за останнім відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 288,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-09"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] ряд 0 (нумерація з 1) відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 385,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-02"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] номер місця 0 (нумерація з 1) відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 385,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-02"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] ряд не ціле число відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 382,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-02"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] місце без номера відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 392,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-02"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] місце числом замість пари ряд і номер відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 390,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-02"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит без seats відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 390,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит без sessionId відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 382,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит seats не масив відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 386,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит sessionId рядком відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 383,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит порожнє тіло відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 387,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][ADD-06][N-11] неіснуючий сеанс повертає 404 NOT_FOUND",
+      "status": "passed",
+      "durationMs": 395,
+      "reqIds": [
+        "REQ-F-008",
+        "ADD-06"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][REQ-F-018][ADD-06][N-10] скасований сеанс повертає 409 SESSION_NOT_AVAILABLE",
+      "status": "passed",
+      "durationMs": 397,
+      "reqIds": [
+        "REQ-F-008",
+        "REQ-F-018",
+        "ADD-06"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][ADD-06][N-10] граничний випадок, сеанс починається рівно зараз, 409 SESSION_NOT_AVAILABLE",
+      "status": "passed",
+      "durationMs": 381,
+      "reqIds": [
+        "REQ-F-008",
+        "ADD-06"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][ADD-06][N-10] сеанс, що вже йде, повертає 409 SESSION_NOT_AVAILABLE",
+      "status": "passed",
+      "durationMs": 379,
+      "reqIds": [
+        "REQ-F-008",
+        "ADD-06"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-009][N-08] місце вже заброньоване іншим клієнтом, 409 SEATS_TAKEN із зазначенням місця",
+      "status": "passed",
+      "durationMs": 622,
+      "reqIds": [
+        "REQ-F-009"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-009] той самий користувач не може вдруге забронювати своє ж місце",
+      "status": "passed",
+      "durationMs": 374,
+      "reqIds": [
+        "REQ-F-009"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-010][REQ-NF-001][REQ-TDD-003][N-09] BDD-сценарій 2, місця 5 і 6 вільні, 7 зайняте, бронювання [5, 6, 7] відхиляється повністю",
+      "status": "passed",
+      "durationMs": 639,
+      "reqIds": [
+        "REQ-F-010",
+        "REQ-NF-001",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-010][REQ-NF-001] після відмови вільні місця групи одразу доступні іншому клієнту",
+      "status": "passed",
+      "durationMs": 854,
+      "reqIds": [
+        "REQ-F-010",
+        "REQ-NF-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-010] у відповіді SEATS_TAKEN перелічено лише зайняті місця",
+      "status": "passed",
+      "durationMs": 605,
+      "reqIds": [
+        "REQ-F-010"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-F-009][REQ-NF-006][REQ-TDD-003][REQ-F-008] BDD-сценарій 1, 10 одночасних запитів на одне місце дають рівно 1 успіх і 9 SEATS_TAKEN",
+      "status": "passed",
+      "durationMs": 2511,
+      "reqIds": [
+        "REQ-F-009",
+        "REQ-NF-006",
+        "REQ-TDD-003",
+        "REQ-F-008"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-F-009][REQ-F-008] після конкурентної гонки місце лишається зайнятим і не допускає повторного бронювання",
+      "status": "passed",
+      "durationMs": 853,
+      "reqIds": [
+        "REQ-F-009",
+        "REQ-F-008"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-F-010][REQ-NF-001][REQ-NF-006] одночасні групові запити зі спільним місцем, успішний лише один, решта місць невдалих груп вільні",
+      "status": "passed",
+      "durationMs": 1343,
+      "reqIds": [
+        "REQ-F-010",
+        "REQ-NF-001",
+        "REQ-NF-006"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-NF-006][REQ-F-009] два екземпляри сервера з окремими з'єднаннями до однієї БД, 10 одночасних запитів дають 1 успіх і без збоїв",
+      "status": "passed",
+      "durationMs": 2576,
+      "reqIds": [
+        "REQ-NF-006",
+        "REQ-F-009"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, атомарність при збої (REQ-NF-001) > [REQ-NF-001][REQ-F-008] збій під час запису місць відкатує транзакцію, часткових записів немає",
+      "status": "passed",
+      "durationMs": 394,
+      "reqIds": [
+        "REQ-NF-001",
+        "REQ-F-008"
+      ],
+      "failureMessages": []
+    }
+  ]
+}

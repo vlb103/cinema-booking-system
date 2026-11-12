@@ -11,6 +11,8 @@ function openDatabase(dbPath) {
   }
   const db = new Database(dbPath);
   db.pragma('journal_mode = WAL');
+  // Кілька з'єднань до одного файлу чекають на блокування замість помилки SQLITE_BUSY (REQ-NF-006).
+  db.pragma('busy_timeout = 5000');
   db.exec(fs.readFileSync(SCHEMA_PATH, 'utf8'));
   return db;
 }
