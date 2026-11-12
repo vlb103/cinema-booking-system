@@ -7,3 +7,11 @@
 # LaTeX build outputs
 report/build/
 build/
+
+# Node.js
+node_modules/
+coverage/
+
+# Runtime data (БД і лог системи створюються під час роботи сервера)
+data/
+logs/system/

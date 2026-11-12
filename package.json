@@ -1,0 +1,26 @@
+{
+  "name": "cinema-booking-system",
+  "version": "1.0.0",
+  "description": "Cinema Booking System REST API (v1) за docs/api/openapi.yaml",
+  "private": true,
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "jest",
+    "test:red": "node scripts/test-stage.js red",
+    "test:green": "node scripts/test-stage.js green",
+    "test:refactor": "node scripts/test-stage.js refactor"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.1.1",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2",
+    "jest-openapi": "^0.14.2",
+    "supertest": "^7.3.2"
+  }
+}
