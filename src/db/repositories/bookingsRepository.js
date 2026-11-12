@@ -1,5 +1,4 @@
 // Робота з таблицями bookings і booking_seats.
-const { NotImplementedError } = require('../../errors');
 
 // Місця вже зайняті, бронювання не створено (REQ-F-009, REQ-F-010).
 class SeatsTakenError extends Error {
@@ -63,6 +62,13 @@ function createBookingsRepository(db) {
     return bookingId;
   });
 
+  const cancelTx = db.transaction(({ bookingId, cancelledAt }) => {
+    const changed = db.prepare("UPDATE bookings SET status = 'CANCELLED', cancelled_at = ? WHERE id = ? AND status = 'ACTIVE'")
+      .run(cancelledAt, bookingId).changes;
+    if (changed) db.prepare('UPDATE booking_seats SET active = 0 WHERE booking_id = ?').run(bookingId);
+    return changed > 0;
+  });
+
   return {
     // Місця активних бронювань сеансу (REQ-F-002, REQ-F-013).
     listTakenSeats(sessionId) {
@@ -90,10 +96,9 @@ function createBookingsRepository(db) {
       return db.prepare(`${BOOKING_SELECT} WHERE b.user_id = ? ORDER BY b.created_at DESC, b.id DESC`).all(userId).map(toBooking);
     },
 
-    // Наступний раунд (скасування)
-    cancelBooking() { throw new NotImplementedError('bookingsRepository.cancelBooking'); },
-    cancelBookingsBySession() { throw new NotImplementedError('bookingsRepository.cancelBookingsBySession'); },
-    countActiveBySession() { throw new NotImplementedError('bookingsRepository.countActiveBySession'); },
+    // Повне скасування: статус бронювання і звільнення всіх його місць в одній транзакції
+    // (REQ-F-011, REQ-F-013). Умова status = 'ACTIVE' не дає скасувати двічі (REQ-F-014).
+    cancelBooking: (params) => cancelTx.immediate(params),
   };
 }
 

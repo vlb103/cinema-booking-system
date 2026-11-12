@@ -1,5 +1,4 @@
 // Робота з таблицею sessions.
-const { NotImplementedError } = require('../../errors');
 
 function toSession(row) {
   return {
@@ -12,7 +11,20 @@ function toSession(row) {
   };
 }
 
+const COLUMNS = { filmId: 'film_id', hallId: 'hall_id', startTime: 'start_time' };
+
 function createSessionsRepository(db) {
+  function findSessionById(id) {
+    const row = db.prepare('SELECT * FROM sessions WHERE id = ?').get(id);
+    return row ? toSession(row) : null;
+  }
+
+  // Транзакція з блокуванням на запис від самого початку (BEGIN IMMEDIATE).
+  const immediate = (fn) => { const tx = db.transaction(fn); return (...args) => tx.immediate(...args); };
+
+  const countActiveBookings = (sessionId) => db.prepare("SELECT COUNT(*) AS n FROM bookings WHERE session_id = ? AND status = 'ACTIVE'")
+    .get(sessionId).n;
+
   return {
     // Активні сеанси, які ще не почалися (ADD-12). Час зберігається в ISO-8601 UTC,
     // тому рядкове порівняння відповідає порівнянню часу.
@@ -29,15 +41,35 @@ function createSessionsRepository(db) {
       `).all(nowIso);
     },
 
-    findSessionById(id) {
-      const row = db.prepare('SELECT * FROM sessions WHERE id = ?').get(id);
-      return row ? toSession(row) : null;
+    findSessionById,
+
+    createSession({ filmId, hallId, startTime }) {
+      const id = Number(db.prepare("INSERT INTO sessions (film_id, hall_id, start_time, status) VALUES (?, ?, ?, 'ACTIVE')")
+        .run(filmId, hallId, startTime).lastInsertRowid);
+      return findSessionById(id);
     },
 
-    // Наступні раунди
-    createSession() { throw new NotImplementedError('sessionsRepository.createSession'); },
-    updateSession() { throw new NotImplementedError('sessionsRepository.updateSession'); },
-    cancelSession() { throw new NotImplementedError('sessionsRepository.cancelSession'); },
+    // Перевірка активних бронювань і зміна сеансу в одній транзакції (REQ-F-016, REQ-F-017),
+    // щоб між перевіркою і зміною не з'явилося нове бронювання.
+    updateSessionIfNoActiveBookings: immediate((id, fields) => {
+      if (countActiveBookings(id) > 0) return { blocked: true };
+      const keys = Object.keys(fields).filter((k) => COLUMNS[k]);
+      const sets = keys.map((k) => `${COLUMNS[k]} = ?`).join(', ');
+      db.prepare(`UPDATE sessions SET ${sets} WHERE id = ?`).run(...keys.map((k) => fields[k]), id);
+      return { blocked: false, session: findSessionById(id) };
+    }),
+
+    // Скасування сеансу і каскадне скасування всіх його активних бронювань в одній транзакції
+    // (REQ-F-018, REQ-F-019). Бронювання лишаються в історії зі статусом CANCELLED і причиною.
+    cancelSessionCascade: immediate(({ sessionId, reason, cancelledAt }) => {
+      const bookingIds = db.prepare("SELECT id FROM bookings WHERE session_id = ? AND status = 'ACTIVE' ORDER BY id")
+        .all(sessionId).map((r) => r.id);
+      db.prepare(`UPDATE bookings SET status = 'CANCELLED', cancelled_at = ?, cancellation_reason = ?
+                   WHERE session_id = ? AND status = 'ACTIVE'`).run(cancelledAt, reason, sessionId);
+      db.prepare('UPDATE booking_seats SET active = 0 WHERE session_id = ? AND active = 1').run(sessionId);
+      db.prepare("UPDATE sessions SET status = 'CANCELLED', cancellation_reason = ? WHERE id = ?").run(reason, sessionId);
+      return { session: findSessionById(sessionId), bookingIds };
+    }),
   };
 }
 

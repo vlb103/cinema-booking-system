@@ -1,6 +1,6 @@
 // Бронювання (REQ-F-007..REQ-F-010, REQ-F-020, REQ-F-005, REQ-NF-001, ADD-02, ADD-06, ADD-09).
-// Скасування бронювань (REQ-F-011..REQ-F-014) наступний раунд.
-const { ApiError, NotImplementedError } = require('../errors');
+// Скасування бронювання клієнтом (REQ-F-011..REQ-F-014).
+const { ApiError } = require('../errors');
 const { EVENT_TYPES, STATUSES } = require('../logging/events');
 const { SeatsTakenError } = require('../db/repositories/bookingsRepository');
 
@@ -98,11 +98,39 @@ function createBookingService({ bookingsRepository, sessionsRepository, hallsRep
     return bookingsRepository.listBookingsByUser(user.id);
   }
 
-  return {
-    createBooking,
-    listMyBookings,
-    cancelBooking() { throw new NotImplementedError('bookingService.cancelBooking'); },
-  };
+  // Скасування бронювання клієнтом (REQ-F-011..REQ-F-014, REQ-F-005, ADD-04).
+  function cancelBooking(user, bookingId) {
+    const logCancel = (status, entityIds, reason = null) => logger.log({
+      event_type: EVENT_TYPES.BOOKING_CANCELLED, status, user_id: user.id, entity_ids: entityIds, reason,
+    });
+
+    const booking = Number.isInteger(bookingId) && bookingId > 0 ? bookingsRepository.findBookingById(bookingId) : null;
+    if (!booking) {
+      logCancel(STATUSES.REJECTED, { bookingId }, 'Бронювання не знайдено');
+      throw new ApiError(404, 'NOT_FOUND', 'Бронювання не знайдено');
+    }
+    // Чуже бронювання дає 403 без розкриття його даних (REQ-NF-004).
+    if (booking.userId !== user.id) {
+      logCancel(STATUSES.REJECTED, { bookingId }, 'Спроба скасувати чуже бронювання');
+      throw new ApiError(403, 'FORBIDDEN', 'Доступ заборонено');
+    }
+    // Повторне скасування повертає поточний стан без змін (REQ-F-014).
+    if (booking.status === 'CANCELLED') return booking;
+
+    const entityIds = { bookingId: booking.id, sessionId: booking.session.id, seats: booking.seats };
+    // Скасування дозволене лише поки T поточний < T сеансу (REQ-F-012).
+    if (clock.now() >= new Date(booking.session.startTime)) {
+      logCancel(STATUSES.REJECTED, entityIds, 'Сеанс уже розпочався, скасування неможливе');
+      throw new ApiError(409, 'CANCELLATION_DEADLINE_PASSED', 'Сеанс уже розпочався, скасування неможливе');
+    }
+
+    if (bookingsRepository.cancelBooking({ bookingId: booking.id, cancelledAt: clock.now().toISOString() })) {
+      logCancel(STATUSES.SUCCESS, entityIds);
+    }
+    return bookingsRepository.findBookingById(booking.id);
+  }
+
+  return { createBooking, listMyBookings, cancelBooking };
 }
 
 module.exports = { createBookingService };
