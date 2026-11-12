@@ -1,0 +1,1316 @@
+{
+  "stage": "run",
+  "startedAt": "2026-11-12T16:16:03.285Z",
+  "finishedAt": "2026-11-12T16:16:12.859Z",
+  "durationMs": 9574,
+  "success": false,
+  "totals": {
+    "suites": 3,
+    "tests": 57,
+    "passed": 0,
+    "failed": 57,
+    "skipped": 0
+  },
+  "requirements": {
+    "REQ-F-020": {
+      "total": 6,
+      "passed": 0,
+      "failed": 6
+    },
+    "REQ-F-005": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1
+    },
+    "REQ-NF-004": {
+      "total": 2,
+      "passed": 0,
+      "failed": 2
+    },
+    "REQ-NF-003": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1
+    },
+    "REQ-F-019": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1
+    },
+    "REQ-LOG-001": {
+      "total": 8,
+      "passed": 0,
+      "failed": 8
+    },
+    "REQ-LOG-002": {
+      "total": 2,
+      "passed": 0,
+      "failed": 2
+    },
+    "REQ-F-009": {
+      "total": 8,
+      "passed": 0,
+      "failed": 8
+    },
+    "REQ-NF-001": {
+      "total": 5,
+      "passed": 0,
+      "failed": 5
+    },
+    "REQ-LOG-003": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1
+    },
+    "REQ-F-008": {
+      "total": 12,
+      "passed": 0,
+      "failed": 12
+    },
+    "REQ-F-007": {
+      "total": 19,
+      "passed": 0,
+      "failed": 19
+    },
+    "REQ-TDD-003": {
+      "total": 6,
+      "passed": 0,
+      "failed": 6
+    },
+    "REQ-F-004": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1
+    },
+    "REQ-F-013": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1
+    },
+    "ADD-06": {
+      "total": 5,
+      "passed": 0,
+      "failed": 5
+    },
+    "ADD-09": {
+      "total": 5,
+      "passed": 0,
+      "failed": 5
+    },
+    "ADD-02": {
+      "total": 5,
+      "passed": 0,
+      "failed": 5
+    },
+    "ADD-03": {
+      "total": 5,
+      "passed": 0,
+      "failed": 5
+    },
+    "REQ-F-018": {
+      "total": 1,
+      "passed": 0,
+      "failed": 1
+    },
+    "REQ-F-010": {
+      "total": 4,
+      "passed": 0,
+      "failed": 4
+    },
+    "REQ-NF-006": {
+      "total": 3,
+      "passed": 0,
+      "failed": 3
+    }
+  },
+  "passed": [],
+  "failed": [
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020][P-07] користувач без бронювань отримує 200 і порожній масив",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-list.test.js:17:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020][P-07] створене бронювання видно в кабінеті з даними сеансу за контрактом Booking",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-list.test.js:30:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020] кабінет показує всі бронювання користувача на різні сеанси",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-list.test.js:56:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-005][REQ-NF-004][T-20][T-22] користувач бачить лише власні бронювання",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-list.test.js:70:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-NF-004][REQ-NF-003][T-22] підміна ID користувача в параметрах запиту не дає доступу до чужих бронювань",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-list.test.js:84:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020][§3.1] скасоване самим користувачем бронювання показується зі статусом CANCELLED без причини сеансу",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-list.test.js:96:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020][REQ-F-019][P-18] бронювання скасованого адміністратором сеансу показується з причиною скасування",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-list.test.js:115:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020] кабінет не змінює стан, повторний запит повертає те саме",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-list.test.js:129:27)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][REQ-LOG-002][T-58] успішне бронювання записується як BOOKING_CREATED SUCCESS з користувачем, сеансом, бронюванням і місцями",
+      "reason": "Error: expect(received).toHaveLength(expected)",
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at Object.toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-logging.test.js:23:19)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][T-58] відмова через зайняте місце записується як BOOKING_CREATED REJECTED з причиною і місцями",
+      "reason": "Error: expect(received).toHaveLength(expected)",
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at Object.toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-logging.test.js:39:19)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][T-58] відмова через порушення правил (7 місць) записується як BOOKING_CREATED REJECTED",
+      "reason": "Error: expect(received).toHaveLength(expected)",
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-logging.test.js:59:19)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][T-58] відмова через порушення правил (місце поза схемою) записується як BOOKING_CREATED REJECTED",
+      "reason": "Error: expect(received).toHaveLength(expected)",
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-logging.test.js:59:19)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][T-58] відмова через порушення правил (неіснуючий сеанс) записується як BOOKING_CREATED REJECTED",
+      "reason": "Error: expect(received).toHaveLength(expected)",
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-logging.test.js:59:19)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][T-58] відмова через недоступний (скасований) сеанс записується як BOOKING_CREATED REJECTED",
+      "reason": "Error: expect(received).toHaveLength(expected)",
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at Object.toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-logging.test.js:72:19)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][REQ-F-009][T-58] конкурентна гонка 10 запитів дає в лозі 1 SUCCESS і 9 REJECTED",
+      "reason": "Error: expect(received).toHaveLength(expected)",
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at Object.toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-logging.test.js:84:55)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][REQ-NF-001][T-58] збій запису бронювання записується як SYSTEM_ERROR ERROR, без BOOKING_CREATED SUCCESS",
+      "reason": "Error: expect(received).toHaveLength(expected)",
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at Object.toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-logging.test.js:97:50)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-002][T-60] усі записи бронювань мають шість обов'язкових полів",
+      "reason": "Error: expect(received).toHaveLength(expected)",
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 3\nReceived length: 0\nReceived array:  []\n    at Object.toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-logging.test.js:112:27)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-003][T-62] після бронювань і перегляду кабінету в лозі немає токенів і паролів",
+      "reason": "Error: expect(received).toHaveLength(expected)",
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 2\nReceived length: 0\nReceived array:  []\n    at Object.toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-logging.test.js:129:77)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-008][REQ-F-007][REQ-TDD-003][P-05] бронювання 1 місця (мінімум) повертає 201 Booking за контрактом",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 201\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:25:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-007][REQ-TDD-003][P-06] бронювання 6 місць (максимум) повертає 201",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 201\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:48:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-008] після бронювання місця одразу зайняті у схемі залу, інші вільні",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"TAKEN\"\nReceived: \"FREE\"\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:62:35)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-004][REQ-F-008] бронювання зберігається в БД з ID користувача і всіма місцями",
+      "reason": "Error: expect(received).toEqual(expected) // deep equality",
+      "failureMessages": [
+        "Error: expect(received).toEqual(expected) // deep equality\n\nExpected: {\"session_id\": 1, \"status\": \"ACTIVE\", \"user_id\": 2}\nReceived: undefined\n    at Object.toEqual (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:75:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-009] два користувачі бронюють різні місця одного сеансу, обидва успішні",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 201\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:88:23)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-009] те саме місце на іншому сеансі вільне і бронюється",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 201\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:102:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-013][REQ-F-008] місце зі скасованого бронювання можна забронювати знову",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 201\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:113:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-008][ADD-06] граничний випадок, сеанс починається через 1 секунду, бронювання дозволене",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 201\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:123:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-007][ADD-09] граничні місця схеми залу (перше і останнє) бронюються",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 201\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:133:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][REQ-TDD-003][N-04] 0 місць відхиляється, бронювання не створюється",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][REQ-TDD-003][N-05] 7 місць відхиляється, бронювання не створюється",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09][N-06] одне місце двічі відхиляється, бронювання не створюється",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09][N-07] ряд поза схемою залу відхиляється, бронювання не створюється",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09] номер місця поза схемою залу відхиляється, бронювання не створюється",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09] ряд, наступний за останнім відхиляється, бронювання не створюється",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] ряд 0 (нумерація з 1) відхиляється, бронювання не створюється",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] номер місця 0 (нумерація з 1) відхиляється, бронювання не створюється",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] ряд не ціле число відхиляється, бронювання не створюється",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] місце без номера відхиляється, бронювання не створюється",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] місце числом замість пари ряд і номер відхиляється, бронювання не створюється",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит без seats відхиляється 400 VALIDATION_ERROR",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:177:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит без sessionId відхиляється 400 VALIDATION_ERROR",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:177:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит seats не масив відхиляється 400 VALIDATION_ERROR",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:177:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит sessionId рядком відхиляється 400 VALIDATION_ERROR",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:177:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит порожнє тіло відхиляється 400 VALIDATION_ERROR",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:177:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][ADD-06][N-11] неіснуючий сеанс повертає 404 NOT_FOUND",
+      "reason": "Error: expect(received).toSatisfyApiSpec() // Matches 'received' to a response defined in your API spec, then validates 'received' against it",
+      "failureMessages": [
+        "Error: expect(received).toSatisfyApiSpec() // Matches 'received' to a response defined in your API spec, then validates 'received' against it\n\nexpected received to satisfy the '404' response defined for endpoint 'POST /bookings' in your API spec\n\nreceived did not satisfy it because: response must be object\n\nreceived contained: {\n  body: {},\n  text: '<!DOCTYPE html>\\n' +\n    '<html lang=\"en\">\\n' +\n    '<head>\\n' +\n    '<meta charset=\"utf-8\">\\n' +\n    '<title>Error</title>\\n' +\n    '</head>\\n' +\n    '<body>\\n' +\n    '<pre>Cannot POST /api/v1/bookings</pre>\\n' +\n    '</body>\\n' +\n    '</html>\\n'\n}\n\nThe '404' response defined for endpoint 'POST /bookings' in API spec: {\n  '404': {\n    description: 'Ресурс не знайдено',\n    content: {\n      'application/json': {\n        schema: { '$ref': '#/components/schemas/Error' },\n        examples: {\n          default: {\n            value: {\n              code: 'NOT_FOUND',\n              message: 'Сеанс не знайдено',\n              details: []\n            }\n          }\n        }\n      }\n    }\n  }\n}\n    at Object.toSatisfyApiSpec (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:192:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][REQ-F-018][ADD-06][N-10] скасований сеанс повертає 409 SESSION_NOT_AVAILABLE",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 409\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:204:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][ADD-06][N-10] граничний випадок, сеанс починається рівно зараз, 409 SESSION_NOT_AVAILABLE",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 409\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:217:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][ADD-06][N-10] сеанс, що вже йде, повертає 409 SESSION_NOT_AVAILABLE",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 409\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:229:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-009][N-08] місце вже заброньоване іншим клієнтом, 409 SEATS_TAKEN із зазначенням місця",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 409\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:245:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-009] той самий користувач не може вдруге забронювати своє ж місце",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 409\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:260:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-010][REQ-NF-001][REQ-TDD-003][N-09] BDD-сценарій 2, місця 5 і 6 вільні, 7 зайняте, бронювання [5, 6, 7] відхиляється повністю",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 409\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:273:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-010][REQ-NF-001] після відмови вільні місця групи одразу доступні іншому клієнту",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 201\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:294:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-010] у відповіді SEATS_TAKEN перелічено лише зайняті місця",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 409\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:306:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-F-009][REQ-NF-006][REQ-TDD-003][REQ-F-008] BDD-сценарій 1, 10 одночасних запитів на одне місце дають рівно 1 успіх і 9 SEATS_TAKEN",
+      "reason": "Error: expect(received).toHaveLength(expected)",
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at Object.toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:324:47)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-F-009][REQ-F-008] після конкурентної гонки місце лишається зайнятим і не допускає повторного бронювання",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 409\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:342:25)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-F-010][REQ-NF-001][REQ-NF-006] одночасні групові запити зі спільним місцем, успішний лише один, решта місць невдалих груп вільні",
+      "reason": "Error: expect(received).toHaveLength(expected)",
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at Object.toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:357:21)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-NF-006][REQ-F-009] два екземпляри сервера з окремими з'єднаннями до однієї БД, 10 одночасних запитів дають 1 успіх і без збоїв",
+      "reason": "Error: expect(received).toHaveLength(expected)",
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at Object.toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:378:47)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, атомарність при збої (REQ-NF-001) > [REQ-NF-001][REQ-F-008] збій під час запису місць відкатує транзакцію, часткових записів немає",
+      "reason": "Error: expect(received).toBe(expected) // Object.is equality",
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 500\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:399:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020][P-07] користувач без бронювань отримує 200 і порожній масив",
+      "status": "failed",
+      "durationMs": 200,
+      "reqIds": [
+        "REQ-F-020"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-list.test.js:17:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020][P-07] створене бронювання видно в кабінеті з даними сеансу за контрактом Booking",
+      "status": "failed",
+      "durationMs": 143,
+      "reqIds": [
+        "REQ-F-020"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-list.test.js:30:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020] кабінет показує всі бронювання користувача на різні сеанси",
+      "status": "failed",
+      "durationMs": 147,
+      "reqIds": [
+        "REQ-F-020"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-list.test.js:56:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-005][REQ-NF-004][T-20][T-22] користувач бачить лише власні бронювання",
+      "status": "failed",
+      "durationMs": 234,
+      "reqIds": [
+        "REQ-F-005",
+        "REQ-NF-004"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-list.test.js:70:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-NF-004][REQ-NF-003][T-22] підміна ID користувача в параметрах запиту не дає доступу до чужих бронювань",
+      "status": "failed",
+      "durationMs": 226,
+      "reqIds": [
+        "REQ-NF-004",
+        "REQ-NF-003"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-list.test.js:84:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020][§3.1] скасоване самим користувачем бронювання показується зі статусом CANCELLED без причини сеансу",
+      "status": "failed",
+      "durationMs": 135,
+      "reqIds": [
+        "REQ-F-020"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-list.test.js:96:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020][REQ-F-019][P-18] бронювання скасованого адміністратором сеансу показується з причиною скасування",
+      "status": "failed",
+      "durationMs": 135,
+      "reqIds": [
+        "REQ-F-020",
+        "REQ-F-019"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-list.test.js:115:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020] кабінет не змінює стан, повторний запит повертає те саме",
+      "status": "failed",
+      "durationMs": 138,
+      "reqIds": [
+        "REQ-F-020"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-list.test.js:129:27)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][REQ-LOG-002][T-58] успішне бронювання записується як BOOKING_CREATED SUCCESS з користувачем, сеансом, бронюванням і місцями",
+      "status": "failed",
+      "durationMs": 200,
+      "reqIds": [
+        "REQ-LOG-001",
+        "REQ-LOG-002"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at Object.toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-logging.test.js:23:19)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][T-58] відмова через зайняте місце записується як BOOKING_CREATED REJECTED з причиною і місцями",
+      "status": "failed",
+      "durationMs": 232,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at Object.toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-logging.test.js:39:19)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][T-58] відмова через порушення правил (7 місць) записується як BOOKING_CREATED REJECTED",
+      "status": "failed",
+      "durationMs": 143,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-logging.test.js:59:19)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][T-58] відмова через порушення правил (місце поза схемою) записується як BOOKING_CREATED REJECTED",
+      "status": "failed",
+      "durationMs": 138,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-logging.test.js:59:19)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][T-58] відмова через порушення правил (неіснуючий сеанс) записується як BOOKING_CREATED REJECTED",
+      "status": "failed",
+      "durationMs": 136,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-logging.test.js:59:19)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][T-58] відмова через недоступний (скасований) сеанс записується як BOOKING_CREATED REJECTED",
+      "status": "failed",
+      "durationMs": 138,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at Object.toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-logging.test.js:72:19)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][REQ-F-009][T-58] конкурентна гонка 10 запитів дає в лозі 1 SUCCESS і 9 REJECTED",
+      "status": "failed",
+      "durationMs": 955,
+      "reqIds": [
+        "REQ-LOG-001",
+        "REQ-F-009"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at Object.toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-logging.test.js:84:55)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][REQ-NF-001][T-58] збій запису бронювання записується як SYSTEM_ERROR ERROR, без BOOKING_CREATED SUCCESS",
+      "status": "failed",
+      "durationMs": 140,
+      "reqIds": [
+        "REQ-LOG-001",
+        "REQ-NF-001"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at Object.toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-logging.test.js:97:50)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-002][T-60] усі записи бронювань мають шість обов'язкових полів",
+      "status": "failed",
+      "durationMs": 235,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 3\nReceived length: 0\nReceived array:  []\n    at Object.toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-logging.test.js:112:27)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-003][T-62] після бронювань і перегляду кабінету в лозі немає токенів і паролів",
+      "status": "failed",
+      "durationMs": 144,
+      "reqIds": [
+        "REQ-LOG-003"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 2\nReceived length: 0\nReceived array:  []\n    at Object.toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-logging.test.js:129:77)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-008][REQ-F-007][REQ-TDD-003][P-05] бронювання 1 місця (мінімум) повертає 201 Booking за контрактом",
+      "status": "failed",
+      "durationMs": 191,
+      "reqIds": [
+        "REQ-F-008",
+        "REQ-F-007",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 201\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:25:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-007][REQ-TDD-003][P-06] бронювання 6 місць (максимум) повертає 201",
+      "status": "failed",
+      "durationMs": 134,
+      "reqIds": [
+        "REQ-F-007",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 201\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:48:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-008] після бронювання місця одразу зайняті у схемі залу, інші вільні",
+      "status": "failed",
+      "durationMs": 143,
+      "reqIds": [
+        "REQ-F-008"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: \"TAKEN\"\nReceived: \"FREE\"\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:62:35)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-004][REQ-F-008] бронювання зберігається в БД з ID користувача і всіма місцями",
+      "status": "failed",
+      "durationMs": 138,
+      "reqIds": [
+        "REQ-F-004",
+        "REQ-F-008"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toEqual(expected) // deep equality\n\nExpected: {\"session_id\": 1, \"status\": \"ACTIVE\", \"user_id\": 2}\nReceived: undefined\n    at Object.toEqual (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:75:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-009] два користувачі бронюють різні місця одного сеансу, обидва успішні",
+      "status": "failed",
+      "durationMs": 225,
+      "reqIds": [
+        "REQ-F-009"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 201\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:88:23)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-009] те саме місце на іншому сеансі вільне і бронюється",
+      "status": "failed",
+      "durationMs": 137,
+      "reqIds": [
+        "REQ-F-009"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 201\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:102:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-013][REQ-F-008] місце зі скасованого бронювання можна забронювати знову",
+      "status": "failed",
+      "durationMs": 132,
+      "reqIds": [
+        "REQ-F-013",
+        "REQ-F-008"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 201\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:113:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-008][ADD-06] граничний випадок, сеанс починається через 1 секунду, бронювання дозволене",
+      "status": "failed",
+      "durationMs": 133,
+      "reqIds": [
+        "REQ-F-008",
+        "ADD-06"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 201\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:123:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-007][ADD-09] граничні місця схеми залу (перше і останнє) бронюються",
+      "status": "failed",
+      "durationMs": 134,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-09"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 201\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:133:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][REQ-TDD-003][N-04] 0 місць відхиляється, бронювання не створюється",
+      "status": "failed",
+      "durationMs": 133,
+      "reqIds": [
+        "REQ-F-007",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][REQ-TDD-003][N-05] 7 місць відхиляється, бронювання не створюється",
+      "status": "failed",
+      "durationMs": 142,
+      "reqIds": [
+        "REQ-F-007",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09][N-06] одне місце двічі відхиляється, бронювання не створюється",
+      "status": "failed",
+      "durationMs": 144,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-09"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09][N-07] ряд поза схемою залу відхиляється, бронювання не створюється",
+      "status": "failed",
+      "durationMs": 152,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-09"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09] номер місця поза схемою залу відхиляється, бронювання не створюється",
+      "status": "failed",
+      "durationMs": 138,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-09"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09] ряд, наступний за останнім відхиляється, бронювання не створюється",
+      "status": "failed",
+      "durationMs": 137,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-09"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] ряд 0 (нумерація з 1) відхиляється, бронювання не створюється",
+      "status": "failed",
+      "durationMs": 138,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-02"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] номер місця 0 (нумерація з 1) відхиляється, бронювання не створюється",
+      "status": "failed",
+      "durationMs": 137,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-02"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] ряд не ціле число відхиляється, бронювання не створюється",
+      "status": "failed",
+      "durationMs": 145,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-02"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] місце без номера відхиляється, бронювання не створюється",
+      "status": "failed",
+      "durationMs": 137,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-02"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] місце числом замість пари ряд і номер відхиляється, бронювання не створюється",
+      "status": "failed",
+      "durationMs": 169,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-02"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:157:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит без seats відхиляється 400 VALIDATION_ERROR",
+      "status": "failed",
+      "durationMs": 151,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-03"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:177:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит без sessionId відхиляється 400 VALIDATION_ERROR",
+      "status": "failed",
+      "durationMs": 149,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-03"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:177:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит seats не масив відхиляється 400 VALIDATION_ERROR",
+      "status": "failed",
+      "durationMs": 140,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-03"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:177:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит sessionId рядком відхиляється 400 VALIDATION_ERROR",
+      "status": "failed",
+      "durationMs": 144,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-03"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:177:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит порожнє тіло відхиляється 400 VALIDATION_ERROR",
+      "status": "failed",
+      "durationMs": 144,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-03"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 400\nReceived: 404\n    at toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:177:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][ADD-06][N-11] неіснуючий сеанс повертає 404 NOT_FOUND",
+      "status": "failed",
+      "durationMs": 152,
+      "reqIds": [
+        "REQ-F-008",
+        "ADD-06"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toSatisfyApiSpec() // Matches 'received' to a response defined in your API spec, then validates 'received' against it\n\nexpected received to satisfy the '404' response defined for endpoint 'POST /bookings' in your API spec\n\nreceived did not satisfy it because: response must be object\n\nreceived contained: {\n  body: {},\n  text: '<!DOCTYPE html>\\n' +\n    '<html lang=\"en\">\\n' +\n    '<head>\\n' +\n    '<meta charset=\"utf-8\">\\n' +\n    '<title>Error</title>\\n' +\n    '</head>\\n' +\n    '<body>\\n' +\n    '<pre>Cannot POST /api/v1/bookings</pre>\\n' +\n    '</body>\\n' +\n    '</html>\\n'\n}\n\nThe '404' response defined for endpoint 'POST /bookings' in API spec: {\n  '404': {\n    description: 'Ресурс не знайдено',\n    content: {\n      'application/json': {\n        schema: { '$ref': '#/components/schemas/Error' },\n        examples: {\n          default: {\n            value: {\n              code: 'NOT_FOUND',\n              message: 'Сеанс не знайдено',\n              details: []\n            }\n          }\n        }\n      }\n    }\n  }\n}\n    at Object.toSatisfyApiSpec (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:192:17)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][REQ-F-018][ADD-06][N-10] скасований сеанс повертає 409 SESSION_NOT_AVAILABLE",
+      "status": "failed",
+      "durationMs": 138,
+      "reqIds": [
+        "REQ-F-008",
+        "REQ-F-018",
+        "ADD-06"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 409\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:204:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][ADD-06][N-10] граничний випадок, сеанс починається рівно зараз, 409 SESSION_NOT_AVAILABLE",
+      "status": "failed",
+      "durationMs": 139,
+      "reqIds": [
+        "REQ-F-008",
+        "ADD-06"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 409\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:217:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][ADD-06][N-10] сеанс, що вже йде, повертає 409 SESSION_NOT_AVAILABLE",
+      "status": "failed",
+      "durationMs": 142,
+      "reqIds": [
+        "REQ-F-008",
+        "ADD-06"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 409\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:229:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-009][N-08] місце вже заброньоване іншим клієнтом, 409 SEATS_TAKEN із зазначенням місця",
+      "status": "failed",
+      "durationMs": 229,
+      "reqIds": [
+        "REQ-F-009"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 409\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:245:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-009] той самий користувач не може вдруге забронювати своє ж місце",
+      "status": "failed",
+      "durationMs": 136,
+      "reqIds": [
+        "REQ-F-009"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 409\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:260:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-010][REQ-NF-001][REQ-TDD-003][N-09] BDD-сценарій 2, місця 5 і 6 вільні, 7 зайняте, бронювання [5, 6, 7] відхиляється повністю",
+      "status": "failed",
+      "durationMs": 232,
+      "reqIds": [
+        "REQ-F-010",
+        "REQ-NF-001",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 409\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:273:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-010][REQ-NF-001] після відмови вільні місця групи одразу доступні іншому клієнту",
+      "status": "failed",
+      "durationMs": 318,
+      "reqIds": [
+        "REQ-F-010",
+        "REQ-NF-001"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 201\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:294:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-010] у відповіді SEATS_TAKEN перелічено лише зайняті місця",
+      "status": "failed",
+      "durationMs": 226,
+      "reqIds": [
+        "REQ-F-010"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 409\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:306:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-F-009][REQ-NF-006][REQ-TDD-003][REQ-F-008] BDD-сценарій 1, 10 одночасних запитів на одне місце дають рівно 1 успіх і 9 SEATS_TAKEN",
+      "status": "failed",
+      "durationMs": 950,
+      "reqIds": [
+        "REQ-F-009",
+        "REQ-NF-006",
+        "REQ-TDD-003",
+        "REQ-F-008"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at Object.toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:324:47)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-F-009][REQ-F-008] після конкурентної гонки місце лишається зайнятим і не допускає повторного бронювання",
+      "status": "failed",
+      "durationMs": 332,
+      "reqIds": [
+        "REQ-F-009",
+        "REQ-F-008"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 409\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:342:25)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-F-010][REQ-NF-001][REQ-NF-006] одночасні групові запити зі спільним місцем, успішний лише один, решта місць невдалих груп вільні",
+      "status": "failed",
+      "durationMs": 498,
+      "reqIds": [
+        "REQ-F-010",
+        "REQ-NF-001",
+        "REQ-NF-006"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at Object.toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:357:21)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-NF-006][REQ-F-009] два екземпляри сервера з окремими з'єднаннями до однієї БД, 10 одночасних запитів дають 1 успіх і без збоїв",
+      "status": "failed",
+      "durationMs": 947,
+      "reqIds": [
+        "REQ-NF-006",
+        "REQ-F-009"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toHaveLength(expected)\n\nExpected length: 1\nReceived length: 0\nReceived array:  []\n    at Object.toHaveLength (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:378:47)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, атомарність при збої (REQ-NF-001) > [REQ-NF-001][REQ-F-008] збій під час запису місць відкатує транзакцію, часткових записів немає",
+      "status": "failed",
+      "durationMs": 134,
+      "reqIds": [
+        "REQ-NF-001",
+        "REQ-F-008"
+      ],
+      "failureMessages": [
+        "Error: expect(received).toBe(expected) // Object.is equality\n\nExpected: 500\nReceived: 404\n    at Object.toBe (C:\\Users\\pc\\Documents\\4course\\PIS\\Lab5\\cinema-booking-system\\tests\\integration\\bookings-create.test.js:399:24)\n    at processTicksAndRejections (node:internal/process/task_queues:104:5)"
+      ]
+    }
+  ]
+}
