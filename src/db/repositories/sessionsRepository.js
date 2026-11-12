@@ -28,10 +28,16 @@ function createSessionsRepository(db) {
     // тому рядкове порівняння відповідає порівнянню часу.
     // Необов'язкові фільтри (REQ-F-021, REQ-F-022): from і to задають межі доби [from, to), filmId фільм.
     listUpcomingActiveSessions(nowIso, { from, to, filmId } = {}) {
-      const conditions = [];
+      const conditions = ["s.status = 'ACTIVE'", 's.start_time > ?'];
       const params = [nowIso];
-      if (from !== undefined) { conditions.push('AND s.start_time >= ? AND s.start_time < ?'); params.push(from, to); }
-      if (filmId !== undefined) { conditions.push('AND s.film_id = ?'); params.push(filmId); }
+      if (from !== undefined) {
+        conditions.push('s.start_time >= ?', 's.start_time < ?');
+        params.push(from, to);
+      }
+      if (filmId !== undefined) {
+        conditions.push('s.film_id = ?');
+        params.push(filmId);
+      }
       return db.prepare(`
         SELECT s.id, s.start_time, s.status,
                f.id AS film_id, f.title, f.duration_minutes, f.description,
@@ -39,7 +45,7 @@ function createSessionsRepository(db) {
           FROM sessions s
           JOIN films f ON f.id = s.film_id
           JOIN halls h ON h.id = s.hall_id
-         WHERE s.status = 'ACTIVE' AND s.start_time > ? ${conditions.join(' ')}
+         WHERE ${conditions.join(' AND ')}
          ORDER BY s.start_time, s.id
       `).all(...params);
     },

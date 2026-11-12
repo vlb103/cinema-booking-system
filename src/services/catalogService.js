@@ -4,10 +4,9 @@ const { ApiError } = require('../errors');
 const { isoNow } = require('../clock');
 const { toFilm } = require('../db/repositories/filmsRepository');
 const { EVENT_TYPES, STATUSES } = require('../logging/events');
-const { isPositiveInt, isCalendarDate } = require('./validation');
+const { isPositiveInt, isPositiveIntString, isCalendarDate } = require('./validation');
 
 const DAY_MS = 24 * 60 * 60 * 1000;
-const FILTERS = ['date', 'filmId'];
 
 const seatKey = (s) => `${s.row}-${s.number}`;
 
@@ -23,30 +22,48 @@ function buildSeatGrid(hall, takenSeats) {
   return seats;
 }
 
-// Перевірка одного параметра запиту. Повтор параметра дає масив і відхиляється (ADD-17).
-function filterError(name, value) {
-  if (Array.isArray(value)) return `${name}: параметр передано кілька разів`;
-  if (name === 'date' && !isCalendarDate(value)) return 'date: очікується дата у форматі YYYY-MM-DD';
-  if (name === 'filmId' && !/^[1-9]\d*$/.test(value)) return 'filmId: очікується ціле число від 1';
-  return null;
+// Доба D за UTC це [D 00:00, D+1 00:00) (ADD-15).
+function utcDayRange(date) {
+  const from = new Date(`${date}T00:00:00.000Z`);
+  return { from: from.toISOString(), to: new Date(from.getTime() + DAY_MS).toISOString() };
 }
 
-// Перетворює параметри запиту на умови вибірки. Доба D за UTC це [D 00:00, D+1 00:00) (ADD-15).
+// Правила фільтрів афіші (ADD-14, ADD-17): як перевірити значення і яку умову вибірки воно дає.
+const FILTER_RULES = {
+  date: { isValid: isCalendarDate, message: 'очікується дата у форматі YYYY-MM-DD', toCriteria: utcDayRange },
+  filmId: { isValid: isPositiveIntString, message: 'очікується ціле число від 1', toCriteria: (v) => ({ filmId: Number(v) }) },
+};
+
+// Повтор параметра Express передає масивом, такий параметр відхиляється (ADD-17).
+function filterError(name, value) {
+  if (Array.isArray(value)) return `${name}: параметр передано кілька разів`;
+  const rule = FILTER_RULES[name];
+  return rule.isValid(value) ? null : `${name}: ${rule.message}`;
+}
+
+// Лише ті фільтри, які передано в запиті. Невідомі параметри ігноруються (REQ-F-023).
+function givenFilters(query) {
+  return Object.keys(FILTER_RULES).filter((name) => query[name] !== undefined);
+}
+
 function toCriteria(query) {
-  const criteria = {};
-  if (query.date !== undefined) {
-    const from = new Date(`${query.date}T00:00:00.000Z`);
-    criteria.from = from.toISOString();
-    criteria.to = new Date(from.getTime() + DAY_MS).toISOString();
-  }
-  if (query.filmId !== undefined) criteria.filmId = Number(query.filmId);
-  return criteria;
+  return Object.assign({}, ...givenFilters(query).map((name) => FILTER_RULES[name].toCriteria(query[name])));
+}
+
+function toSessionListItem(r) {
+  return {
+    id: r.id,
+    startTime: r.start_time,
+    status: r.status,
+    film: toFilm({ id: r.film_id, title: r.title, duration_minutes: r.duration_minutes, description: r.description }),
+    hall: { id: r.hall_id, name: r.hall_name },
+  };
 }
 
 function createCatalogService({ sessionsRepository, hallsRepository, bookingsRepository, logger, clock }) {
   // Некоректний фільтр відхиляє весь запит з 400 і пишеться в лог як SESSIONS_LISTED REJECTED (ADD-17, ADD-18).
   function validateFilters(query) {
-    const given = FILTERS.filter((name) => query[name] !== undefined);
+    const given = givenFilters(query);
     const details = given.map((name) => filterError(name, query[name])).filter(Boolean);
     if (!details.length) return;
     logger.log({
@@ -62,14 +79,7 @@ function createCatalogService({ sessionsRepository, hallsRepository, bookingsRep
   // Без фільтрів поведінка як у версії 1.0.0, успішний перегляд не логується (REQ-F-023, ADD-18).
   function listSessions(query = {}) {
     validateFilters(query);
-    const rows = sessionsRepository.listUpcomingActiveSessions(isoNow(clock), toCriteria(query));
-    return rows.map((r) => ({
-      id: r.id,
-      startTime: r.start_time,
-      status: r.status,
-      film: toFilm({ id: r.film_id, title: r.title, duration_minutes: r.duration_minutes, description: r.description }),
-      hall: { id: r.hall_id, name: r.hall_name },
-    }));
+    return sessionsRepository.listUpcomingActiveSessions(isoNow(clock), toCriteria(query)).map(toSessionListItem);
   }
 
   function getSeatMap(sessionId) {
