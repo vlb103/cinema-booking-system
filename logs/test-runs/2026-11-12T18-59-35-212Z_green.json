@@ -1,0 +1,5110 @@
+{
+  "stage": "green",
+  "startedAt": "2026-11-12T18:59:35.212Z",
+  "finishedAt": "2026-11-12T18:59:48.216Z",
+  "durationMs": 13004,
+  "success": true,
+  "totals": {
+    "suites": 16,
+    "tests": 325,
+    "passed": 325,
+    "failed": 0,
+    "skipped": 0
+  },
+  "requirements": {
+    "REQ-LOG-002": {
+      "total": 17,
+      "passed": 17,
+      "failed": 0
+    },
+    "REQ-LOG-003": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0
+    },
+    "REQ-LOG-004": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "REQ-LOG-005": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "REQ-TDD-002": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "REQ-TDD-005": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "REQ-F-001": {
+      "total": 10,
+      "passed": 10,
+      "failed": 0
+    },
+    "ADD-12": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0
+    },
+    "REQ-F-002": {
+      "total": 9,
+      "passed": 9,
+      "failed": 0
+    },
+    "REQ-F-013": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "ADD-03": {
+      "total": 44,
+      "passed": 44,
+      "failed": 0
+    },
+    "REQ-F-020": {
+      "total": 8,
+      "passed": 8,
+      "failed": 0
+    },
+    "REQ-F-005": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "REQ-NF-004": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "REQ-NF-003": {
+      "total": 33,
+      "passed": 33,
+      "failed": 0
+    },
+    "REQ-F-019": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "REQ-LOG-001": {
+      "total": 30,
+      "passed": 30,
+      "failed": 0
+    },
+    "REQ-F-006": {
+      "total": 19,
+      "passed": 19,
+      "failed": 0
+    },
+    "REQ-F-003": {
+      "total": 58,
+      "passed": 58,
+      "failed": 0
+    },
+    "ADD-01": {
+      "total": 27,
+      "passed": 27,
+      "failed": 0
+    },
+    "REQ-NF-002": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "REQ-F-014": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "REQ-F-017": {
+      "total": 7,
+      "passed": 7,
+      "failed": 0
+    },
+    "REQ-F-018": {
+      "total": 14,
+      "passed": 14,
+      "failed": 0
+    },
+    "ADD-05": {
+      "total": 10,
+      "passed": 10,
+      "failed": 0
+    },
+    "REQ-F-004": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "REQ-NF-005": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "REQ-F-021": {
+      "total": 17,
+      "passed": 17,
+      "failed": 0
+    },
+    "ADD-15": {
+      "total": 2,
+      "passed": 2,
+      "failed": 0
+    },
+    "ADD-16": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "REQ-F-022": {
+      "total": 12,
+      "passed": 12,
+      "failed": 0
+    },
+    "REQ-F-023": {
+      "total": 7,
+      "passed": 7,
+      "failed": 0
+    },
+    "ADD-17": {
+      "total": 8,
+      "passed": 8,
+      "failed": 0
+    },
+    "ADD-18": {
+      "total": 6,
+      "passed": 6,
+      "failed": 0
+    },
+    "ADD-19": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "REQ-F-009": {
+      "total": 8,
+      "passed": 8,
+      "failed": 0
+    },
+    "REQ-NF-001": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "REQ-F-011": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "REQ-F-012": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "REQ-TDD-003": {
+      "total": 16,
+      "passed": 16,
+      "failed": 0
+    },
+    "ADD-04": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "ADD-10": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    },
+    "REQ-F-015": {
+      "total": 47,
+      "passed": 47,
+      "failed": 0
+    },
+    "ADD-07": {
+      "total": 25,
+      "passed": 25,
+      "failed": 0
+    },
+    "ADD-13": {
+      "total": 7,
+      "passed": 7,
+      "failed": 0
+    },
+    "ADD-08": {
+      "total": 1,
+      "passed": 1,
+      "failed": 0
+    },
+    "REQ-F-016": {
+      "total": 8,
+      "passed": 8,
+      "failed": 0
+    },
+    "ADD-11": {
+      "total": 8,
+      "passed": 8,
+      "failed": 0
+    },
+    "REQ-F-008": {
+      "total": 12,
+      "passed": 12,
+      "failed": 0
+    },
+    "REQ-F-007": {
+      "total": 19,
+      "passed": 19,
+      "failed": 0
+    },
+    "ADD-06": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "ADD-09": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "ADD-02": {
+      "total": 5,
+      "passed": 5,
+      "failed": 0
+    },
+    "REQ-F-010": {
+      "total": 4,
+      "passed": 4,
+      "failed": 0
+    },
+    "REQ-NF-006": {
+      "total": 3,
+      "passed": 3,
+      "failed": 0
+    }
+  },
+  "passed": [
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002][T-60] запис містить усі шість обов'язкових полів"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002][T-60] timestamp у форматі ISO-8601 UTC і береться з годинника"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] якщо суб'єкт не ідентифікований, user_id дорівнює null, а відсутні entity_ids і reason мають значення за замовчуванням"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] status SUCCESS приймається"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] status REJECTED приймається"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] status ERROR приймається"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] запис з помилкою структури (невідомий status) відхиляється"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] запис з помилкою структури (без status) відхиляється"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] запис з помилкою структури (без event_type) відхиляється"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] кожен запис займає окремий рядок JSON"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, конфіденційні дані (REQ-LOG-003) > [REQ-LOG-003][T-62] паролі і токени в entity_ids і в зайвих полях не потрапляють у файл"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, конфіденційні дані (REQ-LOG-003) > [REQ-LOG-003][T-62] Bearer-токен у тексті reason маскується"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, персистентність (REQ-LOG-004) > [REQ-LOG-004][T-64] записи попереднього запуску доступні після перезапуску, новий запуск дописує, а не перезаписує"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, персистентність (REQ-LOG-004) > [REQ-LOG-004] каталог для файлу логу створюється, якщо його немає"
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, персистентність (REQ-LOG-004) > [REQ-LOG-004] читання відсутнього файлу логу повертає порожній список"
+    },
+    {
+      "file": "tests/unit/run-report-reporter.test.js",
+      "title": "Звіт прогону тестів (REQ-LOG-005) > [REQ-LOG-005][T-66] після прогону створюються файли звіту JSON і Markdown"
+    },
+    {
+      "file": "tests/unit/run-report-reporter.test.js",
+      "title": "Звіт прогону тестів (REQ-LOG-005) > [REQ-LOG-005][T-66] звіт містить час запуску, кількість тестів, списки успішних і впалих кейсів і повідомлення про помилки"
+    },
+    {
+      "file": "tests/unit/run-report-reporter.test.js",
+      "title": "Звіт прогону тестів (REQ-LOG-005) > [REQ-LOG-005][REQ-TDD-002] звіт фіксує стадію TDD і покриття вимог за ID у назвах тестів"
+    },
+    {
+      "file": "tests/unit/run-report-reporter.test.js",
+      "title": "Звіт прогону тестів (REQ-LOG-005) > [REQ-LOG-005][T-66] кожен прогін зберігається окремим файлом і не перезаписує попередній"
+    },
+    {
+      "file": "tests/unit/test-infrastructure.test.js",
+      "title": "Тестове оточення > [REQ-TDD-005][T-81] кожен тест отримує ізольовану БД у пам'яті зі схемою"
+    },
+    {
+      "file": "tests/unit/test-infrastructure.test.js",
+      "title": "Тестове оточення > [REQ-TDD-005][T-81] фіктивний годинник керує поточним часом"
+    },
+    {
+      "file": "tests/unit/test-infrastructure.test.js",
+      "title": "Тестове оточення > [REQ-TDD-005][T-04] раннер виконує паралельні HTTP-запити до застосунку"
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions (listSessions) > [REQ-F-001][T-06][P-01] афіша доступна без токена, відповідь за контрактом SessionListItem[]"
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions (listSessions) > [REQ-F-001] порожній розклад повертає 200 і порожній масив"
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions (listSessions) > [REQ-F-001] повертається повний список активних майбутніх сеансів (кілька фільмів і залів)"
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions (listSessions) > [REQ-F-001][ADD-12] скасований сеанс не входить в афішу"
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions (listSessions) > [REQ-F-001][ADD-12] сеанс, що вже почався або минув, не входить в афішу"
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions (listSessions) > [REQ-F-001][ADD-12] граничний випадок, сеанс з початком рівно зараз не показується, за 1 секунду до початку показується"
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions (listSessions) > [REQ-F-001][ADD-12] афіша рахує «зараз» за годинником сервера"
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions/{sessionId}/seats (getSessionSeatMap) > [REQ-F-002][T-08][P-02] схема залу доступна без токена, усі місця залу, місткість рахує сервер"
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions/{sessionId}/seats (getSessionSeatMap) > [REQ-F-002] місця активного бронювання мають статус TAKEN, решта FREE"
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions/{sessionId}/seats (getSessionSeatMap) > [REQ-F-002][REQ-F-013] місця скасованого бронювання показуються як FREE"
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions/{sessionId}/seats (getSessionSeatMap) > [REQ-F-002] бронювання іншого сеансу в тому самому залі не робить місця зайнятими"
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions/{sessionId}/seats (getSessionSeatMap) > [REQ-F-002] перегляд схеми клієнтом А не змінює стан місць для клієнта Б (немає hold)"
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions/{sessionId}/seats (getSessionSeatMap) > [REQ-F-002][ADD-12] схема скасованого сеансу повертається разом зі статусом CANCELLED"
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions/{sessionId}/seats (getSessionSeatMap) > [REQ-F-002][ADD-12] схема сеансу, що вже почався, теж доступна"
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions/{sessionId}/seats (getSessionSeatMap) > [REQ-F-002][N-17][ADD-03] неіснуючий сеанс повертає 404 NOT_FOUND у моделі Error"
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020][P-07] користувач без бронювань отримує 200 і порожній масив"
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020][P-07] створене бронювання видно в кабінеті з даними сеансу за контрактом Booking"
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020] кабінет показує всі бронювання користувача на різні сеанси"
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-005][REQ-NF-004][T-20][T-22] користувач бачить лише власні бронювання"
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-NF-004][REQ-NF-003][T-22] підміна ID користувача в параметрах запиту не дає доступу до чужих бронювань"
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020][§3.1] скасоване самим користувачем бронювання показується зі статусом CANCELLED без причини сеансу"
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020][REQ-F-019][P-18] бронювання скасованого адміністратором сеансу показується з причиною скасування"
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020] кабінет не змінює стан, повторний запит повертає те саме"
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-001, які дії потрапляють у лог > [REQ-LOG-001][T-58] успішна реєстрація записується як USER_REGISTERED SUCCESS з ID користувача"
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-001, які дії потрапляють у лог > [REQ-LOG-001][T-58] відмова в реєстрації (зайнятий email) записується як REJECTED з причиною"
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-001, які дії потрапляють у лог > [REQ-LOG-001][T-58] відмова в реєстрації через помилку валідації записується як REJECTED"
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-001, які дії потрапляють у лог > [REQ-LOG-001][T-58] успішний вхід записується як USER_LOGIN SUCCESS з ID користувача"
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-001, які дії потрапляють у лог > [REQ-LOG-001][T-58] невдалий вхід записується як USER_LOGIN REJECTED без ID і з причиною"
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-001, які дії потрапляють у лог > [REQ-LOG-001][T-58][REQ-F-006] відмова USER в адмін-операції записується як ACCESS_DENIED REJECTED з ID користувача"
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-001, які дії потрапляють у лог > [REQ-LOG-001][T-58][REQ-F-003] запит без токена до захищеної операції записується як ACCESS_DENIED REJECTED без ID"
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-001, які дії потрапляють у лог > [REQ-LOG-001][T-58][N-33] системний збій дає 500 INTERNAL_ERROR і запис SYSTEM_ERROR ERROR"
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-002, кожен запис API має обов'язкові поля > [REQ-LOG-002][T-60] усі записи після типового сценарію мають шість полів правильних типів"
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-003, у лозі немає паролів і токенів > [REQ-LOG-003][T-62][T-70] після реєстрації, входу і запитів з токеном файл логу не містить паролів і токенів"
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-004, лог зберігається після перезапуску > [REQ-LOG-004][T-64] після перезапуску застосунку записи попереднього запуску доступні, нові дописуються"
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > позитивні випадки > [REQ-F-003][P-04][ADD-01] коректні дані дають 200 LoginResponse з Bearer-токеном"
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > позитивні випадки > [REQ-F-003][ADD-01] кожен вхід видає окремий токен"
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > позитивні випадки > [REQ-F-003] токен не містить пароля у відкритому чи base64 вигляді"
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > позитивні випадки > [REQ-F-006][§2.2] початковий адміністратор створюється при налаштуванні і входить з роллю ADMIN"
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > позитивні випадки > [REQ-F-006][§2.2] у системі рівно один адміністратор"
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > позитивні випадки > [REQ-F-006][REQ-NF-002][§2.2] повторний запуск застосунку на тій самій БД не створює другого адміністратора"
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > позитивні випадки > [REQ-F-006][§2.2] email адміністратора не можна зареєструвати повторно"
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > негативні випадки > [REQ-F-003][N-22] невірний пароль дає 401 INVALID_CREDENTIALS"
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > негативні випадки > [REQ-F-003] незареєстрований email дає ту саму відповідь 401 INVALID_CREDENTIALS, що й невірний пароль"
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > негативні випадки > [REQ-F-003] пароль чутливий до регістру"
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > негативні випадки > [REQ-F-003][ADD-03] запит без пароля відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > негативні випадки > [REQ-F-003][ADD-03] запит без email відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > негативні випадки > [REQ-F-003][ADD-03] запит порожнє тіло відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > негативні випадки > [REQ-F-003][ADD-03] запит некоректний email відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування скасування бронювань > [REQ-LOG-001][REQ-LOG-002][T-58] скасування записується як BOOKING_CANCELLED SUCCESS з користувачем, бронюванням, сеансом і місцями"
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування скасування бронювань > [REQ-LOG-001][REQ-F-014][T-58] повторне скасування не створює другого запису про успішне скасування"
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування скасування бронювань > [REQ-LOG-001][T-58] відмова після початку сеансу записується як BOOKING_CANCELLED REJECTED з причиною"
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування скасування бронювань > [REQ-LOG-001][REQ-F-005][T-58] спроба скасувати чуже бронювання записується як BOOKING_CANCELLED REJECTED з ID порушника"
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування дій адміністратора > [REQ-LOG-001][T-58] додавання і зміна фільму записуються як FILM_CREATED і FILM_UPDATED з ID адміністратора"
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування дій адміністратора > [REQ-LOG-001][T-58] створення залу записується як HALL_CREATED"
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування дій адміністратора > [REQ-LOG-001][T-58] створення і зміна сеансу записуються як SESSION_CREATED і SESSION_UPDATED"
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування дій адміністратора > [REQ-LOG-001][REQ-F-017][T-58] заблокована зміна сеансу з бронюваннями записується як SESSION_UPDATED REJECTED з причиною"
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування дій адміністратора > [REQ-LOG-001][REQ-LOG-002][REQ-F-018][T-58] скасування сеансу записується як SESSION_CANCELLED з причиною адміністратора і ID скасованих бронювань"
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування дій адміністратора > [REQ-LOG-001][REQ-F-018][T-58] відмова скасувати сеанс без причини записується як SESSION_CANCELLED REJECTED"
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування дій адміністратора > [REQ-LOG-001][T-58] невдале створення фільму (валідація) записується як FILM_CREATED REJECTED"
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Структура і безпека записів раунду 3 > [REQ-LOG-002][REQ-LOG-003][T-60][T-62] усі записи мають шість полів, токенів і паролів у лозі немає"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > позитивні випадки > [REQ-F-003][P-03] коректні email і пароль створюють обліковий запис 201 за схемою User"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > позитивні випадки > [REQ-F-003][ADD-05] відповідь не містить пароля чи його гешу"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > позитивні випадки > [REQ-F-003][ADD-05] реєстрація не виконує вхід автоматично, токен не видається"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > позитивні випадки > [REQ-F-004][T-12] ID є додатним цілим числом і унікальний для кожного облікового запису"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > позитивні випадки > [REQ-F-004][T-12] ID незмінний, при вході повертається той самий ID, що й при реєстрації"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > позитивні випадки > [REQ-NF-005][T-14][N-21] поле role ADMIN у запиті ігнорується, створюється USER"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > позитивні випадки > [REQ-NF-005][T-14] після входу користувач, що передав role ADMIN, має роль USER"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > граничні випадки > [REQ-F-003][ADD-05] пароль довжиною 8 символів приймається (201)"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > граничні випадки > [REQ-F-003][ADD-05] пароль довжиною 128 символів приймається (201)"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > граничні випадки > [REQ-F-003][ADD-05][N-19] пароль довжиною 7 символів відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > граничні випадки > [REQ-F-003][ADD-05][N-19] пароль довжиною 129 символів відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > граничні випадки > [REQ-F-003][ADD-05] email довжиною 254 символи приймається"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > граничні випадки > [REQ-F-003][ADD-05] email довжиною 255 символів відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][N-18] некоректний email \"not-an-email\" відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][N-18] некоректний email \"user@\" відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][N-18] некоректний email \"@example.com\" відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][N-18] некоректний email \"user example@example.com\" відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][N-18] некоректний email \"\" відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][ADD-03] запит без email відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][ADD-03] запит без пароля відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][ADD-03] запит порожнє тіло відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][ADD-03] запит пароль не рядок відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][ADD-03] запит email не рядок відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][N-20][ADD-05] повторна реєстрація того самого email повертає 409 EMAIL_ALREADY_EXISTS"
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][ADD-05] невдала реєстрація не створює запис у БД"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "BDD-сценарії адендуму > [REQ-F-021][ADD-15][ADD-16][P-19] BDD-сценарій 7, афіша за датою повертає лише сеанси цієї доби без скасованих"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "BDD-сценарії адендуму > [REQ-F-022][P-20] BDD-сценарій 8, афіша за фільмом повертає лише сеанси цього фільму"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "BDD-сценарії адендуму > [REQ-F-023][P-21] BDD-сценарій 9, дата і фільм разом дають перетин умов"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "BDD-сценарії адендуму > [REQ-F-023][REQ-F-001][P-22] BDD-сценарій 10, без фільтрів афіша така сама, як у версії 1.0.0"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "BDD-сценарії адендуму > [REQ-F-021][ADD-15][B-01][B-02] BDD-сценарій 11, сеанс о 23:59:59 належить своїй добі, а опівночі вже наступній"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "BDD-сценарії адендуму > [REQ-F-021][REQ-F-022][ADD-17][ADD-18][N-34][N-43] BDD-сценарій 12, некоректний фільтр відхиляється повністю і пишеться в лог"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Позитивні випадки > [REQ-F-021][P-23] дата без сеансів повертає 200 і порожній масив"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Позитивні випадки > [REQ-F-022][P-24] фільм без актуальних сеансів повертає 200 і порожній масив"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Позитивні випадки > [REQ-F-022][P-25] неіснуючий фільм, 200 а не 404 повертає 200 і порожній масив"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Позитивні випадки > [REQ-F-021][ADD-16][P-26] минула дата, порожній список а не помилка повертає 200 і порожній масив"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Позитивні випадки > [REQ-F-023][ADD-16][P-27] скасований і вже розпочатий сеанси обраного дня не з'являються з фільтром"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Позитивні випадки > [REQ-F-021][REQ-F-022][§2.2][P-28] фільтри з токеном USER і ADMIN працюють так само, як без токена"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Позитивні випадки > [REQ-F-023][P-29] невідомий параметр ігнорується, відповідь як без параметрів"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Позитивні випадки > [REQ-F-023][ADD-19][P-30] відфільтровані сеанси впорядковані за зростанням часу початку"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Граничні випадки > [REQ-F-021][ADD-16][B-03] сьогоднішня дата, сеанс рівно зараз не показується"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Граничні випадки > [REQ-F-021][ADD-16][B-04] сьогоднішня дата, сеанс через 1 секунду показується"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Граничні випадки > [REQ-F-022][B-05] мінімальний filmId=1 приймається"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Граничні випадки > [REQ-F-021][B-06] 29 лютого високосного року приймається"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Граничні випадки > [REQ-F-021][ADD-17][B-07] 29 лютого невисокосного року відхиляється 400"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-021][ADD-17][N-34] дата в іншому форматі відхиляється, сеанси не повертаються"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-021][N-35] неіснуючий місяць відхиляється, сеанси не повертаються"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-021][N-36] неіснуючий день відхиляється, сеанси не повертаються"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-021][N-37] дата з часом відхиляється, сеанси не повертаються"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-021][N-37] дата без нулів відхиляється, сеанси не повертаються"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-022][ADD-17][N-38] filmId не число відхиляється, сеанси не повертаються"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-022][N-39] filmId нуль відхиляється, сеанси не повертаються"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-022][N-39] filmId від'ємний відхиляється, сеанси не повертаються"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-022][N-40] filmId дробовий відхиляється, сеанси не повертаються"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-021][ADD-17][N-41] порожня дата відхиляється, сеанси не повертаються"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-022][ADD-17][N-41] порожній filmId відхиляється, сеанси не повертаються"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-022][ADD-17][N-42] повторений filmId відхиляється, сеанси не повертаються"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-021][ADD-17][N-42] повторена дата відхиляється, сеанси не повертаються"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-023][N-43] коректна дата і некоректний filmId відхиляється, сеанси не повертаються"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-023][N-43] некоректна дата і коректний filmId відхиляється, сеанси не повертаються"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Логування (ADD-18) > [REQ-LOG-001][ADD-18][L-01] некоректна дата записується як SESSIONS_LISTED REJECTED без користувача"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Логування (ADD-18) > [REQ-LOG-001][ADD-18][L-02] некоректний filmId записується як SESSIONS_LISTED REJECTED зі значенням filmId"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Логування (ADD-18) > [REQ-LOG-002][ADD-18][L-03] кожен запис відмови має шість полів REQ-LOG-002"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Логування (ADD-18) > [REQ-LOG-001][ADD-18][L-04] успішний перегляд афіші з фільтрами і без них у лог не пишеться"
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Логування (ADD-18) > [REQ-LOG-003][ADD-18][L-05] відмова з токеном у запиті не записує токен, user_id дорівнює null"
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][REQ-LOG-002][T-58] успішне бронювання записується як BOOKING_CREATED SUCCESS з користувачем, сеансом, бронюванням і місцями"
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][T-58] відмова через зайняте місце записується як BOOKING_CREATED REJECTED з причиною і місцями"
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][T-58] відмова через порушення правил (7 місць) записується як BOOKING_CREATED REJECTED"
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][T-58] відмова через порушення правил (місце поза схемою) записується як BOOKING_CREATED REJECTED"
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][T-58] відмова через порушення правил (неіснуючий сеанс) записується як BOOKING_CREATED REJECTED"
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][T-58] відмова через недоступний (скасований) сеанс записується як BOOKING_CREATED REJECTED"
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][REQ-F-009][T-58] конкурентна гонка 10 запитів дає в лозі 1 SUCCESS і 9 REJECTED"
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][REQ-NF-001][T-58] збій запису бронювання записується як SYSTEM_ERROR ERROR, без BOOKING_CREATED SUCCESS"
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-002][T-60] усі записи бронювань мають шість обов'язкових полів"
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-003][T-62] після бронювань і перегляду кабінету в лозі немає токенів і паролів"
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, позитивні випадки > [REQ-F-011][REQ-F-012][REQ-F-013][P-08] BDD-сценарій 3, скасування власного бронювання до початку сеансу повертає 200 CANCELLED"
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, позитивні випадки > [REQ-F-013][P-08] після скасування всі місця одразу вільні у схемі залу"
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, позитивні випадки > [REQ-F-013] звільнене місце одразу може забронювати інший клієнт"
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, позитивні випадки > [REQ-F-011] скасування лише повне, передані в тілі окремі місця ігноруються і звільняються всі місця"
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, позитивні випадки > [REQ-F-012][REQ-TDD-003] граничний випадок, скасування за 1 секунду до початку сеансу успішне"
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, позитивні випадки > [REQ-F-020][REQ-F-011] скасоване бронювання видно в кабінеті зі статусом CANCELLED"
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, ідемпотентність (REQ-F-014) > [REQ-F-014][REQ-TDD-003][P-09] повторне скасування повертає 200 з тим самим станом без змін"
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, ідемпотентність (REQ-F-014) > [REQ-F-014] повторне скасування не звільняє вдруге місця, які вже забронював інший клієнт"
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, ідемпотентність (REQ-F-014) > [REQ-F-014][REQ-F-012] повторне скасування вже скасованого бронювання після початку сеансу теж повертає 200 з поточним станом"
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, межа часу (REQ-F-012) > [REQ-F-012][REQ-TDD-003][N-14] BDD-сценарій 4, скасування рівно в момент початку сеансу блокується 409 CANCELLATION_DEADLINE_PASSED"
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, межа часу (REQ-F-012) > [REQ-F-012][N-15] BDD-сценарій 5, скасування через 15 хвилин після початку блокується, місця не звільняються"
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, доступ і помилки > [REQ-F-005][REQ-NF-004][ADD-04][N-13] скасування чужого бронювання повертає 403 FORBIDDEN і нічого не змінює"
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, доступ і помилки > [REQ-F-005][REQ-NF-004] перебір чужих ID бронювань не розкриває їхній вміст"
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, доступ і помилки > [REQ-F-011][N-16] неіснуюче бронювання повертає 404 NOT_FOUND"
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, доступ і помилки > [REQ-F-006][ADD-10] ADMIN не скасовує бронювання клієнтів, 403 FORBIDDEN"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][P-10] GET /admin/films повертає всі фільми за схемою Film"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][P-11] POST /admin/films додає фільм, 201 Film з новим ID"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][P-11] доданий фільм з'являється в переліку фільмів"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07] опис фільму необов'язковий"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07] граничний випадок, назва 1 символ приймається"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07] граничний випадок, назва 200 символів приймається"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07] граничний випадок, тривалість 1 хвилина приймається"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07] граничний випадок, опис 2000 символів приймається"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07][ADD-03] фільм [N-25] без назви відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07][ADD-03] фільм порожня назва відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07][ADD-03] фільм назва 201 символ відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07][ADD-03] фільм без тривалості відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07][ADD-03] фільм тривалість 0 відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07][ADD-03] фільм тривалість дробова відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07][ADD-03] фільм тривалість рядком відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07][ADD-03] фільм опис 2001 символ відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-13][P-12] PATCH змінює лише опис, решта полів без змін"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-13] PATCH змінює назву і тривалість, зміни зберігаються"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015] зміна назви фільму відображається в публічній афіші"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-13] PATCH з тілом «порожнє тіло» відхиляється 400 VALIDATION_ERROR, фільм не змінюється"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-13] PATCH з тілом «порожня назва» відхиляється 400 VALIDATION_ERROR, фільм не змінюється"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-13] PATCH з тілом «тривалість 0» відхиляється 400 VALIDATION_ERROR, фільм не змінюється"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-03] PATCH неіснуючого фільму повертає 404 NOT_FOUND"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07][P-13] POST /admin/halls створює зал, місткість рахує сервер"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07] передана в запиті місткість ігнорується"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07] граничний випадок, зал 1 ряд на 1 місце"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][P-14] GET /admin/halls повертає створені зали"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07][ADD-03] зал без назви відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07][ADD-03] зал порожня назва відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07][ADD-03] зал назва 101 символ відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07][ADD-03] зал без кількості рядів відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07][ADD-03] зал 0 рядів відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07][ADD-03] зал 0 місць у ряду відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07][ADD-03] зал дробова кількість рядів відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07][ADD-03] зал від'ємна кількість місць відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] createBooking без токена повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] listMyBookings без токена повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] cancelBooking без токена повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminListFilms без токена повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminCreateFilm без токена повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminUpdateFilm без токена повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminListHalls без токена повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminCreateHall без токена повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminCreateSession без токена повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminUpdateSession без токена повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminCancelSession без токена повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] createBooking з недійсним токеном повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] listMyBookings з недійсним токеном повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] cancelBooking з недійсним токеном повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminListFilms з недійсним токеном повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminCreateFilm з недійсним токеном повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminUpdateFilm з недійсним токеном повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminListHalls з недійсним токеном повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminCreateHall з недійсним токеном повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminCreateSession з недійсним токеном повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminUpdateSession з недійсним токеном повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminCancelSession з недійсним токеном повертає 401 UNAUTHORIZED"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][ADD-01] заголовок Authorization у форматі «схема Basic» не приймається, 401"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][ADD-01] заголовок Authorization у форматі «токен без схеми» не приймається, 401"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][ADD-01] заголовок Authorization у форматі «порожній Bearer» не приймається, 401"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][N-01] спроба бронювання без входу не створює бронювання"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][REQ-NF-003][T-16][N-24] USER викликає adminListFilms і отримує 403 FORBIDDEN"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][REQ-NF-003][T-16][N-24] USER викликає adminCreateFilm і отримує 403 FORBIDDEN"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][REQ-NF-003][T-16][N-24] USER викликає adminUpdateFilm і отримує 403 FORBIDDEN"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][REQ-NF-003][T-16][N-24] USER викликає adminListHalls і отримує 403 FORBIDDEN"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][REQ-NF-003][T-16][N-24] USER викликає adminCreateHall і отримує 403 FORBIDDEN"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][REQ-NF-003][T-16][N-24] USER викликає adminCreateSession і отримує 403 FORBIDDEN"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][REQ-NF-003][T-16][N-24] USER викликає adminUpdateSession і отримує 403 FORBIDDEN"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][REQ-NF-003][T-16][N-24] USER викликає adminCancelSession і отримує 403 FORBIDDEN"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-NF-003][T-18] відмова USER в адмін-операції не змінює дані"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-NF-003][T-18] роль береться з облікового запису на сервері, підміна ролі в заголовках і тілі не діє"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-NF-005][T-14][REQ-F-006] користувач, що реєструвався з role ADMIN, не має доступу до адмін-операцій"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][§2.2] ADMIN має доступ до adminListFilms, 200"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][§2.2] ADMIN має доступ до adminListHalls, 200"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][ADD-10][N-12] ADMIN не може створити бронювання, 403 FORBIDDEN"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][ADD-10] ADMIN не має кабінету бронювань, GET /bookings 403 FORBIDDEN"
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-001][§2.2] публічні операції доступні і з токеном будь-якої ролі"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][P-15] створення сеансу повертає 201 Session зі статусом ACTIVE"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][P-15] доданий адміністратором сеанс з'являється в публічній афіші"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][REQ-F-002] для нового сеансу доступна схема залу, всі місця вільні"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][ADD-07] час з іншим часовим поясом зберігається як той самий момент в UTC"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][ADD-08] перетин сеансів в одному залі у версії 1 не перевіряється"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][ADD-03] сеанс з посиланням на неіснуючий фільм повертає 404 NOT_FOUND"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][ADD-03] сеанс з посиланням на неіснуючий зал повертає 404 NOT_FOUND"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][ADD-03] сеанс без startTime відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][ADD-03] сеанс без filmId відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][ADD-03] сеанс без hallId відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][ADD-03] сеанс startTime не дата відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][ADD-03] сеанс filmId рядком відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-016][P-16] зміна часу сеансу без бронювань успішна, афіша показує новий час"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-016][ADD-13] зміна залу і фільму без бронювань успішна, незмінені поля лишаються"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-016][REQ-F-017] сеанс лише зі скасованими бронюваннями можна редагувати"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-017][REQ-TDD-003][N-26] BDD-сценарій 6, зміна поля «зал» сеансу з активними бронюваннями блокується 409"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-017][REQ-TDD-003][N-26] BDD-сценарій 6, зміна поля «час» сеансу з активними бронюваннями блокується 409"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-017][REQ-TDD-003][N-26] BDD-сценарій 6, зміна поля «фільм» сеансу з активними бронюваннями блокується 409"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-016][ADD-13][N-27] порожнє тіло відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-016][ADD-03] некоректний startTime відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-017][ADD-11][N-28] скасований сеанс редагувати не можна, 409 SESSION_ALREADY_CANCELLED"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-016][ADD-03] неіснуючий сеанс повертає 404 NOT_FOUND"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-016][ADD-03] неіснуючий зал повертає 404 NOT_FOUND"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-016][ADD-03] неіснуючий фільм повертає 404 NOT_FOUND"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-018][REQ-F-019][P-17] BDD-сценарій 6, скасування сеансу з причиною повертає 200 і кількість скасованих бронювань"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-019] усі активні бронювання сеансу каскадно отримують статус CANCELLED і зберігаються в історії"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-020][REQ-F-019][P-18] BDD-сценарій 6, клієнт бачить у кабінеті скасування і причину"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-019][REQ-F-014] бронювання, скасоване клієнтом раніше, не рахується і зберігає свій стан"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-018][REQ-F-001] скасований сеанс зникає з афіші, бронювати його не можна"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-018][ADD-11] сеанс без бронювань теж можна скасувати, кількість 0"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-017][REQ-F-018] BDD-сценарій 6 повністю, зміну заблоковано, потім сеанс скасовано з причиною"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-018][REQ-TDD-003][ADD-11] скасування сеансу [N-29] без поля причини відхиляється 400, сеанс і бронювання не змінюються"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-018][REQ-TDD-003][ADD-11] скасування сеансу [N-30] з порожньою причиною відхиляється 400, сеанс і бронювання не змінюються"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-018][REQ-TDD-003][ADD-11] скасування сеансу [N-31] з причиною лише з пробілів відхиляється 400, сеанс і бронювання не змінюються"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-018][REQ-TDD-003][ADD-11] скасування сеансу з причиною довшою за 500 символів відхиляється 400, сеанс і бронювання не змінюються"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-018][ADD-11] граничний випадок, причина рівно 500 символів приймається"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-018][ADD-11][N-32] повторне скасування сеансу повертає 409 SESSION_ALREADY_CANCELLED, причина не змінюється"
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-018][ADD-03] скасування неіснуючого сеансу повертає 404 NOT_FOUND"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-008][REQ-F-007][REQ-TDD-003][P-05] бронювання 1 місця (мінімум) повертає 201 Booking за контрактом"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-007][REQ-TDD-003][P-06] бронювання 6 місць (максимум) повертає 201"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-008] після бронювання місця одразу зайняті у схемі залу, інші вільні"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-004][REQ-F-008] бронювання зберігається в БД з ID користувача і всіма місцями"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-009] два користувачі бронюють різні місця одного сеансу, обидва успішні"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-009] те саме місце на іншому сеансі вільне і бронюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-013][REQ-F-008] місце зі скасованого бронювання можна забронювати знову"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-008][ADD-06] граничний випадок, сеанс починається через 1 секунду, бронювання дозволене"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-007][ADD-09] граничні місця схеми залу (перше і останнє) бронюються"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][REQ-TDD-003][N-04] 0 місць відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][REQ-TDD-003][N-05] 7 місць відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09][N-06] одне місце двічі відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09][N-07] ряд поза схемою залу відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09] номер місця поза схемою залу відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09] ряд, наступний за останнім відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] ряд 0 (нумерація з 1) відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] номер місця 0 (нумерація з 1) відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] ряд не ціле число відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] місце без номера відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] місце числом замість пари ряд і номер відхиляється, бронювання не створюється"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит без seats відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит без sessionId відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит seats не масив відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит sessionId рядком відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит порожнє тіло відхиляється 400 VALIDATION_ERROR"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][ADD-06][N-11] неіснуючий сеанс повертає 404 NOT_FOUND"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][REQ-F-018][ADD-06][N-10] скасований сеанс повертає 409 SESSION_NOT_AVAILABLE"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][ADD-06][N-10] граничний випадок, сеанс починається рівно зараз, 409 SESSION_NOT_AVAILABLE"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][ADD-06][N-10] сеанс, що вже йде, повертає 409 SESSION_NOT_AVAILABLE"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-009][N-08] місце вже заброньоване іншим клієнтом, 409 SEATS_TAKEN із зазначенням місця"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-009] той самий користувач не може вдруге забронювати своє ж місце"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-010][REQ-NF-001][REQ-TDD-003][N-09] BDD-сценарій 2, місця 5 і 6 вільні, 7 зайняте, бронювання [5, 6, 7] відхиляється повністю"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-010][REQ-NF-001] після відмови вільні місця групи одразу доступні іншому клієнту"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-010] у відповіді SEATS_TAKEN перелічено лише зайняті місця"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-F-009][REQ-NF-006][REQ-TDD-003][REQ-F-008] BDD-сценарій 1, 10 одночасних запитів на одне місце дають рівно 1 успіх і 9 SEATS_TAKEN"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-F-009][REQ-F-008] після конкурентної гонки місце лишається зайнятим і не допускає повторного бронювання"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-F-010][REQ-NF-001][REQ-NF-006] одночасні групові запити зі спільним місцем, успішний лише один, решта місць невдалих груп вільні"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-NF-006][REQ-F-009] два екземпляри сервера з окремими з'єднаннями до однієї БД, 10 одночасних запитів дають 1 успіх і без збоїв"
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, атомарність при збої (REQ-NF-001) > [REQ-NF-001][REQ-F-008] збій під час запису місць відкатує транзакцію, часткових записів немає"
+    }
+  ],
+  "failed": [],
+  "tests": [
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002][T-60] запис містить усі шість обов'язкових полів",
+      "status": "passed",
+      "durationMs": 14,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002][T-60] timestamp у форматі ISO-8601 UTC і береться з годинника",
+      "status": "passed",
+      "durationMs": 6,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] якщо суб'єкт не ідентифікований, user_id дорівнює null, а відсутні entity_ids і reason мають значення за замовчуванням",
+      "status": "passed",
+      "durationMs": 5,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] status SUCCESS приймається",
+      "status": "passed",
+      "durationMs": 5,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] status REJECTED приймається",
+      "status": "passed",
+      "durationMs": 5,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] status ERROR приймається",
+      "status": "passed",
+      "durationMs": 5,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] запис з помилкою структури (невідомий status) відхиляється",
+      "status": "passed",
+      "durationMs": 44,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] запис з помилкою структури (без status) відхиляється",
+      "status": "passed",
+      "durationMs": 4,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] запис з помилкою структури (без event_type) відхиляється",
+      "status": "passed",
+      "durationMs": 3,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, структура запису (REQ-LOG-002) > [REQ-LOG-002] кожен запис займає окремий рядок JSON",
+      "status": "passed",
+      "durationMs": 6,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, конфіденційні дані (REQ-LOG-003) > [REQ-LOG-003][T-62] паролі і токени в entity_ids і в зайвих полях не потрапляють у файл",
+      "status": "passed",
+      "durationMs": 9,
+      "reqIds": [
+        "REQ-LOG-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, конфіденційні дані (REQ-LOG-003) > [REQ-LOG-003][T-62] Bearer-токен у тексті reason маскується",
+      "status": "passed",
+      "durationMs": 5,
+      "reqIds": [
+        "REQ-LOG-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, персистентність (REQ-LOG-004) > [REQ-LOG-004][T-64] записи попереднього запуску доступні після перезапуску, новий запуск дописує, а не перезаписує",
+      "status": "passed",
+      "durationMs": 6,
+      "reqIds": [
+        "REQ-LOG-004"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, персистентність (REQ-LOG-004) > [REQ-LOG-004] каталог для файлу логу створюється, якщо його немає",
+      "status": "passed",
+      "durationMs": 4,
+      "reqIds": [
+        "REQ-LOG-004"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/logger.test.js",
+      "title": "logger, персистентність (REQ-LOG-004) > [REQ-LOG-004] читання відсутнього файлу логу повертає порожній список",
+      "status": "passed",
+      "durationMs": 1,
+      "reqIds": [
+        "REQ-LOG-004"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/run-report-reporter.test.js",
+      "title": "Звіт прогону тестів (REQ-LOG-005) > [REQ-LOG-005][T-66] після прогону створюються файли звіту JSON і Markdown",
+      "status": "passed",
+      "durationMs": 6,
+      "reqIds": [
+        "REQ-LOG-005"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/run-report-reporter.test.js",
+      "title": "Звіт прогону тестів (REQ-LOG-005) > [REQ-LOG-005][T-66] звіт містить час запуску, кількість тестів, списки успішних і впалих кейсів і повідомлення про помилки",
+      "status": "passed",
+      "durationMs": 6,
+      "reqIds": [
+        "REQ-LOG-005"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/run-report-reporter.test.js",
+      "title": "Звіт прогону тестів (REQ-LOG-005) > [REQ-LOG-005][REQ-TDD-002] звіт фіксує стадію TDD і покриття вимог за ID у назвах тестів",
+      "status": "passed",
+      "durationMs": 6,
+      "reqIds": [
+        "REQ-LOG-005",
+        "REQ-TDD-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/run-report-reporter.test.js",
+      "title": "Звіт прогону тестів (REQ-LOG-005) > [REQ-LOG-005][T-66] кожен прогін зберігається окремим файлом і не перезаписує попередній",
+      "status": "passed",
+      "durationMs": 15,
+      "reqIds": [
+        "REQ-LOG-005"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/test-infrastructure.test.js",
+      "title": "Тестове оточення > [REQ-TDD-005][T-81] кожен тест отримує ізольовану БД у пам'яті зі схемою",
+      "status": "passed",
+      "durationMs": 191,
+      "reqIds": [
+        "REQ-TDD-005"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/test-infrastructure.test.js",
+      "title": "Тестове оточення > [REQ-TDD-005][T-81] фіктивний годинник керує поточним часом",
+      "status": "passed",
+      "durationMs": 77,
+      "reqIds": [
+        "REQ-TDD-005"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/unit/test-infrastructure.test.js",
+      "title": "Тестове оточення > [REQ-TDD-005][T-04] раннер виконує паралельні HTTP-запити до застосунку",
+      "status": "passed",
+      "durationMs": 177,
+      "reqIds": [
+        "REQ-TDD-005"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions (listSessions) > [REQ-F-001][T-06][P-01] афіша доступна без токена, відповідь за контрактом SessionListItem[]",
+      "status": "passed",
+      "durationMs": 157,
+      "reqIds": [
+        "REQ-F-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions (listSessions) > [REQ-F-001] порожній розклад повертає 200 і порожній масив",
+      "status": "passed",
+      "durationMs": 101,
+      "reqIds": [
+        "REQ-F-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions (listSessions) > [REQ-F-001] повертається повний список активних майбутніх сеансів (кілька фільмів і залів)",
+      "status": "passed",
+      "durationMs": 108,
+      "reqIds": [
+        "REQ-F-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions (listSessions) > [REQ-F-001][ADD-12] скасований сеанс не входить в афішу",
+      "status": "passed",
+      "durationMs": 97,
+      "reqIds": [
+        "REQ-F-001",
+        "ADD-12"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions (listSessions) > [REQ-F-001][ADD-12] сеанс, що вже почався або минув, не входить в афішу",
+      "status": "passed",
+      "durationMs": 83,
+      "reqIds": [
+        "REQ-F-001",
+        "ADD-12"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions (listSessions) > [REQ-F-001][ADD-12] граничний випадок, сеанс з початком рівно зараз не показується, за 1 секунду до початку показується",
+      "status": "passed",
+      "durationMs": 82,
+      "reqIds": [
+        "REQ-F-001",
+        "ADD-12"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions (listSessions) > [REQ-F-001][ADD-12] афіша рахує «зараз» за годинником сервера",
+      "status": "passed",
+      "durationMs": 91,
+      "reqIds": [
+        "REQ-F-001",
+        "ADD-12"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions/{sessionId}/seats (getSessionSeatMap) > [REQ-F-002][T-08][P-02] схема залу доступна без токена, усі місця залу, місткість рахує сервер",
+      "status": "passed",
+      "durationMs": 99,
+      "reqIds": [
+        "REQ-F-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions/{sessionId}/seats (getSessionSeatMap) > [REQ-F-002] місця активного бронювання мають статус TAKEN, решта FREE",
+      "status": "passed",
+      "durationMs": 96,
+      "reqIds": [
+        "REQ-F-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions/{sessionId}/seats (getSessionSeatMap) > [REQ-F-002][REQ-F-013] місця скасованого бронювання показуються як FREE",
+      "status": "passed",
+      "durationMs": 78,
+      "reqIds": [
+        "REQ-F-002",
+        "REQ-F-013"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions/{sessionId}/seats (getSessionSeatMap) > [REQ-F-002] бронювання іншого сеансу в тому самому залі не робить місця зайнятими",
+      "status": "passed",
+      "durationMs": 85,
+      "reqIds": [
+        "REQ-F-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions/{sessionId}/seats (getSessionSeatMap) > [REQ-F-002] перегляд схеми клієнтом А не змінює стан місць для клієнта Б (немає hold)",
+      "status": "passed",
+      "durationMs": 93,
+      "reqIds": [
+        "REQ-F-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions/{sessionId}/seats (getSessionSeatMap) > [REQ-F-002][ADD-12] схема скасованого сеансу повертається разом зі статусом CANCELLED",
+      "status": "passed",
+      "durationMs": 104,
+      "reqIds": [
+        "REQ-F-002",
+        "ADD-12"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions/{sessionId}/seats (getSessionSeatMap) > [REQ-F-002][ADD-12] схема сеансу, що вже почався, теж доступна",
+      "status": "passed",
+      "durationMs": 102,
+      "reqIds": [
+        "REQ-F-002",
+        "ADD-12"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/public-catalog.test.js",
+      "title": "GET /sessions/{sessionId}/seats (getSessionSeatMap) > [REQ-F-002][N-17][ADD-03] неіснуючий сеанс повертає 404 NOT_FOUND у моделі Error",
+      "status": "passed",
+      "durationMs": 108,
+      "reqIds": [
+        "REQ-F-002",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020][P-07] користувач без бронювань отримує 200 і порожній масив",
+      "status": "passed",
+      "durationMs": 344,
+      "reqIds": [
+        "REQ-F-020"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020][P-07] створене бронювання видно в кабінеті з даними сеансу за контрактом Booking",
+      "status": "passed",
+      "durationMs": 283,
+      "reqIds": [
+        "REQ-F-020"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020] кабінет показує всі бронювання користувача на різні сеанси",
+      "status": "passed",
+      "durationMs": 250,
+      "reqIds": [
+        "REQ-F-020"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-005][REQ-NF-004][T-20][T-22] користувач бачить лише власні бронювання",
+      "status": "passed",
+      "durationMs": 412,
+      "reqIds": [
+        "REQ-F-005",
+        "REQ-NF-004"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-NF-004][REQ-NF-003][T-22] підміна ID користувача в параметрах запиту не дає доступу до чужих бронювань",
+      "status": "passed",
+      "durationMs": 425,
+      "reqIds": [
+        "REQ-NF-004",
+        "REQ-NF-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020][§3.1] скасоване самим користувачем бронювання показується зі статусом CANCELLED без причини сеансу",
+      "status": "passed",
+      "durationMs": 258,
+      "reqIds": [
+        "REQ-F-020"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020][REQ-F-019][P-18] бронювання скасованого адміністратором сеансу показується з причиною скасування",
+      "status": "passed",
+      "durationMs": 244,
+      "reqIds": [
+        "REQ-F-020",
+        "REQ-F-019"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-list.test.js",
+      "title": "GET /bookings (listMyBookings) > [REQ-F-020] кабінет не змінює стан, повторний запит повертає те саме",
+      "status": "passed",
+      "durationMs": 227,
+      "reqIds": [
+        "REQ-F-020"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-001, які дії потрапляють у лог > [REQ-LOG-001][T-58] успішна реєстрація записується як USER_REGISTERED SUCCESS з ID користувача",
+      "status": "passed",
+      "durationMs": 229,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-001, які дії потрапляють у лог > [REQ-LOG-001][T-58] відмова в реєстрації (зайнятий email) записується як REJECTED з причиною",
+      "status": "passed",
+      "durationMs": 186,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-001, які дії потрапляють у лог > [REQ-LOG-001][T-58] відмова в реєстрації через помилку валідації записується як REJECTED",
+      "status": "passed",
+      "durationMs": 88,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-001, які дії потрапляють у лог > [REQ-LOG-001][T-58] успішний вхід записується як USER_LOGIN SUCCESS з ID користувача",
+      "status": "passed",
+      "durationMs": 231,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-001, які дії потрапляють у лог > [REQ-LOG-001][T-58] невдалий вхід записується як USER_LOGIN REJECTED без ID і з причиною",
+      "status": "passed",
+      "durationMs": 229,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-001, які дії потрапляють у лог > [REQ-LOG-001][T-58][REQ-F-006] відмова USER в адмін-операції записується як ACCESS_DENIED REJECTED з ID користувача",
+      "status": "passed",
+      "durationMs": 247,
+      "reqIds": [
+        "REQ-LOG-001",
+        "REQ-F-006"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-001, які дії потрапляють у лог > [REQ-LOG-001][T-58][REQ-F-003] запит без токена до захищеної операції записується як ACCESS_DENIED REJECTED без ID",
+      "status": "passed",
+      "durationMs": 88,
+      "reqIds": [
+        "REQ-LOG-001",
+        "REQ-F-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-001, які дії потрапляють у лог > [REQ-LOG-001][T-58][N-33] системний збій дає 500 INTERNAL_ERROR і запис SYSTEM_ERROR ERROR",
+      "status": "passed",
+      "durationMs": 108,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-002, кожен запис API має обов'язкові поля > [REQ-LOG-002][T-60] усі записи після типового сценарію мають шість полів правильних типів",
+      "status": "passed",
+      "durationMs": 347,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-003, у лозі немає паролів і токенів > [REQ-LOG-003][T-62][T-70] після реєстрації, входу і запитів з токеном файл логу не містить паролів і токенів",
+      "status": "passed",
+      "durationMs": 385,
+      "reqIds": [
+        "REQ-LOG-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/logging-api.test.js",
+      "title": "REQ-LOG-004, лог зберігається після перезапуску > [REQ-LOG-004][T-64] після перезапуску застосунку записи попереднього запуску доступні, нові дописуються",
+      "status": "passed",
+      "durationMs": 291,
+      "reqIds": [
+        "REQ-LOG-004"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > позитивні випадки > [REQ-F-003][P-04][ADD-01] коректні дані дають 200 LoginResponse з Bearer-токеном",
+      "status": "passed",
+      "durationMs": 339,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > позитивні випадки > [REQ-F-003][ADD-01] кожен вхід видає окремий токен",
+      "status": "passed",
+      "durationMs": 333,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > позитивні випадки > [REQ-F-003] токен не містить пароля у відкритому чи base64 вигляді",
+      "status": "passed",
+      "durationMs": 236,
+      "reqIds": [
+        "REQ-F-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > позитивні випадки > [REQ-F-006][§2.2] початковий адміністратор створюється при налаштуванні і входить з роллю ADMIN",
+      "status": "passed",
+      "durationMs": 170,
+      "reqIds": [
+        "REQ-F-006"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > позитивні випадки > [REQ-F-006][§2.2] у системі рівно один адміністратор",
+      "status": "passed",
+      "durationMs": 161,
+      "reqIds": [
+        "REQ-F-006"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > позитивні випадки > [REQ-F-006][REQ-NF-002][§2.2] повторний запуск застосунку на тій самій БД не створює другого адміністратора",
+      "status": "passed",
+      "durationMs": 156,
+      "reqIds": [
+        "REQ-F-006",
+        "REQ-NF-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > позитивні випадки > [REQ-F-006][§2.2] email адміністратора не можна зареєструвати повторно",
+      "status": "passed",
+      "durationMs": 100,
+      "reqIds": [
+        "REQ-F-006"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > негативні випадки > [REQ-F-003][N-22] невірний пароль дає 401 INVALID_CREDENTIALS",
+      "status": "passed",
+      "durationMs": 254,
+      "reqIds": [
+        "REQ-F-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > негативні випадки > [REQ-F-003] незареєстрований email дає ту саму відповідь 401 INVALID_CREDENTIALS, що й невірний пароль",
+      "status": "passed",
+      "durationMs": 252,
+      "reqIds": [
+        "REQ-F-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > негативні випадки > [REQ-F-003] пароль чутливий до регістру",
+      "status": "passed",
+      "durationMs": 216,
+      "reqIds": [
+        "REQ-F-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > негативні випадки > [REQ-F-003][ADD-03] запит без пароля відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 92,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > негативні випадки > [REQ-F-003][ADD-03] запит без email відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 98,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > негативні випадки > [REQ-F-003][ADD-03] запит порожнє тіло відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 91,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-login.test.js",
+      "title": "POST /auth/login (loginUser) > негативні випадки > [REQ-F-003][ADD-03] запит некоректний email відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 91,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування скасування бронювань > [REQ-LOG-001][REQ-LOG-002][T-58] скасування записується як BOOKING_CANCELLED SUCCESS з користувачем, бронюванням, сеансом і місцями",
+      "status": "passed",
+      "durationMs": 349,
+      "reqIds": [
+        "REQ-LOG-001",
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування скасування бронювань > [REQ-LOG-001][REQ-F-014][T-58] повторне скасування не створює другого запису про успішне скасування",
+      "status": "passed",
+      "durationMs": 265,
+      "reqIds": [
+        "REQ-LOG-001",
+        "REQ-F-014"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування скасування бронювань > [REQ-LOG-001][T-58] відмова після початку сеансу записується як BOOKING_CANCELLED REJECTED з причиною",
+      "status": "passed",
+      "durationMs": 249,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування скасування бронювань > [REQ-LOG-001][REQ-F-005][T-58] спроба скасувати чуже бронювання записується як BOOKING_CANCELLED REJECTED з ID порушника",
+      "status": "passed",
+      "durationMs": 402,
+      "reqIds": [
+        "REQ-LOG-001",
+        "REQ-F-005"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування дій адміністратора > [REQ-LOG-001][T-58] додавання і зміна фільму записуються як FILM_CREATED і FILM_UPDATED з ID адміністратора",
+      "status": "passed",
+      "durationMs": 183,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування дій адміністратора > [REQ-LOG-001][T-58] створення залу записується як HALL_CREATED",
+      "status": "passed",
+      "durationMs": 172,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування дій адміністратора > [REQ-LOG-001][T-58] створення і зміна сеансу записуються як SESSION_CREATED і SESSION_UPDATED",
+      "status": "passed",
+      "durationMs": 179,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування дій адміністратора > [REQ-LOG-001][REQ-F-017][T-58] заблокована зміна сеансу з бронюваннями записується як SESSION_UPDATED REJECTED з причиною",
+      "status": "passed",
+      "durationMs": 163,
+      "reqIds": [
+        "REQ-LOG-001",
+        "REQ-F-017"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування дій адміністратора > [REQ-LOG-001][REQ-LOG-002][REQ-F-018][T-58] скасування сеансу записується як SESSION_CANCELLED з причиною адміністратора і ID скасованих бронювань",
+      "status": "passed",
+      "durationMs": 310,
+      "reqIds": [
+        "REQ-LOG-001",
+        "REQ-LOG-002",
+        "REQ-F-018"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування дій адміністратора > [REQ-LOG-001][REQ-F-018][T-58] відмова скасувати сеанс без причини записується як SESSION_CANCELLED REJECTED",
+      "status": "passed",
+      "durationMs": 151,
+      "reqIds": [
+        "REQ-LOG-001",
+        "REQ-F-018"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Логування дій адміністратора > [REQ-LOG-001][T-58] невдале створення фільму (валідація) записується як FILM_CREATED REJECTED",
+      "status": "passed",
+      "durationMs": 138,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/round3-logging.test.js",
+      "title": "Структура і безпека записів раунду 3 > [REQ-LOG-002][REQ-LOG-003][T-60][T-62] усі записи мають шість полів, токенів і паролів у лозі немає",
+      "status": "passed",
+      "durationMs": 299,
+      "reqIds": [
+        "REQ-LOG-002",
+        "REQ-LOG-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > позитивні випадки > [REQ-F-003][P-03] коректні email і пароль створюють обліковий запис 201 за схемою User",
+      "status": "passed",
+      "durationMs": 257,
+      "reqIds": [
+        "REQ-F-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > позитивні випадки > [REQ-F-003][ADD-05] відповідь не містить пароля чи його гешу",
+      "status": "passed",
+      "durationMs": 167,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-05"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > позитивні випадки > [REQ-F-003][ADD-05] реєстрація не виконує вхід автоматично, токен не видається",
+      "status": "passed",
+      "durationMs": 167,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-05"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > позитивні випадки > [REQ-F-004][T-12] ID є додатним цілим числом і унікальний для кожного облікового запису",
+      "status": "passed",
+      "durationMs": 229,
+      "reqIds": [
+        "REQ-F-004"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > позитивні випадки > [REQ-F-004][T-12] ID незмінний, при вході повертається той самий ID, що й при реєстрації",
+      "status": "passed",
+      "durationMs": 314,
+      "reqIds": [
+        "REQ-F-004"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > позитивні випадки > [REQ-NF-005][T-14][N-21] поле role ADMIN у запиті ігнорується, створюється USER",
+      "status": "passed",
+      "durationMs": 172,
+      "reqIds": [
+        "REQ-NF-005"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > позитивні випадки > [REQ-NF-005][T-14] після входу користувач, що передав role ADMIN, має роль USER",
+      "status": "passed",
+      "durationMs": 240,
+      "reqIds": [
+        "REQ-NF-005"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > граничні випадки > [REQ-F-003][ADD-05] пароль довжиною 8 символів приймається (201)",
+      "status": "passed",
+      "durationMs": 174,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-05"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > граничні випадки > [REQ-F-003][ADD-05] пароль довжиною 128 символів приймається (201)",
+      "status": "passed",
+      "durationMs": 177,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-05"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > граничні випадки > [REQ-F-003][ADD-05][N-19] пароль довжиною 7 символів відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 99,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-05"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > граничні випадки > [REQ-F-003][ADD-05][N-19] пароль довжиною 129 символів відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 96,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-05"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > граничні випадки > [REQ-F-003][ADD-05] email довжиною 254 символи приймається",
+      "status": "passed",
+      "durationMs": 158,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-05"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > граничні випадки > [REQ-F-003][ADD-05] email довжиною 255 символів відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 93,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-05"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][N-18] некоректний email \"not-an-email\" відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 92,
+      "reqIds": [
+        "REQ-F-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][N-18] некоректний email \"user@\" відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 91,
+      "reqIds": [
+        "REQ-F-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][N-18] некоректний email \"@example.com\" відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 85,
+      "reqIds": [
+        "REQ-F-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][N-18] некоректний email \"user example@example.com\" відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 80,
+      "reqIds": [
+        "REQ-F-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][N-18] некоректний email \"\" відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 82,
+      "reqIds": [
+        "REQ-F-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][ADD-03] запит без email відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 76,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][ADD-03] запит без пароля відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 82,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][ADD-03] запит порожнє тіло відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 75,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][ADD-03] запит пароль не рядок відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 73,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][ADD-03] запит email не рядок відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 79,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][N-20][ADD-05] повторна реєстрація того самого email повертає 409 EMAIL_ALREADY_EXISTS",
+      "status": "passed",
+      "durationMs": 137,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-05"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/auth-register.test.js",
+      "title": "POST /auth/register (registerUser) > негативні випадки > [REQ-F-003][ADD-05] невдала реєстрація не створює запис у БД",
+      "status": "passed",
+      "durationMs": 66,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-05"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "BDD-сценарії адендуму > [REQ-F-021][ADD-15][ADD-16][P-19] BDD-сценарій 7, афіша за датою повертає лише сеанси цієї доби без скасованих",
+      "status": "passed",
+      "durationMs": 161,
+      "reqIds": [
+        "REQ-F-021",
+        "ADD-15",
+        "ADD-16"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "BDD-сценарії адендуму > [REQ-F-022][P-20] BDD-сценарій 8, афіша за фільмом повертає лише сеанси цього фільму",
+      "status": "passed",
+      "durationMs": 108,
+      "reqIds": [
+        "REQ-F-022"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "BDD-сценарії адендуму > [REQ-F-023][P-21] BDD-сценарій 9, дата і фільм разом дають перетин умов",
+      "status": "passed",
+      "durationMs": 114,
+      "reqIds": [
+        "REQ-F-023"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "BDD-сценарії адендуму > [REQ-F-023][REQ-F-001][P-22] BDD-сценарій 10, без фільтрів афіша така сама, як у версії 1.0.0",
+      "status": "passed",
+      "durationMs": 109,
+      "reqIds": [
+        "REQ-F-023",
+        "REQ-F-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "BDD-сценарії адендуму > [REQ-F-021][ADD-15][B-01][B-02] BDD-сценарій 11, сеанс о 23:59:59 належить своїй добі, а опівночі вже наступній",
+      "status": "passed",
+      "durationMs": 88,
+      "reqIds": [
+        "REQ-F-021",
+        "ADD-15"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "BDD-сценарії адендуму > [REQ-F-021][REQ-F-022][ADD-17][ADD-18][N-34][N-43] BDD-сценарій 12, некоректний фільтр відхиляється повністю і пишеться в лог",
+      "status": "passed",
+      "durationMs": 120,
+      "reqIds": [
+        "REQ-F-021",
+        "REQ-F-022",
+        "ADD-17",
+        "ADD-18"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Позитивні випадки > [REQ-F-021][P-23] дата без сеансів повертає 200 і порожній масив",
+      "status": "passed",
+      "durationMs": 105,
+      "reqIds": [
+        "REQ-F-021"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Позитивні випадки > [REQ-F-022][P-24] фільм без актуальних сеансів повертає 200 і порожній масив",
+      "status": "passed",
+      "durationMs": 98,
+      "reqIds": [
+        "REQ-F-022"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Позитивні випадки > [REQ-F-022][P-25] неіснуючий фільм, 200 а не 404 повертає 200 і порожній масив",
+      "status": "passed",
+      "durationMs": 97,
+      "reqIds": [
+        "REQ-F-022"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Позитивні випадки > [REQ-F-021][ADD-16][P-26] минула дата, порожній список а не помилка повертає 200 і порожній масив",
+      "status": "passed",
+      "durationMs": 97,
+      "reqIds": [
+        "REQ-F-021",
+        "ADD-16"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Позитивні випадки > [REQ-F-023][ADD-16][P-27] скасований і вже розпочатий сеанси обраного дня не з'являються з фільтром",
+      "status": "passed",
+      "durationMs": 89,
+      "reqIds": [
+        "REQ-F-023",
+        "ADD-16"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Позитивні випадки > [REQ-F-021][REQ-F-022][§2.2][P-28] фільтри з токеном USER і ADMIN працюють так само, як без токена",
+      "status": "passed",
+      "durationMs": 351,
+      "reqIds": [
+        "REQ-F-021",
+        "REQ-F-022"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Позитивні випадки > [REQ-F-023][P-29] невідомий параметр ігнорується, відповідь як без параметрів",
+      "status": "passed",
+      "durationMs": 88,
+      "reqIds": [
+        "REQ-F-023"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Позитивні випадки > [REQ-F-023][ADD-19][P-30] відфільтровані сеанси впорядковані за зростанням часу початку",
+      "status": "passed",
+      "durationMs": 81,
+      "reqIds": [
+        "REQ-F-023",
+        "ADD-19"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Граничні випадки > [REQ-F-021][ADD-16][B-03] сьогоднішня дата, сеанс рівно зараз не показується",
+      "status": "passed",
+      "durationMs": 81,
+      "reqIds": [
+        "REQ-F-021",
+        "ADD-16"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Граничні випадки > [REQ-F-021][ADD-16][B-04] сьогоднішня дата, сеанс через 1 секунду показується",
+      "status": "passed",
+      "durationMs": 80,
+      "reqIds": [
+        "REQ-F-021",
+        "ADD-16"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Граничні випадки > [REQ-F-022][B-05] мінімальний filmId=1 приймається",
+      "status": "passed",
+      "durationMs": 78,
+      "reqIds": [
+        "REQ-F-022"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Граничні випадки > [REQ-F-021][B-06] 29 лютого високосного року приймається",
+      "status": "passed",
+      "durationMs": 79,
+      "reqIds": [
+        "REQ-F-021"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Граничні випадки > [REQ-F-021][ADD-17][B-07] 29 лютого невисокосного року відхиляється 400",
+      "status": "passed",
+      "durationMs": 90,
+      "reqIds": [
+        "REQ-F-021",
+        "ADD-17"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-021][ADD-17][N-34] дата в іншому форматі відхиляється, сеанси не повертаються",
+      "status": "passed",
+      "durationMs": 90,
+      "reqIds": [
+        "REQ-F-021",
+        "ADD-17"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-021][N-35] неіснуючий місяць відхиляється, сеанси не повертаються",
+      "status": "passed",
+      "durationMs": 95,
+      "reqIds": [
+        "REQ-F-021"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-021][N-36] неіснуючий день відхиляється, сеанси не повертаються",
+      "status": "passed",
+      "durationMs": 87,
+      "reqIds": [
+        "REQ-F-021"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-021][N-37] дата з часом відхиляється, сеанси не повертаються",
+      "status": "passed",
+      "durationMs": 90,
+      "reqIds": [
+        "REQ-F-021"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-021][N-37] дата без нулів відхиляється, сеанси не повертаються",
+      "status": "passed",
+      "durationMs": 86,
+      "reqIds": [
+        "REQ-F-021"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-022][ADD-17][N-38] filmId не число відхиляється, сеанси не повертаються",
+      "status": "passed",
+      "durationMs": 80,
+      "reqIds": [
+        "REQ-F-022",
+        "ADD-17"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-022][N-39] filmId нуль відхиляється, сеанси не повертаються",
+      "status": "passed",
+      "durationMs": 79,
+      "reqIds": [
+        "REQ-F-022"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-022][N-39] filmId від'ємний відхиляється, сеанси не повертаються",
+      "status": "passed",
+      "durationMs": 77,
+      "reqIds": [
+        "REQ-F-022"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-022][N-40] filmId дробовий відхиляється, сеанси не повертаються",
+      "status": "passed",
+      "durationMs": 82,
+      "reqIds": [
+        "REQ-F-022"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-021][ADD-17][N-41] порожня дата відхиляється, сеанси не повертаються",
+      "status": "passed",
+      "durationMs": 77,
+      "reqIds": [
+        "REQ-F-021",
+        "ADD-17"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-022][ADD-17][N-41] порожній filmId відхиляється, сеанси не повертаються",
+      "status": "passed",
+      "durationMs": 74,
+      "reqIds": [
+        "REQ-F-022",
+        "ADD-17"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-022][ADD-17][N-42] повторений filmId відхиляється, сеанси не повертаються",
+      "status": "passed",
+      "durationMs": 74,
+      "reqIds": [
+        "REQ-F-022",
+        "ADD-17"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-021][ADD-17][N-42] повторена дата відхиляється, сеанси не повертаються",
+      "status": "passed",
+      "durationMs": 81,
+      "reqIds": [
+        "REQ-F-021",
+        "ADD-17"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-023][N-43] коректна дата і некоректний filmId відхиляється, сеанси не повертаються",
+      "status": "passed",
+      "durationMs": 71,
+      "reqIds": [
+        "REQ-F-023"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Негативні випадки (400 VALIDATION_ERROR) > [REQ-F-023][N-43] некоректна дата і коректний filmId відхиляється, сеанси не повертаються",
+      "status": "passed",
+      "durationMs": 71,
+      "reqIds": [
+        "REQ-F-023"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Логування (ADD-18) > [REQ-LOG-001][ADD-18][L-01] некоректна дата записується як SESSIONS_LISTED REJECTED без користувача",
+      "status": "passed",
+      "durationMs": 64,
+      "reqIds": [
+        "ADD-18",
+        "REQ-LOG-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Логування (ADD-18) > [REQ-LOG-001][ADD-18][L-02] некоректний filmId записується як SESSIONS_LISTED REJECTED зі значенням filmId",
+      "status": "passed",
+      "durationMs": 66,
+      "reqIds": [
+        "ADD-18",
+        "REQ-LOG-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Логування (ADD-18) > [REQ-LOG-002][ADD-18][L-03] кожен запис відмови має шість полів REQ-LOG-002",
+      "status": "passed",
+      "durationMs": 78,
+      "reqIds": [
+        "ADD-18",
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Логування (ADD-18) > [REQ-LOG-001][ADD-18][L-04] успішний перегляд афіші з фільтрами і без них у лог не пишеться",
+      "status": "passed",
+      "durationMs": 72,
+      "reqIds": [
+        "ADD-18",
+        "REQ-LOG-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/session-filters.test.js",
+      "title": "Логування (ADD-18) > [REQ-LOG-003][ADD-18][L-05] відмова з токеном у запиті не записує токен, user_id дорівнює null",
+      "status": "passed",
+      "durationMs": 190,
+      "reqIds": [
+        "ADD-18",
+        "REQ-LOG-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][REQ-LOG-002][T-58] успішне бронювання записується як BOOKING_CREATED SUCCESS з користувачем, сеансом, бронюванням і місцями",
+      "status": "passed",
+      "durationMs": 345,
+      "reqIds": [
+        "REQ-LOG-001",
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][T-58] відмова через зайняте місце записується як BOOKING_CREATED REJECTED з причиною і місцями",
+      "status": "passed",
+      "durationMs": 419,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][T-58] відмова через порушення правил (7 місць) записується як BOOKING_CREATED REJECTED",
+      "status": "passed",
+      "durationMs": 237,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][T-58] відмова через порушення правил (місце поза схемою) записується як BOOKING_CREATED REJECTED",
+      "status": "passed",
+      "durationMs": 245,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][T-58] відмова через порушення правил (неіснуючий сеанс) записується як BOOKING_CREATED REJECTED",
+      "status": "passed",
+      "durationMs": 250,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][T-58] відмова через недоступний (скасований) сеанс записується як BOOKING_CREATED REJECTED",
+      "status": "passed",
+      "durationMs": 249,
+      "reqIds": [
+        "REQ-LOG-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][REQ-F-009][T-58] конкурентна гонка 10 запитів дає в лозі 1 SUCCESS і 9 REJECTED",
+      "status": "passed",
+      "durationMs": 1481,
+      "reqIds": [
+        "REQ-LOG-001",
+        "REQ-F-009"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-001][REQ-NF-001][T-58] збій запису бронювання записується як SYSTEM_ERROR ERROR, без BOOKING_CREATED SUCCESS",
+      "status": "passed",
+      "durationMs": 179,
+      "reqIds": [
+        "REQ-LOG-001",
+        "REQ-NF-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-002][T-60] усі записи бронювань мають шість обов'язкових полів",
+      "status": "passed",
+      "durationMs": 320,
+      "reqIds": [
+        "REQ-LOG-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-logging.test.js",
+      "title": "Логування створення бронювань > [REQ-LOG-003][T-62] після бронювань і перегляду кабінету в лозі немає токенів і паролів",
+      "status": "passed",
+      "durationMs": 184,
+      "reqIds": [
+        "REQ-LOG-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, позитивні випадки > [REQ-F-011][REQ-F-012][REQ-F-013][P-08] BDD-сценарій 3, скасування власного бронювання до початку сеансу повертає 200 CANCELLED",
+      "status": "passed",
+      "durationMs": 367,
+      "reqIds": [
+        "REQ-F-011",
+        "REQ-F-012",
+        "REQ-F-013"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, позитивні випадки > [REQ-F-013][P-08] після скасування всі місця одразу вільні у схемі залу",
+      "status": "passed",
+      "durationMs": 275,
+      "reqIds": [
+        "REQ-F-013"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, позитивні випадки > [REQ-F-013] звільнене місце одразу може забронювати інший клієнт",
+      "status": "passed",
+      "durationMs": 405,
+      "reqIds": [
+        "REQ-F-013"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, позитивні випадки > [REQ-F-011] скасування лише повне, передані в тілі окремі місця ігноруються і звільняються всі місця",
+      "status": "passed",
+      "durationMs": 264,
+      "reqIds": [
+        "REQ-F-011"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, позитивні випадки > [REQ-F-012][REQ-TDD-003] граничний випадок, скасування за 1 секунду до початку сеансу успішне",
+      "status": "passed",
+      "durationMs": 261,
+      "reqIds": [
+        "REQ-F-012",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, позитивні випадки > [REQ-F-020][REQ-F-011] скасоване бронювання видно в кабінеті зі статусом CANCELLED",
+      "status": "passed",
+      "durationMs": 252,
+      "reqIds": [
+        "REQ-F-020",
+        "REQ-F-011"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, ідемпотентність (REQ-F-014) > [REQ-F-014][REQ-TDD-003][P-09] повторне скасування повертає 200 з тим самим станом без змін",
+      "status": "passed",
+      "durationMs": 270,
+      "reqIds": [
+        "REQ-F-014",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, ідемпотентність (REQ-F-014) > [REQ-F-014] повторне скасування не звільняє вдруге місця, які вже забронював інший клієнт",
+      "status": "passed",
+      "durationMs": 391,
+      "reqIds": [
+        "REQ-F-014"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, ідемпотентність (REQ-F-014) > [REQ-F-014][REQ-F-012] повторне скасування вже скасованого бронювання після початку сеансу теж повертає 200 з поточним станом",
+      "status": "passed",
+      "durationMs": 215,
+      "reqIds": [
+        "REQ-F-014",
+        "REQ-F-012"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, межа часу (REQ-F-012) > [REQ-F-012][REQ-TDD-003][N-14] BDD-сценарій 4, скасування рівно в момент початку сеансу блокується 409 CANCELLATION_DEADLINE_PASSED",
+      "status": "passed",
+      "durationMs": 209,
+      "reqIds": [
+        "REQ-F-012",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, межа часу (REQ-F-012) > [REQ-F-012][N-15] BDD-сценарій 5, скасування через 15 хвилин після початку блокується, місця не звільняються",
+      "status": "passed",
+      "durationMs": 198,
+      "reqIds": [
+        "REQ-F-012"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, доступ і помилки > [REQ-F-005][REQ-NF-004][ADD-04][N-13] скасування чужого бронювання повертає 403 FORBIDDEN і нічого не змінює",
+      "status": "passed",
+      "durationMs": 327,
+      "reqIds": [
+        "REQ-F-005",
+        "REQ-NF-004",
+        "ADD-04"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, доступ і помилки > [REQ-F-005][REQ-NF-004] перебір чужих ID бронювань не розкриває їхній вміст",
+      "status": "passed",
+      "durationMs": 308,
+      "reqIds": [
+        "REQ-F-005",
+        "REQ-NF-004"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, доступ і помилки > [REQ-F-011][N-16] неіснуюче бронювання повертає 404 NOT_FOUND",
+      "status": "passed",
+      "durationMs": 187,
+      "reqIds": [
+        "REQ-F-011"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-cancel.test.js",
+      "title": "POST /bookings/{bookingId}/cancel, доступ і помилки > [REQ-F-006][ADD-10] ADMIN не скасовує бронювання клієнтів, 403 FORBIDDEN",
+      "status": "passed",
+      "durationMs": 215,
+      "reqIds": [
+        "REQ-F-006",
+        "ADD-10"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][P-10] GET /admin/films повертає всі фільми за схемою Film",
+      "status": "passed",
+      "durationMs": 259,
+      "reqIds": [
+        "REQ-F-015"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][P-11] POST /admin/films додає фільм, 201 Film з новим ID",
+      "status": "passed",
+      "durationMs": 204,
+      "reqIds": [
+        "REQ-F-015"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][P-11] доданий фільм з'являється в переліку фільмів",
+      "status": "passed",
+      "durationMs": 171,
+      "reqIds": [
+        "REQ-F-015"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07] опис фільму необов'язковий",
+      "status": "passed",
+      "durationMs": 174,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07] граничний випадок, назва 1 символ приймається",
+      "status": "passed",
+      "durationMs": 156,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07] граничний випадок, назва 200 символів приймається",
+      "status": "passed",
+      "durationMs": 169,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07] граничний випадок, тривалість 1 хвилина приймається",
+      "status": "passed",
+      "durationMs": 173,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07] граничний випадок, опис 2000 символів приймається",
+      "status": "passed",
+      "durationMs": 165,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07][ADD-03] фільм [N-25] без назви відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 188,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07][ADD-03] фільм порожня назва відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 180,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07][ADD-03] фільм назва 201 символ відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 175,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07][ADD-03] фільм без тривалості відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 162,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07][ADD-03] фільм тривалість 0 відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 164,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07][ADD-03] фільм тривалість дробова відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 163,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07][ADD-03] фільм тривалість рядком відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 154,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-07][ADD-03] фільм опис 2001 символ відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 146,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-13][P-12] PATCH змінює лише опис, решта полів без змін",
+      "status": "passed",
+      "durationMs": 141,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-13"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-13] PATCH змінює назву і тривалість, зміни зберігаються",
+      "status": "passed",
+      "durationMs": 124,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-13"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015] зміна назви фільму відображається в публічній афіші",
+      "status": "passed",
+      "durationMs": 133,
+      "reqIds": [
+        "REQ-F-015"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-13] PATCH з тілом «порожнє тіло» відхиляється 400 VALIDATION_ERROR, фільм не змінюється",
+      "status": "passed",
+      "durationMs": 140,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-13"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-13] PATCH з тілом «порожня назва» відхиляється 400 VALIDATION_ERROR, фільм не змінюється",
+      "status": "passed",
+      "durationMs": 132,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-13"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-13] PATCH з тілом «тривалість 0» відхиляється 400 VALIDATION_ERROR, фільм не змінюється",
+      "status": "passed",
+      "durationMs": 123,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-13"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Фільми > [REQ-F-015][ADD-03] PATCH неіснуючого фільму повертає 404 NOT_FOUND",
+      "status": "passed",
+      "durationMs": 141,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07][P-13] POST /admin/halls створює зал, місткість рахує сервер",
+      "status": "passed",
+      "durationMs": 128,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07] передана в запиті місткість ігнорується",
+      "status": "passed",
+      "durationMs": 116,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07] граничний випадок, зал 1 ряд на 1 місце",
+      "status": "passed",
+      "durationMs": 109,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][P-14] GET /admin/halls повертає створені зали",
+      "status": "passed",
+      "durationMs": 111,
+      "reqIds": [
+        "REQ-F-015"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07][ADD-03] зал без назви відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 112,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07][ADD-03] зал порожня назва відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 111,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07][ADD-03] зал назва 101 символ відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 114,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07][ADD-03] зал без кількості рядів відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 123,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07][ADD-03] зал 0 рядів відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 119,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07][ADD-03] зал 0 місць у ряду відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 125,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07][ADD-03] зал дробова кількість рядів відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 117,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-films-halls.test.js",
+      "title": "Зали > [REQ-F-015][ADD-07][ADD-03] зал від'ємна кількість місць відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 98,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] createBooking без токена повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 175,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] listMyBookings без токена повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 109,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] cancelBooking без токена повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 108,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminListFilms без токена повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 120,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminCreateFilm без токена повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 104,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminUpdateFilm без токена повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 95,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminListHalls без токена повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 98,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminCreateHall без токена повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 94,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminCreateSession без токена повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 97,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminUpdateSession без токена повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 96,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminCancelSession без токена повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 102,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] createBooking з недійсним токеном повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 101,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] listMyBookings з недійсним токеном повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 94,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] cancelBooking з недійсним токеном повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 100,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminListFilms з недійсним токеном повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 111,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminCreateFilm з недійсним токеном повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 102,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminUpdateFilm з недійсним токеном повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 99,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminListHalls з недійсним токеном повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 98,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminCreateHall з недійсним токеном повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 93,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminCreateSession з недійсним токеном повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 92,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminUpdateSession з недійсним токеном повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 87,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][REQ-NF-003][ADD-01] adminCancelSession з недійсним токеном повертає 401 UNAUTHORIZED",
+      "status": "passed",
+      "durationMs": 92,
+      "reqIds": [
+        "REQ-F-003",
+        "REQ-NF-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][ADD-01] заголовок Authorization у форматі «схема Basic» не приймається, 401",
+      "status": "passed",
+      "durationMs": 240,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][ADD-01] заголовок Authorization у форматі «токен без схеми» не приймається, 401",
+      "status": "passed",
+      "durationMs": 213,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][ADD-01] заголовок Authorization у форматі «порожній Bearer» не приймається, 401",
+      "status": "passed",
+      "durationMs": 207,
+      "reqIds": [
+        "REQ-F-003",
+        "ADD-01"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Автентифікація захищених операцій > [REQ-F-003][N-01] спроба бронювання без входу не створює бронювання",
+      "status": "passed",
+      "durationMs": 68,
+      "reqIds": [
+        "REQ-F-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][REQ-NF-003][T-16][N-24] USER викликає adminListFilms і отримує 403 FORBIDDEN",
+      "status": "passed",
+      "durationMs": 195,
+      "reqIds": [
+        "REQ-F-006",
+        "REQ-NF-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][REQ-NF-003][T-16][N-24] USER викликає adminCreateFilm і отримує 403 FORBIDDEN",
+      "status": "passed",
+      "durationMs": 199,
+      "reqIds": [
+        "REQ-F-006",
+        "REQ-NF-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][REQ-NF-003][T-16][N-24] USER викликає adminUpdateFilm і отримує 403 FORBIDDEN",
+      "status": "passed",
+      "durationMs": 181,
+      "reqIds": [
+        "REQ-F-006",
+        "REQ-NF-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][REQ-NF-003][T-16][N-24] USER викликає adminListHalls і отримує 403 FORBIDDEN",
+      "status": "passed",
+      "durationMs": 193,
+      "reqIds": [
+        "REQ-F-006",
+        "REQ-NF-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][REQ-NF-003][T-16][N-24] USER викликає adminCreateHall і отримує 403 FORBIDDEN",
+      "status": "passed",
+      "durationMs": 195,
+      "reqIds": [
+        "REQ-F-006",
+        "REQ-NF-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][REQ-NF-003][T-16][N-24] USER викликає adminCreateSession і отримує 403 FORBIDDEN",
+      "status": "passed",
+      "durationMs": 171,
+      "reqIds": [
+        "REQ-F-006",
+        "REQ-NF-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][REQ-NF-003][T-16][N-24] USER викликає adminUpdateSession і отримує 403 FORBIDDEN",
+      "status": "passed",
+      "durationMs": 159,
+      "reqIds": [
+        "REQ-F-006",
+        "REQ-NF-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][REQ-NF-003][T-16][N-24] USER викликає adminCancelSession і отримує 403 FORBIDDEN",
+      "status": "passed",
+      "durationMs": 174,
+      "reqIds": [
+        "REQ-F-006",
+        "REQ-NF-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-NF-003][T-18] відмова USER в адмін-операції не змінює дані",
+      "status": "passed",
+      "durationMs": 152,
+      "reqIds": [
+        "REQ-NF-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-NF-003][T-18] роль береться з облікового запису на сервері, підміна ролі в заголовках і тілі не діє",
+      "status": "passed",
+      "durationMs": 131,
+      "reqIds": [
+        "REQ-NF-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-NF-005][T-14][REQ-F-006] користувач, що реєструвався з role ADMIN, не має доступу до адмін-операцій",
+      "status": "passed",
+      "durationMs": 162,
+      "reqIds": [
+        "REQ-NF-005",
+        "REQ-F-006"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][§2.2] ADMIN має доступ до adminListFilms, 200",
+      "status": "passed",
+      "durationMs": 121,
+      "reqIds": [
+        "REQ-F-006"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][§2.2] ADMIN має доступ до adminListHalls, 200",
+      "status": "passed",
+      "durationMs": 116,
+      "reqIds": [
+        "REQ-F-006"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][ADD-10][N-12] ADMIN не може створити бронювання, 403 FORBIDDEN",
+      "status": "passed",
+      "durationMs": 125,
+      "reqIds": [
+        "REQ-F-006",
+        "ADD-10"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-006][ADD-10] ADMIN не має кабінету бронювань, GET /bookings 403 FORBIDDEN",
+      "status": "passed",
+      "durationMs": 120,
+      "reqIds": [
+        "REQ-F-006",
+        "ADD-10"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/rbac.test.js",
+      "title": "Ролі (RBAC) > [REQ-F-001][§2.2] публічні операції доступні і з токеном будь-якої ролі",
+      "status": "passed",
+      "durationMs": 202,
+      "reqIds": [
+        "REQ-F-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][P-15] створення сеансу повертає 201 Session зі статусом ACTIVE",
+      "status": "passed",
+      "durationMs": 279,
+      "reqIds": [
+        "REQ-F-015"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][P-15] доданий адміністратором сеанс з'являється в публічній афіші",
+      "status": "passed",
+      "durationMs": 189,
+      "reqIds": [
+        "REQ-F-015"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][REQ-F-002] для нового сеансу доступна схема залу, всі місця вільні",
+      "status": "passed",
+      "durationMs": 173,
+      "reqIds": [
+        "REQ-F-015",
+        "REQ-F-002"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][ADD-07] час з іншим часовим поясом зберігається як той самий момент в UTC",
+      "status": "passed",
+      "durationMs": 166,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-07"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][ADD-08] перетин сеансів в одному залі у версії 1 не перевіряється",
+      "status": "passed",
+      "durationMs": 163,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-08"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][ADD-03] сеанс з посиланням на неіснуючий фільм повертає 404 NOT_FOUND",
+      "status": "passed",
+      "durationMs": 190,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][ADD-03] сеанс з посиланням на неіснуючий зал повертає 404 NOT_FOUND",
+      "status": "passed",
+      "durationMs": 175,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][ADD-03] сеанс без startTime відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 187,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][ADD-03] сеанс без filmId відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 183,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][ADD-03] сеанс без hallId відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 181,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][ADD-03] сеанс startTime не дата відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 166,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions (adminCreateSession) > [REQ-F-015][ADD-03] сеанс filmId рядком відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 170,
+      "reqIds": [
+        "REQ-F-015",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-016][P-16] зміна часу сеансу без бронювань успішна, афіша показує новий час",
+      "status": "passed",
+      "durationMs": 177,
+      "reqIds": [
+        "REQ-F-016"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-016][ADD-13] зміна залу і фільму без бронювань успішна, незмінені поля лишаються",
+      "status": "passed",
+      "durationMs": 146,
+      "reqIds": [
+        "REQ-F-016",
+        "ADD-13"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-016][REQ-F-017] сеанс лише зі скасованими бронюваннями можна редагувати",
+      "status": "passed",
+      "durationMs": 132,
+      "reqIds": [
+        "REQ-F-016",
+        "REQ-F-017"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-017][REQ-TDD-003][N-26] BDD-сценарій 6, зміна поля «зал» сеансу з активними бронюваннями блокується 409",
+      "status": "passed",
+      "durationMs": 146,
+      "reqIds": [
+        "REQ-F-017",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-017][REQ-TDD-003][N-26] BDD-сценарій 6, зміна поля «час» сеансу з активними бронюваннями блокується 409",
+      "status": "passed",
+      "durationMs": 138,
+      "reqIds": [
+        "REQ-F-017",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-017][REQ-TDD-003][N-26] BDD-сценарій 6, зміна поля «фільм» сеансу з активними бронюваннями блокується 409",
+      "status": "passed",
+      "durationMs": 131,
+      "reqIds": [
+        "REQ-F-017",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-016][ADD-13][N-27] порожнє тіло відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 137,
+      "reqIds": [
+        "REQ-F-016",
+        "ADD-13"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-016][ADD-03] некоректний startTime відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 123,
+      "reqIds": [
+        "REQ-F-016",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-017][ADD-11][N-28] скасований сеанс редагувати не можна, 409 SESSION_ALREADY_CANCELLED",
+      "status": "passed",
+      "durationMs": 137,
+      "reqIds": [
+        "REQ-F-017",
+        "ADD-11"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-016][ADD-03] неіснуючий сеанс повертає 404 NOT_FOUND",
+      "status": "passed",
+      "durationMs": 139,
+      "reqIds": [
+        "REQ-F-016",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-016][ADD-03] неіснуючий зал повертає 404 NOT_FOUND",
+      "status": "passed",
+      "durationMs": 140,
+      "reqIds": [
+        "REQ-F-016",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "PATCH /admin/sessions/{sessionId} (adminUpdateSession) > [REQ-F-016][ADD-03] неіснуючий фільм повертає 404 NOT_FOUND",
+      "status": "passed",
+      "durationMs": 133,
+      "reqIds": [
+        "REQ-F-016",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-018][REQ-F-019][P-17] BDD-сценарій 6, скасування сеансу з причиною повертає 200 і кількість скасованих бронювань",
+      "status": "passed",
+      "durationMs": 330,
+      "reqIds": [
+        "REQ-F-018",
+        "REQ-F-019"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-019] усі активні бронювання сеансу каскадно отримують статус CANCELLED і зберігаються в історії",
+      "status": "passed",
+      "durationMs": 319,
+      "reqIds": [
+        "REQ-F-019"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-020][REQ-F-019][P-18] BDD-сценарій 6, клієнт бачить у кабінеті скасування і причину",
+      "status": "passed",
+      "durationMs": 325,
+      "reqIds": [
+        "REQ-F-020",
+        "REQ-F-019"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-019][REQ-F-014] бронювання, скасоване клієнтом раніше, не рахується і зберігає свій стан",
+      "status": "passed",
+      "durationMs": 324,
+      "reqIds": [
+        "REQ-F-019",
+        "REQ-F-014"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-018][REQ-F-001] скасований сеанс зникає з афіші, бронювати його не можна",
+      "status": "passed",
+      "durationMs": 403,
+      "reqIds": [
+        "REQ-F-018",
+        "REQ-F-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-018][ADD-11] сеанс без бронювань теж можна скасувати, кількість 0",
+      "status": "passed",
+      "durationMs": 90,
+      "reqIds": [
+        "REQ-F-018",
+        "ADD-11"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-017][REQ-F-018] BDD-сценарій 6 повністю, зміну заблоковано, потім сеанс скасовано з причиною",
+      "status": "passed",
+      "durationMs": 281,
+      "reqIds": [
+        "REQ-F-017",
+        "REQ-F-018"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-018][REQ-TDD-003][ADD-11] скасування сеансу [N-29] без поля причини відхиляється 400, сеанс і бронювання не змінюються",
+      "status": "passed",
+      "durationMs": 279,
+      "reqIds": [
+        "REQ-F-018",
+        "REQ-TDD-003",
+        "ADD-11"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-018][REQ-TDD-003][ADD-11] скасування сеансу [N-30] з порожньою причиною відхиляється 400, сеанс і бронювання не змінюються",
+      "status": "passed",
+      "durationMs": 291,
+      "reqIds": [
+        "REQ-F-018",
+        "REQ-TDD-003",
+        "ADD-11"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-018][REQ-TDD-003][ADD-11] скасування сеансу [N-31] з причиною лише з пробілів відхиляється 400, сеанс і бронювання не змінюються",
+      "status": "passed",
+      "durationMs": 280,
+      "reqIds": [
+        "REQ-F-018",
+        "REQ-TDD-003",
+        "ADD-11"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-018][REQ-TDD-003][ADD-11] скасування сеансу з причиною довшою за 500 символів відхиляється 400, сеанс і бронювання не змінюються",
+      "status": "passed",
+      "durationMs": 294,
+      "reqIds": [
+        "REQ-F-018",
+        "REQ-TDD-003",
+        "ADD-11"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-018][ADD-11] граничний випадок, причина рівно 500 символів приймається",
+      "status": "passed",
+      "durationMs": 98,
+      "reqIds": [
+        "REQ-F-018",
+        "ADD-11"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-018][ADD-11][N-32] повторне скасування сеансу повертає 409 SESSION_ALREADY_CANCELLED, причина не змінюється",
+      "status": "passed",
+      "durationMs": 267,
+      "reqIds": [
+        "REQ-F-018",
+        "ADD-11"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/admin-sessions.test.js",
+      "title": "POST /admin/sessions/{sessionId}/cancel (adminCancelSession) > [REQ-F-018][ADD-03] скасування неіснуючого сеансу повертає 404 NOT_FOUND",
+      "status": "passed",
+      "durationMs": 90,
+      "reqIds": [
+        "REQ-F-018",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-008][REQ-F-007][REQ-TDD-003][P-05] бронювання 1 місця (мінімум) повертає 201 Booking за контрактом",
+      "status": "passed",
+      "durationMs": 384,
+      "reqIds": [
+        "REQ-F-008",
+        "REQ-F-007",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-007][REQ-TDD-003][P-06] бронювання 6 місць (максимум) повертає 201",
+      "status": "passed",
+      "durationMs": 268,
+      "reqIds": [
+        "REQ-F-007",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-008] після бронювання місця одразу зайняті у схемі залу, інші вільні",
+      "status": "passed",
+      "durationMs": 250,
+      "reqIds": [
+        "REQ-F-008"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-004][REQ-F-008] бронювання зберігається в БД з ID користувача і всіма місцями",
+      "status": "passed",
+      "durationMs": 252,
+      "reqIds": [
+        "REQ-F-004",
+        "REQ-F-008"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-009] два користувачі бронюють різні місця одного сеансу, обидва успішні",
+      "status": "passed",
+      "durationMs": 416,
+      "reqIds": [
+        "REQ-F-009"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-009] те саме місце на іншому сеансі вільне і бронюється",
+      "status": "passed",
+      "durationMs": 246,
+      "reqIds": [
+        "REQ-F-009"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-013][REQ-F-008] місце зі скасованого бронювання можна забронювати знову",
+      "status": "passed",
+      "durationMs": 227,
+      "reqIds": [
+        "REQ-F-013",
+        "REQ-F-008"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-008][ADD-06] граничний випадок, сеанс починається через 1 секунду, бронювання дозволене",
+      "status": "passed",
+      "durationMs": 226,
+      "reqIds": [
+        "REQ-F-008",
+        "ADD-06"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, позитивні випадки > [REQ-F-007][ADD-09] граничні місця схеми залу (перше і останнє) бронюються",
+      "status": "passed",
+      "durationMs": 221,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-09"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][REQ-TDD-003][N-04] 0 місць відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 203,
+      "reqIds": [
+        "REQ-F-007",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][REQ-TDD-003][N-05] 7 місць відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 204,
+      "reqIds": [
+        "REQ-F-007",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09][N-06] одне місце двічі відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 192,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-09"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09][N-07] ряд поза схемою залу відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 197,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-09"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09] номер місця поза схемою залу відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 188,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-09"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-09] ряд, наступний за останнім відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 212,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-09"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] ряд 0 (нумерація з 1) відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 182,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-02"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] номер місця 0 (нумерація з 1) відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 161,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-02"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] ряд не ціле число відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 170,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-02"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] місце без номера відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 164,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-02"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-02] місце числом замість пари ряд і номер відхиляється, бронювання не створюється",
+      "status": "passed",
+      "durationMs": 163,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-02"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит без seats відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 165,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит без sessionId відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 184,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит seats не масив відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 161,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит sessionId рядком відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 182,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, валідація місць (400 VALIDATION_ERROR) > [REQ-F-007][ADD-03] запит порожнє тіло відхиляється 400 VALIDATION_ERROR",
+      "status": "passed",
+      "durationMs": 161,
+      "reqIds": [
+        "REQ-F-007",
+        "ADD-03"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][ADD-06][N-11] неіснуючий сеанс повертає 404 NOT_FOUND",
+      "status": "passed",
+      "durationMs": 151,
+      "reqIds": [
+        "REQ-F-008",
+        "ADD-06"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][REQ-F-018][ADD-06][N-10] скасований сеанс повертає 409 SESSION_NOT_AVAILABLE",
+      "status": "passed",
+      "durationMs": 147,
+      "reqIds": [
+        "REQ-F-008",
+        "REQ-F-018",
+        "ADD-06"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][ADD-06][N-10] граничний випадок, сеанс починається рівно зараз, 409 SESSION_NOT_AVAILABLE",
+      "status": "passed",
+      "durationMs": 146,
+      "reqIds": [
+        "REQ-F-008",
+        "ADD-06"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, недоступний сеанс > [REQ-F-008][ADD-06][N-10] сеанс, що вже йде, повертає 409 SESSION_NOT_AVAILABLE",
+      "status": "passed",
+      "durationMs": 135,
+      "reqIds": [
+        "REQ-F-008",
+        "ADD-06"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-009][N-08] місце вже заброньоване іншим клієнтом, 409 SEATS_TAKEN із зазначенням місця",
+      "status": "passed",
+      "durationMs": 241,
+      "reqIds": [
+        "REQ-F-009"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-009] той самий користувач не може вдруге забронювати своє ж місце",
+      "status": "passed",
+      "durationMs": 149,
+      "reqIds": [
+        "REQ-F-009"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-010][REQ-NF-001][REQ-TDD-003][N-09] BDD-сценарій 2, місця 5 і 6 вільні, 7 зайняте, бронювання [5, 6, 7] відхиляється повністю",
+      "status": "passed",
+      "durationMs": 226,
+      "reqIds": [
+        "REQ-F-010",
+        "REQ-NF-001",
+        "REQ-TDD-003"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-010][REQ-NF-001] після відмови вільні місця групи одразу доступні іншому клієнту",
+      "status": "passed",
+      "durationMs": 321,
+      "reqIds": [
+        "REQ-F-010",
+        "REQ-NF-001"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, зайняті місця > [REQ-F-010] у відповіді SEATS_TAKEN перелічено лише зайняті місця",
+      "status": "passed",
+      "durationMs": 242,
+      "reqIds": [
+        "REQ-F-010"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-F-009][REQ-NF-006][REQ-TDD-003][REQ-F-008] BDD-сценарій 1, 10 одночасних запитів на одне місце дають рівно 1 успіх і 9 SEATS_TAKEN",
+      "status": "passed",
+      "durationMs": 937,
+      "reqIds": [
+        "REQ-F-009",
+        "REQ-NF-006",
+        "REQ-TDD-003",
+        "REQ-F-008"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-F-009][REQ-F-008] після конкурентної гонки місце лишається зайнятим і не допускає повторного бронювання",
+      "status": "passed",
+      "durationMs": 303,
+      "reqIds": [
+        "REQ-F-009",
+        "REQ-F-008"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-F-010][REQ-NF-001][REQ-NF-006] одночасні групові запити зі спільним місцем, успішний лише один, решта місць невдалих груп вільні",
+      "status": "passed",
+      "durationMs": 476,
+      "reqIds": [
+        "REQ-F-010",
+        "REQ-NF-001",
+        "REQ-NF-006"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, конкурентні запити > [REQ-NF-006][REQ-F-009] два екземпляри сервера з окремими з'єднаннями до однієї БД, 10 одночасних запитів дають 1 успіх і без збоїв",
+      "status": "passed",
+      "durationMs": 934,
+      "reqIds": [
+        "REQ-NF-006",
+        "REQ-F-009"
+      ],
+      "failureMessages": []
+    },
+    {
+      "file": "tests/integration/bookings-create.test.js",
+      "title": "POST /bookings, атомарність при збої (REQ-NF-001) > [REQ-NF-001][REQ-F-008] збій під час запису місць відкатує транзакцію, часткових записів немає",
+      "status": "passed",
+      "durationMs": 131,
+      "reqIds": [
+        "REQ-NF-001",
+        "REQ-F-008"
+      ],
+      "failureMessages": []
+    }
+  ]
+}

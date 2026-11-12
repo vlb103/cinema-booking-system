@@ -37,7 +37,7 @@ function createApp({ db, clock = systemClock, logFilePath = config.logFilePath, 
   const bookingsRepository = createBookingsRepository(db);
 
   const authService = createAuthService({ usersRepository, logger, clock });
-  const catalogService = createCatalogService({ sessionsRepository, hallsRepository, bookingsRepository, clock });
+  const catalogService = createCatalogService({ sessionsRepository, hallsRepository, bookingsRepository, logger, clock });
   const adminService = createAdminService({ filmsRepository, hallsRepository, sessionsRepository, logger, clock });
   const bookingService = createBookingService({ bookingsRepository, sessionsRepository, hallsRepository, logger, clock });
   const auth = createAuthMiddleware({ authService, logger });

@@ -9,6 +9,9 @@ const isEmail = (v) => typeof v === 'string' && EMAIL.test(v);
 const isPositiveInt = (v) => Number.isInteger(v) && v >= 1;
 const isText = (v, min, max) => typeof v === 'string' && v.length >= min && v.length <= max;
 const isDateTime = (v) => typeof v === 'string' && DATE_TIME.test(v) && !Number.isNaN(Date.parse(v));
+// Календарна дата YYYY-MM-DD, яка справді існує (2026-02-29 і 2026-11-31 не проходять).
+const isCalendarDate = (v) => typeof v === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(v)
+  && !Number.isNaN(Date.parse(`${v}T00:00:00Z`)) && new Date(`${v}T00:00:00Z`).toISOString().startsWith(v);
 
 // Вибирає з тіла лише дозволені поля, які справді передано.
 function pick(body, keys) {
@@ -20,4 +23,4 @@ function missing(fields, keys) {
   return keys.filter((k) => !(k in fields)).map((k) => `${k}: обов'язкове поле`);
 }
 
-module.exports = { isEmail, isPositiveInt, isText, isDateTime, pick, missing };
+module.exports = { isEmail, isPositiveInt, isText, isDateTime, isCalendarDate, pick, missing };
